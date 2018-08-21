@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>/// Create the dialogue
-tb_CreateDialogue( 8, room_height-128-8, room_width-16, 128, spr_tbskin_default, 22, 22, true );
+tb_CreateDialogue( 8, room_height-8, room_width-16, 256, spr_tbskin_default, 22, 22, true );
 </string>
           </argument>
         </arguments>

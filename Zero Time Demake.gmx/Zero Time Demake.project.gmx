@@ -22,6 +22,31 @@
       <sprite>sprites\spr_font_white_pixel</sprite>
       <sprite>sprites\spr_tbskin_default</sprite>
     </sprites>
+    <sprites name="GUI">
+      <sprite>sprites\sGUIDisabled</sprite>
+      <sprite>sprites\sGUIGoggles</sprite>
+      <sprite>sprites\sGUILeft</sprite>
+      <sprite>sprites\sGUIRight</sprite>
+      <sprite>sprites\sGUIPointer</sprite>
+      <sprite>sprites\sGUISelected</sprite>
+      <sprite>sprites\sGUISwitch</sprite>
+    </sprites>
+    <sprites name="Map">
+      <sprite>sprites\sMapA1</sprite>
+      <sprite>sprites\sMapA2</sprite>
+      <sprite>sprites\sMapA3</sprite>
+      <sprite>sprites\sMapA4</sprite>
+    </sprites>
+    <sprites name="Puzzles">
+      <sprite>sprites\sPuzzleChute</sprite>
+      <sprite>sprites\sPuzzlePanel</sprite>
+      <sprite>sprites\sPuzzleSlider</sprite>
+    </sprites>
+    <sprites name="Characters">
+      <sprite>sprites\sCharPhi</sprite>
+      <sprite>sprites\sCharSigma</sprite>
+      <sprite>sprites\sCharDiana</sprite>
+    </sprites>
   </sprites>
   <backgrounds name="background">
     <background>background\bg_back1</background>
@@ -66,10 +91,13 @@
       <object>objects\obj_controller</object>
       <object>objects\obj_demo_dialogue</object>
     </objects>
+    <objects name="Map">
+      <object>objects\MapController</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\room0</room>
     <room>rooms\rm_test</room>
+    <room>rooms\room0</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

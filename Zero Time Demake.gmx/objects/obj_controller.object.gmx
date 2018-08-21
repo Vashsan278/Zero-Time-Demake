@@ -26,6 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>isFullscreen = false;
+characterShown = "sCharSigma";
+cutScene1 = false;
+cutScene2 = false;
 </string>
           </argument>
         </arguments>
@@ -48,17 +51,46 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if( keyboard_check_pressed( vk_escape ) ) game_end();
-
-if( keyboard_check_pressed( vk_f4 ) )
+            <string>with( obj_demo_dialogue )
 {
-    isFullscreen = !isFullscreen;
-    window_set_fullscreen( isFullscreen );
-}
-
-if( keyboard_check_pressed( vk_f2 ) )
-{
-    with( obj_demo_dialogue )
+    if(cutScene1 == true)
+    {
+        if( ds_queue_empty( messages ) )
+        {
+            tb_ClearMessages();
+            
+            characterShown = "sCharSigma";
+            tb_AddMessage
+            (                
+                "Diana. Wake up.#"
+            );
+            
+            characterShown = "sCharDiana";
+            tb_AddMessage
+            (
+                "Diana: Sigma?#"+
+                "What is this room?"
+            );
+            
+            characterShown = "sCharSigma";
+            tb_AddMessage
+            (
+                "[f:another]You can [c:blue]bind[c:default] any [c:yellow]button[c:default] you like,#"+
+                "may it be [c:yellow]keyboard[c:default], [c:yellow]mouse[c:default], or even [c:yellow]both[c:default]!"
+            );
+            
+            characterShown = "sCharSigma";
+            tb_AddMessage
+            (
+                "I hope you [f:other]enjoy [f:default]this little [f:another]addon[f:default] of mine [c:yellow]:D"
+            );
+            
+            tb_ShowDialogue();
+        }
+        cutScene1 = false;
+    }
+    
+    if(cutScene2 == true)
     {
         if( ds_queue_empty( messages ) )
         {
@@ -91,7 +123,11 @@ if( keyboard_check_pressed( vk_f2 ) )
             
             tb_ShowDialogue();
         }
+        cutScene2 = false;
     }
+    
+    
+    
 }
 </string>
           </argument>
