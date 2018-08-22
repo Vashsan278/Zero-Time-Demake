@@ -8,3 +8,4 @@
     Return: Nothing
 */
 visible = false;
+Player.sprite_index = asset_get_index("sCharNarrator");

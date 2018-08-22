@@ -10,6 +10,7 @@ if( !visible ) return 0;
 if( !surface_exists( surface ) ) surface = skin_generate_surface( skin, width, height );
 if( surface_exists( surface ) ) draw_surface( surface, x, y );
 // Second part - Draw the text with animation
+
 if( currentMessage == noone )
 {
     if( !ds_queue_empty( messages ) )

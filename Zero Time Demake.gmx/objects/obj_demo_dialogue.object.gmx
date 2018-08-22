@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-10</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,8 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>/// Create the dialogue
-tb_CreateDialogue( 8, room_height-8, room_width-16, 256, spr_tbskin_default, 22, 22, true );
+            <string>inCutScene = false;
+
+/// Create the dialogue
+tb_CreateDialogue( 0, 0, room_width, 384, spr_tbskin_default, 22, 22, false );
 </string>
           </argument>
         </arguments>
@@ -49,7 +51,6 @@ tb_CreateDialogue( 8, room_height-8, room_width-16, 256, spr_tbskin_default, 22,
             <kind>1</kind>
             <string>/// Set the bindings
 tb_SetMouseBinding( true, mb_left, mb_right );
-tb_SetKeyboardBinding( true, vk_space, vk_control );
 </string>
           </argument>
         </arguments>
@@ -71,9 +72,8 @@ tb_SetKeyboardBinding( true, vk_space, vk_control );
           <argument>
             <kind>1</kind>
             <string>/// Define fonts and colors
-tb_DefineFont( "default", font_add_sprite( spr_font_white_pixel, 32, true, 1 ) );
-tb_DefineFont( "other", f_other );
-tb_DefineFont( "another", f_another );
+//tb_DefineFont( "default", font_add_sprite( spr_font_white_pixel, 32, true, 1 ) );
+tb_DefineFont( "default", font2);
 
 tb_DefineColor( "default", c_white );
 tb_DefineColor( "red", make_color_rgb( 255, 50, 50 ) );
@@ -102,7 +102,10 @@ tb_DefineColor( "yellow", make_color_rgb( 255, 255, 0 ) );
           <argument>
             <kind>1</kind>
             <string>/// Update Dialogue
-tb_UpdateDialogue();
+//if (inCutScene)
+//{
+    tb_UpdateDialogue();
+//}
 </string>
           </argument>
         </arguments>
@@ -126,7 +129,10 @@ tb_UpdateDialogue();
           <argument>
             <kind>1</kind>
             <string>/// Draw dialogue box and text
-tb_DrawDialogue();
+//if (inCutScene)
+//{
+    tb_DrawDialogue();
+//}
 </string>
           </argument>
         </arguments>

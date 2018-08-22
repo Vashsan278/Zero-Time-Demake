@@ -16,8 +16,8 @@
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1016</w>
-    <h>600</h>
+    <w>1340</w>
+    <h>1004</h>
     <showGrid>-1</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -27,8 +27,8 @@
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>1</page>
-    <xoffset>-125</xoffset>
-    <yoffset>-110</yoffset>
+    <xoffset>-314</xoffset>
+    <yoffset>-196</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="bg_back1" x="0" y="0" htiled="-1" vtiled="-1" hspeed="-1" vspeed="1" stretch="0"/>
@@ -52,7 +52,7 @@
   </views>
   <instances>
     <instance objName="obj_controller" x="0" y="0" name="inst_0AD15959" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_demo_dialogue" x="64" y="64" name="inst_70D6A219" locked="0" code="tb_AddMessage&#xA;(&#xA;    &quot;This is Cedrik's new project: [c:yellow]Simple Dialogue Box[c:default]!#&quot;+&#xA;    &quot;#&quot;+&#xA;    &quot;Press [c:blue][Left Mouse Button][c:default] or [c:blue][Space][c:default] to continue...&quot;&#xA;);&#xA;&#xA;tb_AddMessage&#xA;(&#xA;    &quot;[f:other]It supports an [c:blue]unlimited[c:default] number of [c:yellow]colors[c:default],#&quot;+&#xA;    &quot;[c:blue]unlimited[c:default] [c:yellow]fonts[c:default], and [c:red]eventually[c:default],#&quot;+&#xA;    &quot;[c:blue]unlimited[c:default] [c:yellow]animations[c:default] ( they will be scripts! )&quot;&#xA;);&#xA;&#xA;tb_AddMessage&#xA;(&#xA;    &quot;[f:another]You can [c:blue]bind[c:default] any [c:yellow]button[c:default] you like,#&quot;+&#xA;    &quot;may it be [c:yellow]keyboard[c:default], [c:yellow]mouse[c:default], or even [c:yellow]both[c:default]!&quot;&#xA;);&#xA;&#xA;tb_AddMessage&#xA;(&#xA;    &quot;I hope you [f:other]enjoy [f:default]this little [f:another]addon[f:default] of mine [c:yellow]:D[c:default]#&quot;+&#xA;    &quot;#&quot;+&#xA;    &quot;Press [c:blue]F2[c:default] to show this message again...&quot;&#xA;);&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_demo_dialogue" x="64" y="64" name="inst_70D6A219" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

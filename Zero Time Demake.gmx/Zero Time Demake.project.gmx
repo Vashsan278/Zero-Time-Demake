@@ -19,6 +19,7 @@
     </sprites>
     <sprites name="SimpleDialogueBox">
       <sprite>sprites\spr_mask</sprite>
+      <sprite>sprites\spr_maskBGP</sprite>
       <sprite>sprites\spr_font_white_pixel</sprite>
       <sprite>sprites\spr_tbskin_default</sprite>
     </sprites>
@@ -39,13 +40,45 @@
     </sprites>
     <sprites name="Puzzles">
       <sprite>sprites\sPuzzleChute</sprite>
-      <sprite>sprites\sPuzzlePanel</sprite>
-      <sprite>sprites\sPuzzleSlider</sprite>
+      <sprites name="Slider">
+        <sprite>sprites\sPuzzleSliderBar</sprite>
+        <sprite>sprites\sPuzzleSlider</sprite>
+        <sprite>sprites\sPuzzlePanel</sprite>
+        <sprites name="Alphabet">
+          <sprite>sprites\sA</sprite>
+          <sprite>sprites\sB</sprite>
+          <sprite>sprites\sC</sprite>
+          <sprite>sprites\sD</sprite>
+          <sprite>sprites\sE</sprite>
+          <sprite>sprites\sF</sprite>
+          <sprite>sprites\sG</sprite>
+          <sprite>sprites\sH</sprite>
+          <sprite>sprites\sI</sprite>
+          <sprite>sprites\sJ</sprite>
+          <sprite>sprites\sK</sprite>
+          <sprite>sprites\sL</sprite>
+          <sprite>sprites\sM</sprite>
+          <sprite>sprites\sN</sprite>
+          <sprite>sprites\sO</sprite>
+          <sprite>sprites\sP</sprite>
+          <sprite>sprites\sQ</sprite>
+          <sprite>sprites\sR</sprite>
+          <sprite>sprites\sS</sprite>
+          <sprite>sprites\sT</sprite>
+          <sprite>sprites\sU</sprite>
+          <sprite>sprites\sV</sprite>
+          <sprite>sprites\sW</sprite>
+          <sprite>sprites\sX</sprite>
+          <sprite>sprites\sY</sprite>
+          <sprite>sprites\sZ</sprite>
+        </sprites>
+      </sprites>
     </sprites>
     <sprites name="Characters">
       <sprite>sprites\sCharPhi</sprite>
       <sprite>sprites\sCharSigma</sprite>
       <sprite>sprites\sCharDiana</sprite>
+      <sprite>sprites\sCharNarrator</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -84,6 +117,7 @@
   <fonts name="fonts">
     <font>fonts\f_other</font>
     <font>fonts\f_another</font>
+    <font>fonts\font2</font>
   </fonts>
   <objects name="objects">
     <object>objects\Player</object>
@@ -94,10 +128,17 @@
     <objects name="Map">
       <object>objects\MapController</object>
     </objects>
+    <objects name="Puzzles">
+      <object>objects\sSliderPuzzle</object>
+      <object>objects\Slider</object>
+      <object>objects\SliderBar</object>
+      <object>objects\LetterBox</object>
+    </objects>
   </objects>
   <rooms name="rooms">
-    <room>rooms\rm_test</room>
+    <room>rooms\sliderPuzzleTest</room>
     <room>rooms\room0</room>
+    <room>rooms\rm_test2</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

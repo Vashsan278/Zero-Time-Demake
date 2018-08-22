@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>0</depth>
-  <persistent>0</persistent>
+  <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -26,9 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>isFullscreen = false;
-characterShown = "sCharSigma";
-cutScene1 = false;
+cutScene1 = true;
 cutScene2 = false;
+currentCharacter = sCharSigma;
+
+characterOrder = ds_list_create();
 </string>
           </argument>
         </arguments>
@@ -51,83 +53,64 @@ cutScene2 = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>with( obj_demo_dialogue )
-{
-    if(cutScene1 == true)
+            <string>if(instance_exists(cutScene1))
     {
-        if( ds_queue_empty( messages ) )
-        {
-            tb_ClearMessages();
+        if(cutScene1 == true)
+        {                                                                  
+            with( obj_demo_dialogue )
+            {
+                //if( ds_queue_empty( messages ) )
+                //{           
+                                    
+                    ds_list_add(obj_controller.characterOrder, "sCharSigma");                    
+                    tb_AddMessage
+                    (                
+                        "Diana. Wake up."
+                    );
+                    
+                    ds_list_add(obj_controller.characterOrder, "sCharDiana");
+                    //Player.sprite_index = sCharDiana;
+                    tb_AddMessage
+                    (
+                        "What is this room?"
+                    );                    
+                    
+                    ds_list_add(obj_controller.characterOrder, "sCharSigma");
+                    //Player.sprite_index = sCharSigma;
+                    tb_AddMessage
+                    (                
+                        "Looks like a Trash Disposal Room."
+                    );
+                    
+                    ds_list_add(obj_controller.characterOrder, "sCharNarrator");
+                    Player.sprite_index = sCharNarrator;
+                    tb_AddMessage
+                    (                
+                        "Diana looks at the time on her watch.#It's 18:06. She then looks around the room."
+                    );     
+                    
+                    ds_list_add(obj_controller.characterOrder, "sCharPhi");
+                    Player.sprite_index = sCharDiana;
+                    tb_AddMessage
+                    (                
+                        "Wait, where's Phi... ?"
+                    );   
+                    
+                    ds_list_add(obj_controller.characterOrder, "sCharSigma");
+                    Player.sprite_index = sCharSigma;
+                    tb_AddMessage
+                    (                
+                        "I don't know."
+                    );             
+                       
+                    //tb_ClearMessages();  
+                    cutScene1 = false;       
+                    tb_ShowDialogue();             
+                //}
             
-            characterShown = "sCharSigma";
-            tb_AddMessage
-            (                
-                "Diana. Wake up.#"
-            );
-            
-            characterShown = "sCharDiana";
-            tb_AddMessage
-            (
-                "Diana: Sigma?#"+
-                "What is this room?"
-            );
-            
-            characterShown = "sCharSigma";
-            tb_AddMessage
-            (
-                "[f:another]You can [c:blue]bind[c:default] any [c:yellow]button[c:default] you like,#"+
-                "may it be [c:yellow]keyboard[c:default], [c:yellow]mouse[c:default], or even [c:yellow]both[c:default]!"
-            );
-            
-            characterShown = "sCharSigma";
-            tb_AddMessage
-            (
-                "I hope you [f:other]enjoy [f:default]this little [f:another]addon[f:default] of mine [c:yellow]:D"
-            );
-            
-            tb_ShowDialogue();
         }
         cutScene1 = false;
-    }
-    
-    if(cutScene2 == true)
-    {
-        if( ds_queue_empty( messages ) )
-        {
-            tb_ClearMessages();
-            
-            tb_AddMessage
-            (
-                "This is Cedrik's new project: [c:yellow]Simple Dialogue Box[c:default]!#"+
-                "#"+
-                "Press [c:blue][Left Mouse Button][c:default] or [c:blue][Space][c:default] to continue..."
-            );
-            
-            tb_AddMessage
-            (
-                "[f:other]It supports an [c:blue]unlimited[c:default] number of [c:yellow]colors[c:default],#"+
-                "[c:blue]unlimited[c:default] [c:yellow]fonts[c:default], and [c:red]eventually[c:default],#"+
-                "[c:blue]unlimited[c:default] [c:yellow]animations[c:default] ( they will be scripts! )"
-            );
-            
-            tb_AddMessage
-            (
-                "[f:another]You can [c:blue]bind[c:default] any [c:yellow]button[c:default] you like,#"+
-                "may it be [c:yellow]keyboard[c:default], [c:yellow]mouse[c:default], or even [c:yellow]both[c:default]!"
-            );
-            
-            tb_AddMessage
-            (
-                "I hope you [f:other]enjoy [f:default]this little [f:another]addon[f:default] of mine [c:yellow]:D"
-            );
-            
-            tb_ShowDialogue();
-        }
-        cutScene2 = false;
-    }
-    
-    
-    
+    }    
 }
 </string>
           </argument>
