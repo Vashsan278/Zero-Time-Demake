@@ -39,7 +39,6 @@
       <sprite>sprites\sMapA4</sprite>
     </sprites>
     <sprites name="Puzzles">
-      <sprite>sprites\sPuzzleChute</sprite>
       <sprites name="Slider">
         <sprite>sprites\sPuzzleSliderBar</sprite>
         <sprite>sprites\sPuzzleSlider</sprite>
@@ -71,6 +70,22 @@
           <sprite>sprites\sX</sprite>
           <sprite>sprites\sY</sprite>
           <sprite>sprites\sZ</sprite>
+        </sprites>
+      </sprites>
+      <sprites name="Chute">
+        <sprite>sprites\sPuzzleChute</sprite>
+        <sprites name="Numbers">
+          <sprite>sprites\s0</sprite>
+          <sprite>sprites\s1</sprite>
+          <sprite>sprites\s2</sprite>
+          <sprite>sprites\s3</sprite>
+          <sprite>sprites\s4</sprite>
+          <sprite>sprites\s5</sprite>
+          <sprite>sprites\s6</sprite>
+          <sprite>sprites\s7</sprite>
+          <sprite>sprites\s8</sprite>
+          <sprite>sprites\s9</sprite>
+          <sprite>sprites\sNumbers</sprite>
         </sprites>
       </sprites>
     </sprites>
@@ -110,9 +125,6 @@
       <script>scripts\tk_getXOffset.gml</script>
       <script>scripts\tk_getYOffset.gml</script>
     </scripts>
-    <scripts name="Cutscenes">
-      <script>scripts\scene1.gml</script>
-    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\f_other</font>
@@ -129,13 +141,20 @@
       <object>objects\MapController</object>
     </objects>
     <objects name="Puzzles">
-      <object>objects\sSliderPuzzle</object>
-      <object>objects\Slider</object>
-      <object>objects\SliderBar</object>
-      <object>objects\LetterBox</object>
+      <objects name="Slider">
+        <object>objects\LetterBox</object>
+        <object>objects\SliderBar</object>
+        <object>objects\Slider</object>
+        <object>objects\sSliderPuzzle</object>
+      </objects>
+      <objects name="Chute">
+        <object>objects\ChutePanel</object>
+        <object>objects\ChuteNumber</object>
+      </objects>
     </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\ChutePuzzleTest</room>
     <room>rooms\sliderPuzzleTest</room>
     <room>rooms\room0</room>
     <room>rooms\rm_test2</room>

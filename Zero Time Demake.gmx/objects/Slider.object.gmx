@@ -27,7 +27,7 @@
             <kind>1</kind>
             <string>yy = 0;
 grab = false;
-percentage = 0; 
+percentage = 100; 
 </string>
           </argument>
         </arguments>
@@ -61,7 +61,7 @@ if (grab == false)
 }
 else
 {
-    if ((mouse_y + yy) &lt; bottomLimit &amp;&amp;) &amp;&amp; (mouse_y + yy &gt; topLimit))
+    if ((mouse_y + yy) &lt; bottomLimit &amp;&amp; (mouse_y + yy &gt; topLimit))
     {
         y = mouse_y + yy;
     }     
@@ -77,6 +77,7 @@ else
 }
 
 percentage = round(((y-bottomLimit)/(topLimit-bottomLimit))*100);
+//show_debug_message(string(percentage));
 </string>
           </argument>
         </arguments>
