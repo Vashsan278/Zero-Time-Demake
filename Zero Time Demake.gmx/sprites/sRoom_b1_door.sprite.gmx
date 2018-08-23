@@ -8,7 +8,7 @@
   <sepmasks>0</sepmasks>
   <bboxmode>0</bboxmode>
   <bbox_left>0</bbox_left>
-  <bbox_right>511</bbox_right>
+  <bbox_right>90</bbox_right>
   <bbox_top>0</bbox_top>
   <bbox_bottom>383</bbox_bottom>
   <HTile>0</HTile>
@@ -17,12 +17,9 @@
     <TextureGroup0>0</TextureGroup0>
   </TextureGroups>
   <For3D>0</For3D>
-  <width>512</width>
+  <width>91</width>
   <height>384</height>
   <frames>
-    <frame index="0">images\sCharPhi_0.png</frame>
-    <frame index="1">images\sCharPhi_1.png</frame>
-    <frame index="2">images\sCharPhi_2.png</frame>
-    <frame index="3">images\sCharPhi_3.png</frame>
+    <frame index="0">images\sRoom_b1_door_0.png</frame>
   </frames>
 </sprite>

@@ -75,16 +75,6 @@
       <sprites name="Chute">
         <sprite>sprites\sPuzzleChute</sprite>
         <sprites name="Numbers">
-          <sprite>sprites\s0</sprite>
-          <sprite>sprites\s1</sprite>
-          <sprite>sprites\s2</sprite>
-          <sprite>sprites\s3</sprite>
-          <sprite>sprites\s4</sprite>
-          <sprite>sprites\s5</sprite>
-          <sprite>sprites\s6</sprite>
-          <sprite>sprites\s7</sprite>
-          <sprite>sprites\s8</sprite>
-          <sprite>sprites\s9</sprite>
           <sprite>sprites\sNumbers</sprite>
         </sprites>
       </sprites>
@@ -95,10 +85,51 @@
       <sprite>sprites\sCharDiana</sprite>
       <sprite>sprites\sCharNarrator</sprite>
     </sprites>
+    <sprites name="Rooms">
+      <sprites name="RoomA">
+        <sprites name="A1">
+          <sprite>sprites\sRoom_a1_background</sprite>
+          <sprite>sprites\sRoom_a1_cabinet</sprite>
+          <sprite>sprites\sRoom_a1_controls</sprite>
+          <sprite>sprites\sRoom_a1_shutters</sprite>
+        </sprites>
+        <sprites name="A2">
+          <sprite>sprites\sRoom_a2_background</sprite>
+          <sprite>sprites\sRoom_a2_chute</sprite>
+          <sprite>sprites\sRoom_a2_controls</sprite>
+          <sprite>sprites\sRoom_a2_shutters</sprite>
+          <sprite>sprites\sRoom_a2_window</sprite>
+          <sprite>sprites\sRoom_a2_sliders</sprite>
+        </sprites>
+        <sprites name="A3">
+          <sprite>sprites\sRoom_a3_background</sprite>
+          <sprite>sprites\sRoom_a3_chair</sprite>
+          <sprite>sprites\sRoom_a3_door</sprite>
+          <sprite>sprites\sRoom_a3_slot</sprite>
+        </sprites>
+        <sprites name="A4">
+          <sprite>sprites\sRoom_a4_background</sprite>
+          <sprite>sprites\sRoom_a4_backboard</sprite>
+        </sprites>
+      </sprites>
+      <sprites name="RoomB">
+        <sprites name="B1">
+          <sprite>sprites\sRoom_b1_background</sprite>
+          <sprite>sprites\sRoom_b1_thermometer</sprite>
+          <sprite>sprites\sRoom_b1_weight</sprite>
+          <sprite>sprites\sRoom_b1_burners</sprite>
+          <sprite>sprites\sRoom_b1_door</sprite>
+          <sprite>sprites\sRoom_b1_panel</sprite>
+        </sprites>
+        <sprites name="B2">
+          <sprite>sprites\sRoom_b2_background</sprite>
+          <sprite>sprites\sRoom_b2_door</sprite>
+          <sprite>sprites\sRoom_b2_window</sprite>
+        </sprites>
+      </sprites>
+    </sprites>
   </sprites>
-  <backgrounds name="background">
-    <background>background\bg_back1</background>
-  </backgrounds>
+  <backgrounds name="background"/>
   <paths name="paths"/>
   <scripts name="scripts">
     <scripts name="SimpleDialogueBox">
@@ -132,7 +163,6 @@
     <font>fonts\font2</font>
   </fonts>
   <objects name="objects">
-    <object>objects\Player</object>
     <objects name="SimpleDialogueBox">
       <object>objects\obj_controller</object>
       <object>objects\obj_demo_dialogue</object>
@@ -152,12 +182,57 @@
         <object>objects\ChuteNumber</object>
       </objects>
     </objects>
+    <objects name="Player">
+      <object>objects\Player</object>
+    </objects>
+    <objects name="Room Objects">
+      <objects name="RoomA">
+        <objects name="A1">
+          <object>objects\Room_a1_background</object>
+          <object>objects\Room_a1_cabinet</object>
+          <object>objects\Room_a1_controls</object>
+          <object>objects\Room_a1_shutters</object>
+        </objects>
+        <objects name="A2">
+          <object>objects\Room_a2_background</object>
+          <object>objects\Room_a2_chute</object>
+          <object>objects\Room_a2_controls</object>
+          <object>objects\Room_a2_shutters</object>
+          <object>objects\Room_a2_window</object>
+          <object>objects\Room_a2_sliders</object>
+        </objects>
+        <objects name="A3">
+          <object>objects\Room_a3_background</object>
+          <object>objects\Room_a3_chair</object>
+          <object>objects\Room_a3_door</object>
+          <object>objects\Room_a3_slot</object>
+        </objects>
+        <objects name="A4">
+          <object>objects\Room_a4_background</object>
+          <object>objects\Room_a4_backboard</object>
+        </objects>
+      </objects>
+      <objects name="RoomB">
+        <objects name="B1">
+          <object>objects\room_b1_background</object>
+          <object>objects\Room_b1_burners</object>
+          <object>objects\Room_b1_door</object>
+          <object>objects\Room_b1_panel</object>
+          <object>objects\Room_b1_thermometer</object>
+          <object>objects\Room_b1_weight</object>
+        </objects>
+        <objects name="B2">
+          <object>objects\Room_b2_background</object>
+          <object>objects\Room_b2_door</object>
+          <object>objects\Room_b2_window</object>
+        </objects>
+      </objects>
+    </objects>
   </objects>
   <rooms name="rooms">
     <room>rooms\ChutePuzzleTest</room>
     <room>rooms\sliderPuzzleTest</room>
-    <room>rooms\room0</room>
-    <room>rooms\rm_test2</room>
+    <room>rooms\MainRoom</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

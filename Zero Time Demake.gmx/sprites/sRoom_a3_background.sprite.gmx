@@ -20,9 +20,6 @@
   <width>512</width>
   <height>384</height>
   <frames>
-    <frame index="0">images\sCharPhi_0.png</frame>
-    <frame index="1">images\sCharPhi_1.png</frame>
-    <frame index="2">images\sCharPhi_2.png</frame>
-    <frame index="3">images\sCharPhi_3.png</frame>
+    <frame index="0">images\sRoom_a3_background_0.png</frame>
   </frames>
 </sprite>
