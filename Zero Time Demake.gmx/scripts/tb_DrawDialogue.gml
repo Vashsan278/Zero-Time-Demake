@@ -5,7 +5,11 @@
     Arguments: Nothing
     Returns: Nothing
 */
-if( !visible ) return 0;
+if( !visible ) {
+    
+    
+    return 0;
+}
 // First part - Draw the dialogue box
 if( !surface_exists( surface ) ) surface = skin_generate_surface( skin, width, height );
 if( surface_exists( surface ) ) draw_surface( surface, x, y );
@@ -21,6 +25,7 @@ if( currentMessage == noone )
     }
     else
     {
+        Player.sprite_index = asset_get_index("sCharNarrator");
         visible = false;
         // TODO: Add closing animation
     }

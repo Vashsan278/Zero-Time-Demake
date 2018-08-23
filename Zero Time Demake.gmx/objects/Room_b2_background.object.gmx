@@ -29,6 +29,7 @@
 
 door = instance_create(x, y, Room_b2_door);
 window = instance_create(x+202, y, Room_b2_window);
+
 </string>
           </argument>
         </arguments>
@@ -51,22 +52,56 @@ window = instance_create(x+202, y, Room_b2_window);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>// inventory check
+            <string>//-------------------------------------------------------------
+//inventorySlots 
+if(Player.hasGoggles)
+{
+    goggles = instance_create(x+7, y+289, Goggles);
+} else {
+    if(instance_exists(goggles)) instance_destroy(goggles);
+}
 if(Player.hasChainedBox)
 {
-    door = instance_create(x, y, Room_b2_door);
+    chainedBox = instance_create(x+96, y+303, ChainedBox);
 } else {
-    instance_a
+    if(instance_exists(chainedBox)) instance_destroy(chainedBox);
+}
+if(Player.hasCoin)
+{
+    coin = instance_create(x+193, y+316, Coin);
+} else {
+    if(instance_exists(coin)) instance_destroy(coin);
+}
+if(Player.hasRevolver)
+{
+    revolver = instance_create(x+188, y+307, Revolver);
+} else {
+    if(instance_exists(revolver)) instance_destroy(revolver);
+}
+if(Player.hasScrewDriver)
+{
+    screwDriver = instance_create(x+287, y+304, ScrewDriver);
+} else {
+    if(instance_exists(screwDriver)) instance_destroy(screwDriver);
+}
+if(Player.hasScrews)
+{
+    screws = instance_create(x+368, y+320, Screws);
+} else {
+    if(instance_exists(screws)) instance_destroy(screws);
+}
+if(Player.hasGasTorch)
+{
+    gasTorch = instance_create(x+193, y+316, GasTorch);
+} else {
+    if(instance_exists(gasTorch)) instance_destroy(gasTorch);
 }
 
-revolver = instance_create(x+188, y+307, Revolver);
-coin = instance_create(x+193, y+316, Coin);
-
-
-
+//-------------------------------------------------------------
+// itemSelected boxes
 revolverSelected = instance_create(x+172, y+289, ItemSelected);
 coinSelected = instance_create(x+172, y+289, ItemSelected);
-chainBoxSelected = instance_create(x+88, y+289, ItemSelected);
+chainedBoxSelected = instance_create(x+88, y+289, ItemSelected);
 gogglesSelected = instance_create(x+4, y+289, ItemSelected);
 screwDriverSelected = instance_create(x+260, y+289, ItemSelected);
 screwsSelected = instance_create(x+344, y+289, ItemSelected);

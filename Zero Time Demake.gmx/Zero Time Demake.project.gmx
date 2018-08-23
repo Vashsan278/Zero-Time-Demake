@@ -82,7 +82,7 @@
       </sprites>
     </sprites>
     <sprites name="Characters">
-      <sprite>sprites\sCharPhi</sprite>
+      <sprite>sprites\sCharPhiLocked</sprite>
       <sprite>sprites\sCharSigma</sprite>
       <sprite>sprites\sCharDiana</sprite>
       <sprite>sprites\sCharNarrator</sprite>
