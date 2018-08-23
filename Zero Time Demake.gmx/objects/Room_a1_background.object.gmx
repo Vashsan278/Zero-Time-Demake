@@ -26,6 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>image_speed = 0;
+
+cabinet = instance_create(x+24, y+123, Room_a1_cabinet);
+controls = instance_create(x+284, y+246, Room_a1_controls);
+shutters = instance_create(x+335, y, Room_a1_shutters);
 </string>
           </argument>
         </arguments>

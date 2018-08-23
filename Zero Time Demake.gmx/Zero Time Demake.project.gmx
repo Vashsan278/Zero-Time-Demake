@@ -37,6 +37,8 @@
       <sprite>sprites\sMapA2</sprite>
       <sprite>sprites\sMapA3</sprite>
       <sprite>sprites\sMapA4</sprite>
+      <sprite>sprites\sMapB1</sprite>
+      <sprite>sprites\sMapB2</sprite>
     </sprites>
     <sprites name="Puzzles">
       <sprites name="Slider">
@@ -167,8 +169,9 @@
       <object>objects\obj_controller</object>
       <object>objects\obj_demo_dialogue</object>
     </objects>
-    <objects name="Map">
-      <object>objects\MapController</object>
+    <objects name="GUI">
+      <object>objects\GUI</object>
+      <object>objects\ItemSelected</object>
     </objects>
     <objects name="Puzzles">
       <objects name="Slider">
@@ -228,11 +231,26 @@
         </objects>
       </objects>
     </objects>
+    <objects name="Items">
+      <object>objects\ChainedBox</object>
+      <object>objects\Coin</object>
+      <object>objects\GasTorch</object>
+      <object>objects\Goggles</object>
+      <object>objects\Revolver</object>
+      <object>objects\ScrewDriver</object>
+      <object>objects\Screws</object>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\MainRoom</room>
+    <room>rooms\B2_Test</room>
+    <room>rooms\B1_Test</room>
+    <room>rooms\A4_Test</room>
+    <room>rooms\A3_Test</room>
+    <room>rooms\A2_Test</room>
+    <room>rooms\A1_Test</room>
     <room>rooms\ChutePuzzleTest</room>
     <room>rooms\sliderPuzzleTest</room>
-    <room>rooms\MainRoom</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>

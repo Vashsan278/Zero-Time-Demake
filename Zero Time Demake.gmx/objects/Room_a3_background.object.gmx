@@ -26,6 +26,12 @@
           <argument>
             <kind>1</kind>
             <string>image_speed = 0;
+
+chair = instance_create(x+152, y+61, Room_a3_chair);
+slot = instance_create(x+351, y+160, Room_a3_slot);
+door = instance_create(x, y+53, Room_a3_door);
+
+
 </string>
           </argument>
         </arguments>

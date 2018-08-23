@@ -26,6 +26,8 @@
           <argument>
             <kind>1</kind>
             <string>image_speed = 0;
+
+backboard = instance_create(x+72, y+46, Room_a4_backboard);
 </string>
           </argument>
         </arguments>
