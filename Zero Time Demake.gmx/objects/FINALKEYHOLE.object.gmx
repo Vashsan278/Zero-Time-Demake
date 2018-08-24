@@ -76,9 +76,6 @@ else if (!inView &amp;&amp; !SliderPuzzle.inView &amp;&amp; !ChutePuzzle.inView)
     BackButton.y = 1000;  
     BackButton.depth = depth-1;  
 }
-else{
-    inView = false;
-}
 
 </string>
           </argument>

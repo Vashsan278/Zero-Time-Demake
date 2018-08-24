@@ -130,7 +130,7 @@ if(!gunFired &amp;&amp; timeRanOut)
 
 if(gameOver &amp;&amp; !Player.inCutscene)
 {
-    room = room_get_name("MainMenu")
+    room_goto_previous();
 
 }
 </string>

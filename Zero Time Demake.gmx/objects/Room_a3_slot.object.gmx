@@ -53,7 +53,7 @@ initialDialogue = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(GUI.revolverSelected &amp;&amp; !Player.inCutscene)
+            <string>if(GUI.revolverSelected)
 {
     FOUNDIT.x = 0;
     FOUNDIT.y = 384;
