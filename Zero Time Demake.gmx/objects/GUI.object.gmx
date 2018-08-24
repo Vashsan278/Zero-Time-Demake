@@ -136,6 +136,21 @@ if(Player.hasGasTorch &amp;&amp; !instance_exists(gasTorch))
 else if (!Player.hasGasTorch) {
     if(instance_exists(gasTorch)) instance_destroy(gasTorch);
 }
+
+//--------------------------------------------------------------------
+
+chainedBoxHighlight = instance_create(88, 289, ItemSelected);
+coinSelected = instance_create(172, 289, ItemSelected);
+gasTorchSelected = instance_create(427, 289, ItemSelected);
+gogglesSelected = instance_create(x+4, y+289, ItemSelected);
+revolverSelected = instance_create(172, 289, ItemSelected);
+screwDriverSelected = instance_create(x+260, y+289, ItemSelected);
+screwsSelected = instance_create(x+344, y+289, ItemSelected); 
+
+
+
+
+
 </string>
           </argument>
         </arguments>
