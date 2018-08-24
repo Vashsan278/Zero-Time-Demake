@@ -81,6 +81,7 @@ unopenedDialogue = false;
 {
        obj_controller.shuttersDialogue = true;
        Room_a1_shutters.unopenedDialogue = true;
+       unopenedDialogue = true;
 }
 </string>
           </argument>

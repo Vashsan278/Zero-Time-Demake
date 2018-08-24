@@ -35,6 +35,7 @@ hasGoggles = false;
 hasRevolver = false;
 hasScrewDriver = false;
 hasScrews = false;
+hasGasTorchPhi = false;
 
 currentEvent = "start";
 currentArea = "mainRoom";

@@ -141,7 +141,7 @@ else if (!Player.hasScrews) {
 if(Player.hasGasTorch &amp;&amp; !instance_exists(gasTorch))
 {
     //gasTorch = instance_create(x+441, y+303, GasTorch);
-    gasTorch = instance_create(x+193, y+316, GasTorch);
+    gasTorch = instance_create(x+188, y+307, GasTorch);
     gasTorch.inInventory = true;
 } 
 else if (!Player.hasGasTorch) {
@@ -149,11 +149,11 @@ else if (!Player.hasGasTorch) {
 }
 if(Player.hasGasTorchPhi &amp;&amp; !instance_exists(gasTorch))
 {
-    gasTorchPhi = instance_create(x+441, y+303, GasTorch);
+    gasTorchPhi = instance_create(x+441, y+316, GasTorch);
     gasTorchPhi.inInventory = true;
 } 
 else if (!Player.hasGasTorch) {
-    if(instance_exists(gasTorch)) instance_destroy(gasTorch);
+    if(instance_exists(gasTorchPhi)) instance_destroy(gasTorchPhi);
 }
 
 //--------------------------------------------------------------------
