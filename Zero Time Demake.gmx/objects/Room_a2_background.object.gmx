@@ -37,7 +37,7 @@ coin = instance_create(x+50, y+150, Coin);
 
 hasHeatedThermometer = false;
 
-
+Player.cutscene1 = true;
 </string>
           </argument>
         </arguments>
@@ -83,8 +83,10 @@ window.y = y+23;
 
 if (hasHeatedThermometer &amp;&amp; !instance_exists(coin) &amp;&amp; !coinCreated)
 {
-    coin = instance_create(x+50, y+150, Coin);
-    coinCreated = true;    
+    coin = instance_create(x+55, y+155, Coin);
+    coinCreated = true; 
+    coin.image_xscale = 0.5;
+    coin.image_yscale = 0.5;    
 } 
 else if(!hasHeatedThermometer &amp;&amp; instance_exists(coin) &amp;&amp; !coinCreated) 
 {

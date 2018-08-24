@@ -189,11 +189,11 @@
         <script>scripts\ScenePuzzleB1.gml</script>
         <script>scripts\ScenePuzzleB2.gml</script>
         <scripts name="1A">
-          <script>scripts\ConsoleLockDialogue.gml</script>
-          <script>scripts\ShuttersDialogue.gml</script>
+          <script>scripts\ThermostatConsoleLock.gml</script>
+          <script>scripts\LockerDialogue.gml</script>
         </scripts>
         <scripts name="2A">
-          <script>scripts\LockerDialogue.gml</script>
+          <script>scripts\ShutterConsoleLock.gml</script>
         </scripts>
       </scripts>
     </scripts>

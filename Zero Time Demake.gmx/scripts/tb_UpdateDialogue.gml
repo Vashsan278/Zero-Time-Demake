@@ -50,6 +50,7 @@ if( advance && visible )
              //Player.sprite_index = asset_get_index(ds_list_find_value(obj_controller.characterOrder, 0));
              //show_debug_message(string(ds_list_find_value(obj_controller.characterOrder, 0)));
              ds_list_delete(obj_controller.characterOrder, 0);
+             Player.inCutscene = false;
         }
         
     }

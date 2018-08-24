@@ -53,6 +53,7 @@
 if (disabled){
     GUI.coinSelected = false;
 }
+
 </string>
           </argument>
         </arguments>

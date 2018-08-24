@@ -32,6 +32,7 @@ cutscene2 = false;
 cutscene3 = false;
 cutscene4 = false;
 cutscene5 = false;
+cutscene6 = false;
 
 cutscenePuzzleA1 = false;
 cutscenePuzzleA2 = false;
@@ -40,8 +41,8 @@ cutscenePuzzleA4 = false;
 cutscenePuzzleB1 = false;
 cutscenePuzzleB2 = false;
 
-consoleLockDialogue = false;
-shuttersDialogue = false;
+thermostatConnsoleLock = false;
+shutterConsoleLock = false;
 lockerDialogue = false;
 
 finalChoice = false;
@@ -71,123 +72,156 @@ characterOrder = ds_list_create();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(cutscene1 == true)
+            <string>if(Player.cutscene1 == true)
 {                                                                  
+    Player.inCutscene = true;
     with( obj_demo_dialogue )
     {
         script_execute(Scene1);                                                                                     
     }             
-    cutscene1 = false;               
+    Player.cutscene1 = false;               
 }
 
 if(cutscene2 == true)
-{                                                                  
+{        
+    Player.inCutscene = true;                                                          
     with( obj_demo_dialogue )
     {
         script_execute(Scene2);                                                                                      
     }             
-    cutscene2 = false;               
+    Player.cutscene2 = false;               
 }
 
-if(cutscene3 == true)
-{                                                                  
+if(Player.cutscene3 == true)
+{              
+    Player.inCutscene = true;                                                    
     with( obj_demo_dialogue )
     {
         script_execute(Scene3);                                                                                     
     }             
-    cutscene3 = false;               
+    Player.cutscene3 = false;               
 }
 
-if(cutscene4 == true)
-{                                                                  
+if(Player.cutscene4 == true)
+{      
+    Player.inCutscene = true;                                                            
     with( obj_demo_dialogue )
     {
         script_execute(Scene4);                                                                                      
     }             
-    cutscene4 = false;               
+    Player.cutscene4 = false;               
 }
 
-if(cutscenePuzzleA1 == true)
-{                                                                  
+if(Player.cutscenePuzzleA1 == true)
+{     
+    Player.inCutscene = true;                                                             
     with( obj_demo_dialogue )
     {
         script_execute(ScenePuzzleA1);                                                                                     
     }             
-    cutscenePuzzleA1 = false;               
+    Player.cutscenePuzzleA1 = false;               
 }
 
-if(cutscenePuzzleA2 == true)
-{                                                                  
+if(Player.cutscenePuzzleA2 == true)
+{   
+    Player.inCutscene = true;                                                               
     with( obj_demo_dialogue )
     {
         script_execute(ScenePuzzleA2);                                                                                      
     }             
-    cutscenePuzzleA2 = false;               
+    Player.cutscenePuzzleA2 = false;               
 }
 
-if(cutscenePuzzleA3 == true)
-{                                                                  
+if(Player.cutscenePuzzleA3 == true)
+{     
+    Player.inCutscene = true;                                                             
     with( obj_demo_dialogue )
     {
         script_execute(ScenePuzzleA3);                                                                                      
     }             
-    cutscenePuzzleA3 = false;               
+    Player.cutscenePuzzleA3 = false;               
 }
 
-if(cutscenePuzzleA4 == true)
-{                                                                  
+if(Player.cutscenePuzzleA4 == true)
+{    
+    Player.inCutscene = true;                                                              
     with( obj_demo_dialogue )
     {
         script_execute(ScenePuzzleA4);                                                                                      
     }             
-    cutscenePuzzleA4 = false;               
+    Player.cutscenePuzzleA4 = false;               
 }
 
-if(cutscenePuzzleB1 == true)
-{                                                                  
+if(Player.cutscenePuzzleB1 == true)
+{      
+    Player.inCutscene = true;                                                            
     with( obj_demo_dialogue )
     {
         script_execute(ScenePuzzleB1);                                                                                     
     }             
-    cutscenePuzzleB1 = false;               
+    Player.cutscenePuzzleB1 = false;               
 }
 
-if(cutscenePuzzleB2 == true)
-{                                                                  
+if(Player.cutscenePuzzleB2 == true)
+{     
+    Player.inCutscene = true;                                                             
     with( obj_demo_dialogue )
     {
         script_execute(ScenePuzzleB2);                                                                                     
     }             
-    cutscenePuzzleB2 = false;               
+    Player.cutscenePuzzleB2 = false;               
 }
 
-if(consoleLockDialogue == true)
-{                                                                  
+if(Player.consoleLockDialogue == true)
+{   
+    Player.inCutscene = true;                                                               
     with( obj_demo_dialogue )
     {
         script_execute(ConsoleLockDialogue);                                                                                     
     }             
-    consoleLockDialogue = false;               
+    Player.consoleLockDialogue = false;               
 }
 
-if(shuttersDialogue == true)
-{                                                                  
+if(Player.shuttersDialogue == true)
+{       
+    Player.inCutscene = true;                                                           
     with( obj_demo_dialogue )
     {
         script_execute(ShuttersDialogue);                                                                                     
     }             
-    shuttersDialogue = false;               
+    Player.shuttersDialogue = false;               
 }
 
-if(lockerDialogue == true)
-{                                                                  
+if(Player.lockerDialogue == true)
+{    
+    Player.inCutscene = true;                                                              
     with( obj_demo_dialogue )
     {
         script_execute(LockerDialogue);                                                                                     
     }             
-    lockerDialogue = false;               
+    Player.lockerDialogue = false;               
 }
-           
+
+//     
+if(Player.lockerDialogue == true)
+{    
+    Player.inCutscene = true;                                                              
+    with( obj_demo_dialogue )
+    {
+        script_execute(LockerDialogue);                                                                                     
+    }             
+    Player.lockerDialogue = false;               
+}
+
+if(Player.ShutterDialogue == true)
+{    
+    Player.inCutscene = true;                                                              
+    with( obj_demo_dialogue )
+    {
+        script_execute(LockerDialogue);                                                                                     
+    }             
+    Player.lockerDialogue = false;               
+}      
     
 
 </string>

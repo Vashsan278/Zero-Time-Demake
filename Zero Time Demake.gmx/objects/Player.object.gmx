@@ -42,6 +42,7 @@ currentArea = "mainRoom";
 
 sliderPuzzleComplete = false;
 chutePuzzleComplete = false;
+
 inCutscene = false;
 
 finalChoice = false;
@@ -103,12 +104,16 @@ if (gunFired)
         //suicideEnding
         show_message("live bullet");
         
+        gunFired = false;
+        
         
     }
     else if(blankBullet)
     {
         //happyEnding
         show_message("blank bullet");
+        
+        gunFired = false;
     }    
 }
 
@@ -116,6 +121,9 @@ if(!gunFired &amp;&amp; timeRanOut)
 {
     //sadEnding
     show_message("time ran out");
+    
+    
+    timeRanOut = false;
 }
 </string>
           </argument>

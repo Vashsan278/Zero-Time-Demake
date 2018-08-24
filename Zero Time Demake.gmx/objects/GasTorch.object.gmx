@@ -80,38 +80,40 @@ else if (disabled &amp;&amp; phiHolding){
           <argument>
             <kind>1</kind>
             <string>disabled = place_meeting(x,y, GUI.guiDisabledBar);
-
-if (inInventory &amp;&amp; !disabled &amp;&amp; !phiHolding) 
-{ 
-    GUI.gogglesSelected = false;
-    GUI.chainedBoxSelected = false;
-    GUI.coinSelected = false;
-    GUI.revolverSelected = false;
-    GUI.screwDriverSelected = false;
-    GUI.screwsSelected = false;
-    GUI.gasTorchSelected = true;
-    GUI.gasTorchPhiSelected = false;
-}
-else if(inInventory &amp;&amp; !disabled &amp;&amp; phiHolding)
+if (!Player.inCutscene)
 {
-    GUI.gogglesSelected = false;
-    GUI.chainedBoxSelected = false;
-    GUI.coinSelected = false;
-    GUI.revolverSelected = false;
-    GUI.screwDriverSelected = false;
-    GUI.screwsSelected = false;
-    GUI.gasTorchSelected = false;
-    GUI.gasTorchPhiSelected = true;
-} 
-else if(!inInventory &amp;&amp; !phiHolding)
-{
-    Player.hasGasTorch = true;
-    instance_destroy(GasTorch);
-}
-else if(!inInventory &amp;&amp; phiHolding)
-{
-    Player.hasGasTorchPhi = true;
-    instance_destroy(GasTorch);
+    if (inInventory &amp;&amp; !disabled &amp;&amp; !phiHolding) 
+    { 
+        GUI.gogglesSelected = false;
+        GUI.chainedBoxSelected = false;
+        GUI.coinSelected = false;
+        GUI.revolverSelected = false;
+        GUI.screwDriverSelected = false;
+        GUI.screwsSelected = false;
+        GUI.gasTorchSelected = true;
+        GUI.gasTorchPhiSelected = false;
+    }
+    else if(inInventory &amp;&amp; !disabled &amp;&amp; phiHolding)
+    {
+        GUI.gogglesSelected = false;
+        GUI.chainedBoxSelected = false;
+        GUI.coinSelected = false;
+        GUI.revolverSelected = false;
+        GUI.screwDriverSelected = false;
+        GUI.screwsSelected = false;
+        GUI.gasTorchSelected = false;
+        GUI.gasTorchPhiSelected = true;
+    } 
+    else if(!inInventory &amp;&amp; !phiHolding)
+    {
+        Player.hasGasTorch = true;
+        instance_destroy(GasTorch);
+    }
+    else if(!inInventory &amp;&amp; phiHolding)
+    {
+        Player.hasGasTorchPhi = true;
+        instance_destroy(GasTorch);
+    }
 }
 
 
