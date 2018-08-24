@@ -48,6 +48,7 @@ finalChoice = false;
 gunFired = false;
 liveBullet = false;
 blankBullet = false;
+timeRanOut = false;
 </string>
           </argument>
         </arguments>
@@ -91,9 +92,28 @@ else if (sprName = "sCharNarraor")
 if (finalChoice)
 {
     obj_controller.finalChoice = true;
+    FinalRoom.isCurrentRoom = true;
 
 }
- 
+
+if (gunFired)
+{
+    if(liveBullet)
+    {
+        //suicideEnding
+        
+        
+    }
+    else if(blankBullet)
+    {
+        //happyEnding
+    }    
+}
+
+if(!gunFired &amp;&amp; timeRanOut)
+{
+    //sadEnding
+}
 </string>
           </argument>
         </arguments>

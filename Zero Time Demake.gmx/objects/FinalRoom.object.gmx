@@ -25,7 +25,10 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>image_speed = 0;
+isCurrentRoom = false;
+gun = instance_create(x+331, y+103, FINALGUN);
+</string>
           </argument>
         </arguments>
       </action>
@@ -47,7 +50,38 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>instance_create(
+            <string>if(isCurrentRoom)
+{
+    x = 0;
+    y = 384;
+    
+    Player.hasChainedBox = false;
+    Player.hasCoin = false;
+    Player.hasGasTorch = false;
+    Player.hasGoggles = false;
+    Player.hasRevolver = false;
+    Player.hasScrewDriver = false;
+    Player.hasScrews = false;
+    Player.hasGasTorchPhi = false;
+    
+    Room_a1_background.isCurrentRoom = false;
+    Room_a2_background.isCurrentRoom = false;
+    Room_a3_background.isCurrentRoom = false;
+    Room_a4_background.isCurrentRoom = false;
+    Room_b1_background.isCurrentRoom = false;
+    Room_b2_background.isCurrentRoom = false;
+    
+}
+else
+{
+    x = -500;
+    y = -500;
+}
+
+gun.x = x+331;
+gun.y = y+103;
+    
+
 </string>
           </argument>
         </arguments>

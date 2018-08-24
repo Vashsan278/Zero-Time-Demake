@@ -79,7 +79,7 @@ dial3.depth= depth-1;
     BackButton.y = 709;  
     BackButton.depth = -15;    
 }
-else if (!inView &amp;&amp; !SliderPuzzle.inView)
+else if (!inView &amp;&amp; !SliderPuzzle.inView &amp;&amp; !FINALKEYHOLE.inView)
 {
     depth = 10
     dial1.depth= depth-1;

@@ -49,6 +49,7 @@
             <kind>1</kind>
             <string>SliderPuzzle.inView = false;
 ChutePuzzle.inView = false;
+FINALKEYHOLE.inView = false;
 
 LeftButton.depth = -10;
 RightButton.depth = -10;

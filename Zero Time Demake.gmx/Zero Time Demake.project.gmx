@@ -231,7 +231,7 @@
         <object>objects\ChuteNumber</object>
       </objects>
       <objects name="Gun">
-        <object>objects\GunKeyPuzzle</object>
+        <object>objects\FINALKEYHOLE</object>
       </objects>
     </objects>
     <objects name="Player">

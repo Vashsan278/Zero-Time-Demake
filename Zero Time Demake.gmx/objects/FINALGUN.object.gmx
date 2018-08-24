@@ -3,7 +3,7 @@
   <spriteName>sFinalGun</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-11</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>foundIt = instance_create(500,500, FOUNDIT); 
+foundIt.image_speed = 0;
+</string>
           </argument>
         </arguments>
       </action>
@@ -49,7 +51,7 @@
             <kind>1</kind>
             <string>chance = random_range(0,1)
 
-if(change = 0)
+if(chance = 0)
 {
     Player.liveBullet = true;
 } 

@@ -26,6 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>image_speed = 0;
+keyHole = instance_create(x+0, y+416, FINALKEYHOLE);
+keyHole.depth = 10;
+
+initialDialogue = false;
+
 </string>
           </argument>
         </arguments>
@@ -50,10 +55,23 @@
             <kind>1</kind>
             <string>if(GUI.revolverSelected)
 {
+    FOUNDIT.x = 0;
+    FOUNDIT.y = 384;
+    FOUNDIT.image_speed = 1.1;
     //dialogue
     
-    instance_create(x, y+384, FOUNDIT);
+    
 
+}
+if(!GUI.revolverSelected)
+{
+    FINALKEYHOLE.inView = true;
+    
+    if(!initialDialogue)
+    {
+        // dialogue
+        initialDialogue = false;   
+    }
 }
 </string>
           </argument>

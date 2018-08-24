@@ -3,7 +3,7 @@
   <spriteName>sFOUNDIT</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-10</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -25,8 +25,11 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>Player.finalChoice = true;
-instance_destroy(FOUNDIT);
+            <string>FinalRoom.isCurrentRoom = true;
+image_speed = 0;
+x = 1000;
+y = 1000;
+Room_a3_background.isCurrentRoom = false;
 </string>
           </argument>
         </arguments>

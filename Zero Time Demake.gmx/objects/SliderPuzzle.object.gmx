@@ -103,7 +103,7 @@ if(inView)
     BackButton.depth = -15;    
         
 }
-else if(!inView &amp;&amp; !ChutePuzzle.inView)
+else if(!inView &amp;&amp; !ChutePuzzle.inView &amp;&amp; !FINALKEYHOLE.inView)
 {
     depth = 10
     slider1.depth = depth-1;

@@ -70,12 +70,12 @@ if (Player.chutePuzzleComplete &amp;&amp; GUI.gasTorchSelected)
     
     //Dialogue
 }
-if(GUI.chainedBoxSelected || GUI.coinSelected)
+if(GUI.chainedBoxSelected)
 {
-    Room_b2_background.transferedTorch = false;;
-    GUI.chainedBoxSelected = false;
-    Player.hasChainedBox = false;
+    Room_b2_background.transferedTorch = false;
     Room_b2_background.transferedChainedBox = true;
+    Player.hasChainedBox = false;
+    GUI.chainedBoxSelected = false;
 }
 </string>
           </argument>
