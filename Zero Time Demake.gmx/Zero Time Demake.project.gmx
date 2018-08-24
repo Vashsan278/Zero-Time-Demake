@@ -163,6 +163,23 @@
       <script>scripts\tk_getXOffset.gml</script>
       <script>scripts\tk_getYOffset.gml</script>
     </scripts>
+    <scripts name="Scenes">
+      <scripts name="Cutscenes">
+        <script>scripts\Scene1.gml</script>
+        <script>scripts\Scene2.gml</script>
+        <script>scripts\Scene3.gml</script>
+        <script>scripts\Scene4.gml</script>
+        <script>scripts\Scene5.gml</script>
+      </scripts>
+      <scripts name="Puzzle Scenes">
+        <script>scripts\ScenePuzzleA1.gml</script>
+        <script>scripts\ScenePuzzleA2.gml</script>
+        <script>scripts\ScenePuzzleA3.gml</script>
+        <script>scripts\ScenePuzzleA4.gml</script>
+        <script>scripts\ScenePuzzleB1.gml</script>
+        <script>scripts\ScenePuzzleB2.gml</script>
+      </scripts>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\f_other</font>
@@ -171,7 +188,7 @@
   </fonts>
   <objects name="objects">
     <objects name="SimpleDialogueBox">
-      <object>objects\dialogueController</object>
+      <object>objects\obj_controller</object>
       <object>objects\obj_demo_dialogue</object>
     </objects>
     <objects name="GUI">

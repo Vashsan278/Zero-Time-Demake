@@ -60,7 +60,7 @@ initialDialogue = false;
         </arguments>
       </action>
     </event>
-    <event eventtype="6" enumb="4">
+    <event eventtype="6" enumb="7">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -80,7 +80,7 @@ initialDialogue = false;
             <string>if (!Player.sliderPuzzleComplete)
 {
        
-    SliderPuzzle.inView = true;   
+    SliderPuzzle.inView = true;
     
     if(!initialDialogue)
     {

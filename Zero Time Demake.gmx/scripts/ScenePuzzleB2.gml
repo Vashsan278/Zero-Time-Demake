@@ -1,199 +1,171 @@
+///ScenePuzzleB2()
 ds_list_add(obj_controller.characterOrder, "sCharNarrator");
 tb_AddMessage
 (                
-	"Sigma: The door's locked, but there's*
-	no keyhole... Probably an electronic lock."
+	"Phi: #I don't see a keyhole, so it#
+	has to be electronically locked."
 );
 
 ds_list_add(obj_controller.characterOrder, "sCharNarrator");
 tb_AddMessage
 (                
-	"Diana: This door connects to the*
-	incinerator, right? If we can open it,*
-	then Phi can..."
+	"Phi: #This looks like where the#
+	flames will come from... Am I going#
+	to gurn up to ash... ?"
 );
 
 ds_list_add(obj_controller.characterOrder, "sCharNarrator");
 tb_AddMessage
 (                
-	"Diana: It says "STOP" here, so maybe*
-	it'll stop the incineration process!"
+	"Phi: #This section of the wall is#
+	screwed on."
 );
 
 ds_list_add(obj_controller.characterOrder, "sCharNarrator");
 tb_AddMessage
 (                
-	"Sigma: Hmm, if it does then that's*
-	one less thing to worry about. Let's*
-	find the ley that fits this."
+	"Phi: #This wall is screwed on.#
+	I doubt it's connected to the#
+	outside though."
 );
 
 ds_list_add(obj_controller.characterOrder, "sCharNarrator");
 tb_AddMessage
 (                
-	"Diana: We'd definately fee; calmer*
-	once Phi is safe. Wait a second...*
-	Isn't this keyhole too big?"
+	"Phi: #... May as well take it off.#"
 );
 
 ds_list_add(obj_controller.characterOrder, "sCharNarrator");
 tb_AddMessage
 (                
-	"Diana: I think the gun will go*
-	in here... Please fit... !"
+	"Phi: #Is this some sort of clue?#
+	188 pounds... ?"
 );
 
 ds_list_add(obj_controller.characterOrder, "sCharNarrator");
 tb_AddMessage
 (                
-	"Diana: What's this... ?*
-	Is this a button?"
+	"Phi: #... I'll hold on to the#
+	screws just in case."
 );
 
 ds_list_add(obj_controller.characterOrder, "sCharNarrator");
 tb_AddMessage
 (                
-	"Sigma: Hmm, looks like it. There are*
-	four screws holding the cover in place."
+	"Phi: #That's about the weight of#
+	an adult man..."
 );
 
 ds_list_add(obj_controller.characterOrder, "sCharNarrator");
 tb_AddMessage
 (                
-	"Diana: Oh, could we use this coin*
-	to unscrew it... ?"
+	"Phi: #Sigma! How much do you weigh?"
 );
 
 ds_list_add(obj_controller.characterOrder, "sCharNarrator");
 tb_AddMessage
 (                
-	"Diana: Yes! They're off!"
+	"Sigma: #HUH? What's with this all of#
+	the sudden... How much do #YOU weigh?"
 );
 
 ds_list_add(obj_controller.characterOrder, "sCharNarrator");
 tb_AddMessage
 (                
-	"Sigma: Seems like we didn't*
-	need a screwdriver after all."
+	"Phi: #Just answer. Is it 188 pounds?"
 );
 
 ds_list_add(obj_controller.characterOrder, "sCharNarrator");
 tb_AddMessage
 (                
-	"Sigma: We removed the cover, but...*
-	should we really up and press this*
-	button so carelessly..."
+	"Sigma: #Yeah, more or less...#
+	How'd you know?"
 );
 
 ds_list_add(obj_controller.characterOrder, "sCharNarrator");
 tb_AddMessage
 (                
-	"Diana: I'd like for a tiny guillotine*
-	to come out when you push it and chop*
-	off your hand..."
+	"Phi: #Is it a coincidence it#
+	says that? No, it can't be."
 );
 
 ds_list_add(obj_controller.characterOrder, "sCharNarrator");
 tb_AddMessage
 (                
-	"Sigma: Wh-What... ?! I-I'm going to*
-	forget you said that thank you*
-	very much. I'm pushing it!"
+	"Phi: #I should try weighing#
+	something here."
 );
 
 ds_list_add(obj_controller.characterOrder, "sCharNarrator");
 tb_AddMessage
 (                
-	"Sigma: Oh good, my hand's still intact."
+	"Phi: #130 grams..."
 );
 
 ds_list_add(obj_controller.characterOrder, "sCharNarrator");
 tb_AddMessage
 (                
-	"Diana: Something came out of the*
-	floor. What is it? It kind of looks*
-	like a chair."
+	"Phi: #24 grams for both..."
 );
 
 ds_list_add(obj_controller.characterOrder, "sCharNarrator");
 tb_AddMessage
 (                
-	"Diana: This is a chair... isn't it?*
-	We should try sitting on it."
+	"Phi: #360 grams..."
 );
 
 ds_list_add(obj_controller.characterOrder, "sCharNarrator");
 tb_AddMessage
 (                
-	"Sigma: Er, sure. Maybe we can figure*
-	something out by sitting on it..."
+	"Phi: #It's a thermometer. But why#
+	is it in the incinerator... ?"
 );
 
 ds_list_add(obj_controller.characterOrder, "sCharNarrator");
 tb_AddMessage
 (                
-	"Sigma: Wh-What the hell!*
-	I can't move!"
+	"Phi: #... The temperature is#
+	going up."
 );
 
 ds_list_add(obj_controller.characterOrder, "sCharNarrator");
 tb_AddMessage
 (                
-	"Phi: What?! Hey Sigma! Diana!*
-	What the hell's going on!"
+	"Sigma: #Hey Phi! You okay?!"
 );
 
 ds_list_add(obj_controller.characterOrder, "sCharNarrator");
 tb_AddMessage
 (                
-	"Sigma: I think we tripped something!*
-	I'm restrained, but Diana's fine!"
+	"Phi: #Huh? Well, I'm not bacon yet...#
+	Did something happen?"
 );
 
 ds_list_add(obj_controller.characterOrder, "sCharNarrator");
 tb_AddMessage
 (                
-	"Phi: What did you say?!"
+	"Diana: #The needle on the thermometer#
+	here is shooting up! Is it getting#
+	hot in there?!"
 );
 
 ds_list_add(obj_controller.characterOrder, "sCharNarrator");
 tb_AddMessage
 (                
-	"Diana: N-No..."
+	"Phi: #No, I'm fine."
 );
 
 ds_list_add(obj_controller.characterOrder, "sCharNarrator");
 tb_AddMessage
 (                
-	"Sigma: Take a deep breath, Diana.*
-	We can get past this if we just deal*
-	with it calmly."
+	"Diana: #I'm so glad... Huh?#
+	The coin here is..."
 );
 
 ds_list_add(obj_controller.characterOrder, "sCharNarrator");
 tb_AddMessage
 (                
-	"Diana: Urg... O-Okay... hold on! I'll*
-	find a way to get the two of you out!"
+	"Phi: #Hey, this is... !!"
 );
-
-ds_list_add(obj_controller.characterOrder, "sCharNarrator");
-tb_AddMessage
-(                
-	"Sigma: I'm counting on you. Phi first,*
-	she doesn't have much time left... !"
-);
-
-ds_list_add(obj_controller.characterOrder, "sCharNarrator");
-tb_AddMessage
-(                
-	"Sigma: Don't forget to look behind*
-	you! The box that hung from the*
-	ceiling dropped!"
-);
-
-
-
-//tb_ClearMessages();  
-cutScene1 = false;       
-tb_ShowDialogue(); 
+  
+tb_ShowDialogue();

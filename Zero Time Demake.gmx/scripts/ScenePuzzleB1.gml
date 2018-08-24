@@ -1,58 +1,55 @@
+///ScenePuzzleB1()
 ds_list_add(obj_controller.characterOrder, "sCharNarrator");
 tb_AddMessage
 (                
-	"Phi: This must be the exit...
+	"Phi: #This must be the exit...#
 	Nope, locked."
 );
 
 ds_list_add(obj_controller.characterOrder, "sCharNarrator");
 tb_AddMessage
 (                
-	"Phi: A padlock...*
+	"Phi: #A padlock...#
 	I can't open it without a key. Oh?"
 );
 
 ds_list_add(obj_controller.characterOrder, "sCharNarrator");
 tb_AddMessage
 (                
-	"Phi: The keyhole is deep and*
+	"Phi: #The keyhole is deep and#
 	flat-shaped... Hmm."
 );
 
 ds_list_add(obj_controller.characterOrder, "sCharNarrator");
 tb_AddMessage
 (                
-	"Phi: If I use the screwdriver*
+	"Phi: #If I use the screwdriver#
 	like so..."
 );
 
 ds_list_add(obj_controller.characterOrder, "sCharNarrator");
 tb_AddMessage
 (                
-	"Phi: Yes! It's open!"
+	"Phi: #Yes! It's open!"
 );
 
 ds_list_add(obj_controller.characterOrder, "sCharNarrator");
 tb_AddMessage
 (                
-	"Phi: Diana, I opened the lock!*
+	"Phi: #Diana, I opened the lock!*
 	Pull the chain up!"
 );
 
 ds_list_add(obj_controller.characterOrder, "sCharNarrator");
 tb_AddMessage
 (                
-	"Phi: Got it!"
+	"Phi: #Got it!"
 );
 
 ds_list_add(obj_controller.characterOrder, "sCharNarrator");
 tb_AddMessage
 (                
-	"Diana: Got it!"
+	"Diana: #Got it!"
 );
-
-
-
-//tb_ClearMessages();  
-cutScene1 = false;       
+       
 tb_ShowDialogue(); 
