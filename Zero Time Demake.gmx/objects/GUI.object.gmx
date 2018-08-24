@@ -45,9 +45,9 @@ revolverHighlight = instance_create(172, 289, ItemSelected);
 screwDriverHighlight = instance_create(x+260, y+289, ItemSelected);
 screwsHighlight = instance_create(x+344, y+289, ItemSelected);
 
-switchChars = instance_create(x+8, y+392, SwitchCharsButton);
 leftButton = instance_create(x+8, y+704, LeftButton);
 rightButton = instance_create(x+472, y+704, RightButton);
+switchChars = instance_create(x+8, y+392, SwitchCharsButton);
 
 gogglesSelected = false;
 chainedBoxSelected = false;
@@ -209,7 +209,15 @@ else if (!screwsSelected)
 { 
     if (instance_exists(screwsHighlight)) instance_destroy(screwsHighlight);
 }
-
+//--------------------------------------------------------------------------------------
+if (Player.sliderPuzzleComplete &amp;&amp; !instance_exists(switchChars))
+{
+    switchChars = instance_create(x+8, y+392, SwitchCharsButton);
+}
+else if (!Player.sliderPuzzleComplete)
+{
+    if (instance_exists(switchChars)) instance_destroy(switchChars);
+}
 
 
 
