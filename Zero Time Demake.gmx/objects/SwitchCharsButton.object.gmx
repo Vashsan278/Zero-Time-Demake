@@ -59,80 +59,79 @@ phiLastRoom = "";
     diana = false;
     phi = true;
     
-    if(Room_a1_background.isCurrentRoom) dianaLastRoom = "Room_a1_backgroud";
-    else if (Room_a2_background.isCurrentRoom) dianaLastRoom = "Room_a2_backgroud";
-    else if (Room_a3_background.isCurrentRoom) dianaLastRoom = "Room_a3_backgroud";
-    else if (Room_a4_background.isCurrentRoom) dianaLastRoom = "Room_a4_backgroud";
+    if(Room_a1_background.isCurrentRoom) dianaLastRoom = "Room_a1_background";
+    else if (Room_a2_background.isCurrentRoom) dianaLastRoom = "Room_a2_background";
+    else if (Room_a3_background.isCurrentRoom) dianaLastRoom = "Room_a3_background";
+    else if (Room_a4_background.isCurrentRoom) dianaLastRoom = "Room_a4_background";
     
     if(phiLastRoom == "Room_b1_background" || phiLastRoom == "")
     {
-        Room_b1_background.isCurrent = true;
+        Room_b1_background.isCurrentRoom = true;
         
-        Room_a1_background.isCurrent = false;
-        Room_a2_background.isCurrent = false;
-        Room_a3_background.isCurrent = false;
-        Room_a4_background.isCurrent = false;        
+        Room_a1_background.isCurrentRoom = false;
+        Room_a2_background.isCurrentRoom = false;
+        Room_a3_background.isCurrentRoom = false;
+        Room_a4_background.isCurrentRoom = false;        
     }
     else if(phiLastRoom == "Room_b2_background")
     {
-        Room_b2_background.isCurrent = true;
+        Room_b2_background.isCurrentRoom = true;
         
-        Room_a1_background.isCurrent = false;
-        Room_a2_background.isCurrent = false;
-        Room_a3_background.isCurrent = false;
-        Room_a4_background.isCurrent = false;        
-    }    
-    
+        Room_a1_background.isCurrentRoom = false;
+        Room_a2_background.isCurrentRoom = false;
+        Room_a3_background.isCurrentRoom = false;
+        Room_a4_background.isCurrentRoom = false;        
+    }        
 } 
 else if(phi)
 {
     GUIDisabledBar.x = 257;
     GUIDisabledBar.y = 285;
-    sigma = false;
-    phi = true;
+    diana = true;
+    phi = false;
     
-    if(Room_b1_background.isCurrentRoom) phiLastRoom = "Room_b1_backgroud";
-    else if (Room_b2_background.isCurrentRoom) phiLastRoom = "Room_b2_backgroud";
+    if(Room_b1_background.isCurrentRoom) phiLastRoom = "Room_b1_background";
+    else if (Room_b2_background.isCurrentRoom) phiLastRoom = "Room_b2_background";
     
     if(dianaLastRoom == "Room_a1_background" || dianaLastRoom == "")
     {                
-        Room_a1_background.isCurrent = true;
-        Room_a2_background.isCurrent = false;
-        Room_a3_background.isCurrent = false;
-        Room_a4_background.isCurrent = false; 
+        Room_a1_background.isCurrentRoom = true;
+        Room_a2_background.isCurrentRoom = false;
+        Room_a3_background.isCurrentRoom = false;
+        Room_a4_background.isCurrentRoom = false; 
         
-        Room_b1_background.isCurrent = false;
-        Room_b2_background.isCurrent = false;       
+        Room_b1_background.isCurrentRoom = false;
+        Room_b2_background.isCurrentRoom = false;       
     }
     else if(dianaLastRoom == "Room_a2_background")
     {                
-        Room_a1_background.isCurrent = false;
-        Room_a2_background.isCurrent = true;
-        Room_a3_background.isCurrent = false;
-        Room_a4_background.isCurrent = false; 
+        Room_a1_background.isCurrentRoom = false;
+        Room_a2_background.isCurrentRoom = true;
+        Room_a3_background.isCurrentRoom = false;
+        Room_a4_background.isCurrentRoom = false; 
         
-        Room_b1_background.isCurrent = false;
-        Room_b2_background.isCurrent = false;       
+        Room_b1_background.isCurrentRoom = false;
+        Room_b2_background.isCurrentRoom = false;       
     }
     else if(dianaLastRoom == "Room_a2_background")
     {                
-        Room_a1_background.isCurrent = false;
-        Room_a2_background.isCurrent = false;
-        Room_a3_background.isCurrent = true;
-        Room_a4_background.isCurrent = false; 
+        Room_a1_background.isCurrentRoom = false;
+        Room_a2_background.isCurrentRoom = false;
+        Room_a3_background.isCurrentRoom = true;
+        Room_a4_background.isCurrentRoom = false; 
         
-        Room_b1_background.isCurrent = false;
-        Room_b2_background.isCurrent = false;       
+        Room_b1_background.isCurrentRoom = false;
+        Room_b2_background.isCurrentRoom = false;       
     }
     else if(dianaLastRoom == "Room_a2_background")
     {                
-        Room_a1_background.isCurrent = false;
-        Room_a2_background.isCurrent = false;
-        Room_a3_background.isCurrent = false;
-        Room_a4_background.isCurrent = true; 
+        Room_a1_background.isCurrentRoom = false;
+        Room_a2_background.isCurrentRoom = false;
+        Room_a3_background.isCurrentRoom = false;
+        Room_a4_background.isCurrentRoom = true; 
         
-        Room_b1_background.isCurrent = false;
-        Room_b2_background.isCurrent = false;       
+        Room_b1_background.isCurrentRoom = false;
+        Room_b2_background.isCurrentRoom = false;       
     }
 }
 </string>
