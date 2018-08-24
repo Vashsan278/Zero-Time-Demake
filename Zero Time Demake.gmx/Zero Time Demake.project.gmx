@@ -31,6 +31,7 @@
       <sprite>sprites\sGUIPointer</sprite>
       <sprite>sprites\sGUISelected</sprite>
       <sprite>sprites\sGUISwitchChars</sprite>
+      <sprite>sprites\sGUIBack</sprite>
     </sprites>
     <sprites name="Map">
       <sprite>sprites\sMapA1</sprite>
@@ -180,13 +181,14 @@
       <object>objects\SwitchCharsButton</object>
       <object>objects\GUIGoggles</object>
       <object>objects\GUIDisabledBar</object>
+      <object>objects\BackButton</object>
     </objects>
     <objects name="Puzzles">
       <objects name="Slider">
         <object>objects\LetterBox</object>
         <object>objects\SliderBar</object>
         <object>objects\Slider</object>
-        <object>objects\sSliderPuzzle</object>
+        <object>objects\SliderPuzzle</object>
       </objects>
       <objects name="Chute">
         <object>objects\ChutePanel</object>
