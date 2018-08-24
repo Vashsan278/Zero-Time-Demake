@@ -25,7 +25,7 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>inInventory = true;
+            <string>inInventory = false;
 </string>
           </argument>
         </arguments>

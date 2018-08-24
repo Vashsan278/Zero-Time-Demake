@@ -59,6 +59,11 @@ if (inInventory &amp;&amp; !disabled)
     GUI.screwDriverSelected = false;
     GUI.screwsSelected = false;
     GUI.gasTorchSelected = true;
+} 
+else if(!inInventory)
+{
+    Player.hasGasTorch = true;
+    instance_destroy(GasTorch);
 }
 </string>
           </argument>

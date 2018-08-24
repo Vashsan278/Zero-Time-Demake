@@ -37,6 +37,14 @@ gasTorch = instance_create(x+441, y+303, GasTorch);
 
 guiDisabledBar = instance_create(x+257, y+285, GUIDisabledBar);
 
+chainedBoxHighlight = instance_create(88, 289, ItemSelected);
+coinHighlight = instance_create(172, 289, ItemSelected);
+gasTorchHighlight = instance_create(427, 289, ItemSelected);
+gogglesHighlight = instance_create(x+4, y+289, ItemSelected);
+revolverHighlight = instance_create(172, 289, ItemSelected);
+screwDriverHighlight = instance_create(x+260, y+289, ItemSelected);
+screwsHighlight = instance_create(x+344, y+289, ItemSelected);
+
 switchChars = instance_create(x+8, y+392, SwitchCharsButton);
 leftButton = instance_create(x+8, y+704, LeftButton);
 rightButton = instance_create(x+472, y+704, RightButton);
@@ -139,13 +147,81 @@ else if (!Player.hasGasTorch) {
 
 //--------------------------------------------------------------------
 
-chainedBoxHighlight = instance_create(88, 289, ItemSelected);
-coinSelected = instance_create(172, 289, ItemSelected);
-gasTorchSelected = instance_create(427, 289, ItemSelected);
-gogglesSelected = instance_create(x+4, y+289, ItemSelected);
-revolverSelected = instance_create(172, 289, ItemSelected);
-screwDriverSelected = instance_create(x+260, y+289, ItemSelected);
-screwsSelected = instance_create(x+344, y+289, ItemSelected); 
+if (chainedBoxSelected &amp;&amp; !instance_exists(chainedBoxHighlight))
+{
+    chainedBoxHighlight = instance_create(88, 289, ItemSelected);
+}
+else if (!chainedBoxSelected)
+{ 
+    if (instance_exists(chainedBoxHighlight)) instance_destroy(chainedBoxHighlight);
+}
+
+if (coinSelected &amp;&amp; !instance_exists(coinHighlight))
+{
+    coinHighlight = instance_create(172, 289, ItemSelected);
+}
+else if (!coinSelected)
+{ 
+    if (instance_exists(coinHighlight)) instance_destroy(coinHighlight);
+}
+
+if (gasTorchSelected &amp;&amp; !instance_exists(gasTorchHighlight))
+{
+    gasTorchHighlight = instance_create(427, 289, ItemSelected);
+}
+else if (!gasTorchSelected)
+{ 
+    if (instance_exists(gasTorchHighlight)) instance_destroy(gasTorchHighlight);
+}
+
+if (gogglesSelected &amp;&amp; !instance_exists(gogglesHighlight))
+{
+    gogglesHighlight = instance_create(x+4, y+289, ItemSelected);
+}
+else if (!gogglesSelected)
+{ 
+    if (instance_exists(gogglesHighlight)) instance_destroy(gogglesHighlight);
+}
+
+if (revolverSelected &amp;&amp; !instance_exists(revolverHighlight))
+{
+    revolverHighlight = instance_create(172, 289, ItemSelected);
+}
+else if (!revolverSelected)
+{ 
+    if (instance_exists(revolverHighlight)) instance_destroy(revolverHighlight);
+}
+
+if (screwDriverSelected &amp;&amp; !instance_exists(screwDriverHighlight))
+{
+    screwDriverHighlight = instance_create(x+260, y+289, ItemSelected);
+}
+else if (!screwDriverSelected)
+{ 
+    if (instance_exists(screwDriverHighlight)) instance_destroy(screwDriverHighlight);
+}
+
+if (screwsSelected &amp;&amp; !instance_exists(screwsHighlight))
+{
+    screwsHighlight = instance_create(x+344, y+289, ItemSelected); 
+}
+else if (!screwsSelected)
+{ 
+    if (instance_exists(screwsHighlight)) instance_destroy(screwsHighlight);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

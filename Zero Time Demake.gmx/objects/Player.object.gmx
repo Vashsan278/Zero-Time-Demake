@@ -28,9 +28,9 @@
             <string>image_speed = 0.22;
 sprName = "";
 
-hasChainedBox = true;
-hasCoin = true;
-hasGasTorch = true;
+hasChainedBox = false;
+hasCoin = false;
+hasGasTorch = false;
 hasGoggles = false;
 hasRevolver = false;
 hasScrewDriver = false;
