@@ -3,7 +3,7 @@
   <spriteName>sRoom_b1_background</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-1</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -26,14 +26,59 @@
           <argument>
             <kind>1</kind>
             <string>image_speed = 0;
-xPosition = 0;
-yPosition = 0;
+isCurrentRoom = false;
 
 burners = instance_create(x, y, Room_b1_burners);
 door = instance_create(x+421, y, Room_b1_door);
 panel = instance_create(x+34, y+117, Room_b1_panel);
 weight = instance_create(x+161, y+114, Room_b1_weight);
 thermometer = instance_create(x+349, y+118, Room_b1_thermometer);
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(isCurrentRoom)
+{
+    x = 0;
+    y = 384;
+} else {
+    x = -500;
+    y = -500;
+}
+
+burners.x = x;
+burners.y = y;
+
+door.x = x+421;
+door.y = y;
+
+panel.x = x+34;
+panel.y = y+117;
+
+weight.x = x+161;
+weight.y = y+114;
+
+thermometer.x = x+349;
+thermometer.y = y+118;
 </string>
           </argument>
         </arguments>

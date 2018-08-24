@@ -30,7 +30,7 @@
       <sprite>sprites\sGUIRight</sprite>
       <sprite>sprites\sGUIPointer</sprite>
       <sprite>sprites\sGUISelected</sprite>
-      <sprite>sprites\sGUISwitch</sprite>
+      <sprite>sprites\sGUISwitchChars</sprite>
     </sprites>
     <sprites name="Map">
       <sprite>sprites\sMapA1</sprite>
@@ -86,6 +86,9 @@
       <sprite>sprites\sCharSigma</sprite>
       <sprite>sprites\sCharDiana</sprite>
       <sprite>sprites\sCharNarrator</sprite>
+      <sprite>sprites\sCharGunScene</sprite>
+      <sprite>sprites\sCharPhiCrying</sprite>
+      <sprite>sprites\sCharSigmaSilent</sprite>
     </sprites>
     <sprites name="Rooms">
       <sprites name="RoomA">
@@ -166,12 +169,17 @@
   </fonts>
   <objects name="objects">
     <objects name="SimpleDialogueBox">
-      <object>objects\obj_controller</object>
+      <object>objects\dialogueController</object>
       <object>objects\obj_demo_dialogue</object>
     </objects>
     <objects name="GUI">
       <object>objects\GUI</object>
       <object>objects\ItemSelected</object>
+      <object>objects\LeftButton</object>
+      <object>objects\RightButton</object>
+      <object>objects\SwitchCharsButton</object>
+      <object>objects\GUIGoggles</object>
+      <object>objects\GUIDisabledBar</object>
     </objects>
     <objects name="Puzzles">
       <objects name="Slider">
@@ -217,7 +225,7 @@
       </objects>
       <objects name="RoomB">
         <objects name="B1">
-          <object>objects\room_b1_background</object>
+          <object>objects\Room_b1_background</object>
           <object>objects\Room_b1_burners</object>
           <object>objects\Room_b1_door</object>
           <object>objects\Room_b1_panel</object>
@@ -243,9 +251,9 @@
   </objects>
   <rooms name="rooms">
     <room>rooms\MainRoom</room>
+    <room>rooms\A4_Test</room>
     <room>rooms\B2_Test</room>
     <room>rooms\B1_Test</room>
-    <room>rooms\A4_Test</room>
     <room>rooms\A3_Test</room>
     <room>rooms\A2_Test</room>
     <room>rooms\A1_Test</room>

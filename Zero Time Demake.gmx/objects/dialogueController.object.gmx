@@ -26,7 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>isFullscreen = false;
-cutScene1 = true;
+cutScene1 = false;
 cutScene2 = false;
 currentCharacter = sCharSigma;
 
@@ -69,329 +69,282 @@ characterOrder = ds_list_create();
                     );
                     
                     ds_list_add(obj_controller.characterOrder, "sCharDiana");
-                    //Player.sprite_index = sCharDiana;
                     tb_AddMessage
                     (
                         "What is this room?"
                     );                    
                     
                     ds_list_add(obj_controller.characterOrder, "sCharSigma");
-                    //Player.sprite_index = sCharSigma;
                     tb_AddMessage
                     (                
                         "Looks like a Trash Disposal Room."
                     );
                     
                     ds_list_add(obj_controller.characterOrder, "sCharNarrator");
-                    Player.sprite_index = sCharNarrator;
                     tb_AddMessage
                     (                
                         "Diana looks at the time on her watch.#It's 18:06. She then looks around the room."
                     );     
                     
                     ds_list_add(obj_controller.characterOrder, "sCharDiana");
-                    Player.sprite_index = sCharDiana;
                     tb_AddMessage
                     (                
                         "Wait, where's Phi... ?"
                     );   
                     
                     ds_list_add(obj_controller.characterOrder, "sCharSigma");
-                    Player.sprite_index = sCharSigma;
                     tb_AddMessage
                     (                
                         "I don't know."
                     );
                     
                     ds_list_add(obj_controller.characterOrder, "sCharDiana");
-                    Player.sprite_index = sCharDiana;
                     tb_AddMessage
                     (                
                         "You don't know... ?"
                     );        
                     
                     ds_list_add(obj_controller.characterOrder, "sCharSigma");
-                    Player.sprite_index = sCharSigma;
                     tb_AddMessage
                     (                
                         "When I woke up, she was already gone."
                     );    
                     
                     ds_list_add(obj_controller.characterOrder, "sCharSigma");
-                    Player.sprite_index = sCharSigma;
                     tb_AddMessage
                     (                
                         "Maybe she managed to get out of this room."
                     );   
                     
                     ds_list_add(obj_controller.characterOrder, "sCharDiana");
-                    Player.sprite_index = sCharDiana;
                     tb_AddMessage
                     (                
                         "Do you think we can?"
                     );  
                     
                     ds_list_add(obj_controller.characterOrder, "sCharNarrator");
-                    Player.sprite_index = sCharNarrator;
                     tb_AddMessage
                     (                
                         "They try the door. It opens successfully."
                     );
                     
                     ds_list_add(obj_controller.characterOrder, "sCharDiana");
-                    Player.sprite_index = sCharDiana;
                     tb_AddMessage
                     (                
                         "It opened..."
                     );
                     
                     ds_list_add(obj_controller.characterOrder, "sCharDiana");
-                    Player.sprite_index = sCharDiana;
                     tb_AddMessage
                     (                
                         "Sigma! It opened!"
                     );
                     
                     ds_list_add(obj_controller.characterOrder, "sCharSigma");
-                    Player.sprite_index = sCharSigma;
                     tb_AddMessage
                     (                
                         "And?"
                     ); 
                     
                     ds_list_add(obj_controller.characterOrder, "sCharDiana");
-                    Player.sprite_index = sCharDiana;
                     tb_AddMessage
                     (                
                         "Er, urm, well, #I didn't really expect it to, so..."
                     );
                     
                     ds_list_add(obj_controller.characterOrder, "sCharNarrator");
-                    Player.sprite_index = sCharNarrator;
                     tb_AddMessage
                     (                
                         "They hear a knocking noise and turn their heads to its source."
                     );
                     
                     ds_list_add(obj_controller.characterOrder, "sCharNarrator");
-                    Player.sprite_index = sCharNarrator;
                     tb_AddMessage
                     (                
                         "They go to a tinted window within the room and see Phi."
                     );
                     
                     ds_list_add(obj_controller.characterOrder, "sCharDiana");
-                    Player.sprite_index = sCharDiana;
                     tb_AddMessage
                     (                
                         "Phi!"
                     );
                     
                     ds_list_add(obj_controller.characterOrder, "sCharSigma");
-                    Player.sprite_index = sCharSigma;
                     tb_AddMessage
                     (                
                         "What the hell are you doing in there?!"
                     ); 
                     
                     ds_list_add(obj_controller.characterOrder, "sCharPhiLocked");
-                    Player.sprite_index = sCharPhiLocked;
                     tb_AddMessage
                     (                
                         "Cutting my next album. What do you think I'm doing?!"
                     ); 
                     
                     ds_list_add(obj_controller.characterOrder, "sCharPhiLocked");
-                    Player.sprite_index = sCharPhiLocked;
                     tb_AddMessage
                     (                
                         "I'm locked in here!"
                     );
                     
                     ds_list_add(obj_controller.characterOrder, "sCharDiana");
-                    Player.sprite_index = sCharDiana;
                     tb_AddMessage
                     (                
                         "You're locked in... ?"
                     ); 
                     
                     ds_list_add(obj_controller.characterOrder, "sCharSigma");
-                    Player.sprite_index = sCharSigma;
                     tb_AddMessage
                     (                
                         "Why... ?"
                     );
                     
                     ds_list_add(obj_controller.characterOrder, "sCharPhiLocked");
-                    Player.sprite_index = sCharPhiLocked;
                     tb_AddMessage
                     (                
                         "How should I know?!"
                     );
                     
                     ds_list_add(obj_controller.characterOrder, "sCharPhiLocked");
-                    Player.sprite_index = sCharPhiLocked;
                     tb_AddMessage
                     (                
                         "This is where I was when I woke up!"
                     );
                     
                     ds_list_add(obj_controller.characterOrder, "sCharPhiLocked");
-                    Player.sprite_index = sCharPhiLocked;
                     tb_AddMessage
                     (                
                         "Stuck inside this incinerator!"
                     );
                        
                     ds_list_add(obj_controller.characterOrder, "sCharNarrator");
-                    Player.sprite_index = sCharNarrator;
                     tb_AddMessage
                     (                
                         "The camera, next to Phi, pans to view the incinerator burners."
                     );
                     
                     ds_list_add(obj_controller.characterOrder, "sCharSigma");
-                    Player.sprite_index = sCharSigma;
                     tb_AddMessage
                     (                
                         "Hang on, we'll get you out now!"
                     );
                     
                     ds_list_add(obj_controller.characterOrder, "sCharNarrator");
-                    Player.sprite_index = sCharNarrator;
                     tb_AddMessage
                     (                
                         "Sigma tries the door to the incinerator."
                     );
                     
                     ds_list_add(obj_controller.characterOrder, "sCharSigma");
-                    Player.sprite_index = sCharSigma;
                     tb_AddMessage
                     (                
                         "Damn it, it's locked!"
                     );
                     
                     ds_list_add(obj_controller.characterOrder, "sCharDiana");
-                    Player.sprite_index = sCharDiana;
                     tb_AddMessage
                     (                
                         "Is there a keyhole?"
                     );
                     
                     ds_list_add(obj_controller.characterOrder, "sCharSigma");
-                    Player.sprite_index = sCharSigma;
                     tb_AddMessage
                     (                
                         "I don't see one."
                     );
                     
                     ds_list_add(obj_controller.characterOrder, "sCharSigma");
-                    Player.sprite_index = sCharSigma;
                     tb_AddMessage
                     (                
                         "Probably an electronic lock."
                     );
                     
                     ds_list_add(obj_controller.characterOrder, "sCharPhiLocked");
-                    Player.sprite_index = sCharPhiLocked;
                     tb_AddMessage
                     (                
                         "I've got a bad feeling about this..."
                     );
                     
                     ds_list_add(obj_controller.characterOrder, "sCharNarrator");
-                    Player.sprite_index = sCharNarrator;
                     tb_AddMessage
                     (                
                         "Incinerator startup... #will now commence."
                     );
                     
                     ds_list_add(obj_controller.characterOrder, "sCharNarrator");
-                    Player.sprite_index = sCharNarrator;
                     tb_AddMessage
                     (                
                         "Incineration in... #thirty minutes."
                     ); 
                     
                     ds_list_add(obj_controller.characterOrder, "sCharSigma");
-                    Player.sprite_index = sCharSigma;
                     tb_AddMessage
                     (                
                         "It's gonna be okay, Phi!"
                     );
                     
                     ds_list_add(obj_controller.characterOrder, "sCharSigma");
-                    Player.sprite_index = sCharSigma;
                     tb_AddMessage
                     (                
                         "Stay calm!"
                     );
                     
                     ds_list_add(obj_controller.characterOrder, "sCharPhiLocked");
-                    Player.sprite_index = sCharPhiLocked;
                     tb_AddMessage
                     (                
                         "You're the one flailing and freaking out here!"
                     );
                     
                     ds_list_add(obj_controller.characterOrder, "sCharDiana");
-                    Player.sprite_index = sCharDiana;
                     tb_AddMessage
                     (                
                         "Anyway, we have to do something!"
                     );
                     
                     ds_list_add(obj_controller.characterOrder, "sCharDiana");
-                    Player.sprite_index = sCharDiana;
                     tb_AddMessage
                     (                
                         "Either stop the incinerator startup..."
                     );
                     
                     ds_list_add(obj_controller.characterOrder, "sCharDiana");
-                    Player.sprite_index = sCharDiana;
                     tb_AddMessage
                     (                
                         "Or unlock the door..."
                     );
                     
                     ds_list_add(obj_controller.characterOrder, "sCharPhiLocked");
-                    Player.sprite_index = sCharPhiLocked;
                     tb_AddMessage
                     (                
                         "Okay, I'll see if I can do anything on this side!"
                     );
                     
                     ds_list_add(obj_controller.characterOrder, "sCharSigma");
-                    Player.sprite_index = sCharSigma;
                     tb_AddMessage
                     (                
                         "I'm counting on you!"
                     );
                     
                     ds_list_add(obj_controller.characterOrder, "sCharPhiLocked");
-                    Player.sprite_index = sCharPhiLocked;
                     tb_AddMessage
                     (                
                         "That should be my line!"
                     );
                     
                      ds_list_add(obj_controller.characterOrder, "sCharPhiLocked");
-                    Player.sprite_index = sCharPhiLocked;
                     tb_AddMessage
                     (                
                         "I'd like to avoid the worst sunburn of my life in here!"
                     );
                     
                     ds_list_add(obj_controller.characterOrder, "sCharDiana");
-                    Player.sprite_index = sCharDiana;
                     tb_AddMessage
                     (                
                         "Let's hurry!"
                     );
                     
                     ds_list_add(obj_controller.characterOrder, "sCharSigma");
-                    Player.sprite_index = sCharSigma;
                     tb_AddMessage
                     (                
                         "Right!"

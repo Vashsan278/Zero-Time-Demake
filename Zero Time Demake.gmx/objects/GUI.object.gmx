@@ -27,6 +27,27 @@
             <kind>1</kind>
             <string>image_speed = 0;
 
+goggles = instance_create(x+7, y+289, Goggles);
+chainedBox = instance_create(x+96, y+303, ChainedBox);
+coin = instance_create(x+193, y+316, Coin);
+revolver = instance_create(x+188, y+307, Revolver);
+screwDriver = instance_create(x+287, y+304, ScrewDriver);
+screws = instance_create(x+368, y+320, Screws);
+gasTorch = instance_create(x+441, y+303, GasTorch);
+
+guiDisabledBar = instance_create(x+257, y+285, GUIDisabledBar);
+
+switchChars = instance_create(x+8, y+392, SwitchCharsButton);
+leftButton = instance_create(x+8, y+704, LeftButton);
+rightButton = instance_create(x+472, y+704, RightButton);
+
+gogglesSelected = false;
+chainedBoxSelected = false;
+coinSelected = false;
+revolverSelected = false;
+screwDriverSelected = false;
+screwsSelected = false;
+gasTorchSelected = false;
 </string>
           </argument>
         </arguments>
@@ -49,28 +70,72 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>googles = instance_create(x+7, y+289, Goggles);
+            <string>//--------------------------------------------------------
+// Inventory managment
+//-------------------------------------------------------------
+//inventorySlots 
+if(Player.hasGoggles &amp;&amp; !instance_exists(goggles))
+{
+    goggles = instance_create(x+7, y+289, Goggles);
+    goggles.inInventory = true;
+} 
+else if (!Player.hasGoggles) {
+    if(instance_exists(goggles)) instance_destroy(goggles);
+}
 
-chainedBox = instance_create(x+96, y+303, ChainedBox);
+if(Player.hasChainedBox &amp;&amp; !instance_exists(chainedBox))
+{
+    chainedBox = instance_create(x+96, y+303, ChainedBox);
+    chainedBox.inInventory = true;
+} 
+else if (!Player.hasChainedBox) {
+    if(instance_exists(chainedBox)) instance_destroy(chainedBox);
+}
 
-coin = instance_create(x+193, y+316, Coin);
+if(Player.hasCoin &amp;&amp; !instance_exists(coin))
+{
+    coin = instance_create(x+193, y+316, Coin);
+    coin.inInventory = true;
+} 
+else if (!Player.hasCoin) {
+    if(instance_exists(coin)) instance_destroy(coin);
+}
 
-revolver = instance_create(x+189, y+306, Revolver);
+if(Player.hasRevolver &amp;&amp; !instance_exists(revolver))
+{
+    revolver = instance_create(x+188, y+307, Revolver);
+    revolver.inInventory = true;
+} 
+else if (!Player.hasRevolver) {
+    if(instance_exists(revolver)) instance_destroy(revolver);
+}
 
-screwDriver = instance_create(x+287, y+304, ScrewDriver);
+if(Player.hasScrewDriver &amp;&amp; !instance_exists(screwDriver))
+{
+    screwDriver = instance_create(x+287, y+304, ScrewDriver);
+    screwDriver.inInventory = true;
+} 
+else if (!Player.hasScrewDriver) {
+    if(instance_exists(screwDriver)) instance_destroy(screwDriver);
+}
 
-screws = instance_create(x+368, y+320, Screws);
+if(Player.hasScrews &amp;&amp; !instance_exists(screws))
+{
+    screws = instance_create(x+368, y+320, Screws);
+    screws.inInventory = true;
+} 
+else if (!Player.hasScrews) {
+    if(instance_exists(screws)) instance_destroy(screws);
+}
 
-gasTorch = instance_create(x+448, y+304, GasTorch);
-
-gogglesSelected = instance_create(x+4,y+289,ItemSelected);
-chainedBoxSelected = instance_create(x+88,y+289,ItemSelected);
-coinSelected = instance_create(x+172,y+289,ItemSelected);
-revolverSelected = instance_create(x+172,y+289,ItemSelected);
-screwDriverSelected = instance_create(x+260,y+289,ItemSelected);
-screwsSelected = instance_create(x+344,y+289,ItemSelected);
-gasTorchSelected = instance_create(x+429,y+289,ItemSelected);
-
+if(Player.hasGasTorch &amp;&amp; !instance_exists(gasTorch))
+{
+    gasTorch = instance_create(x+441, y+303, GasTorch);
+    gasTorch.inInventory = true;
+} 
+else if (!Player.hasGasTorch) {
+    if(instance_exists(gasTorch)) instance_destroy(gasTorch);
+}
 </string>
           </argument>
         </arguments>

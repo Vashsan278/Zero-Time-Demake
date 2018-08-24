@@ -3,7 +3,7 @@
   <spriteName>sRoom_a2_background</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-1</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -26,11 +26,54 @@
           <argument>
             <kind>1</kind>
             <string>image_speed = 0;
+isCurrentRoom = false;
 
 chute = instance_create(x+377, y+238, Room_a2_chute);
 controls = instance_create(x+24, y+176, Room_a2_controls);
 shutters = instance_create(x+8, y, Room_a2_shutters);
 window = instance_create(x+370, y+23, Room_a2_window);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(isCurrentRoom)
+{
+    x = 0;
+    y = 384;
+} else {
+    x = -500;
+    y = -500;
+}
+
+chute.x = x+377;
+chute.y = y+238;
+
+controls.x = x+24;
+controls.y = y+176;
+
+shutters.x = x+8;
+shutters.y = y;
+
+window.x = x+370;
+window.y = y+23;
 </string>
           </argument>
         </arguments>
