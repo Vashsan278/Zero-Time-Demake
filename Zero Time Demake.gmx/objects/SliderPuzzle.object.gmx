@@ -155,6 +155,9 @@ else
 
     PuzzleLockScreen.depth = 10;
     
+    Room_a1_shutters.opened = true;
+    Room_a2_shutters.opened = true;
+    
     //kick off dialogue
         
 }

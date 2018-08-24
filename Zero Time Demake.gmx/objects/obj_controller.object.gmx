@@ -3,7 +3,7 @@
   <spriteName>&lt;undefined&gt;</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-20</depth>
   <persistent>-1</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -40,8 +40,9 @@ cutscenePuzzleA4 = false;
 cutscenePuzzleB1 = false;
 cutscenePuzzleB2 = false;
 
-
-
+consoleLockDialogue = false;
+shuttersDialogue = false;
+lockerDialogue = false;
 
 currentCharacter = sCharSigma;
 
@@ -156,6 +157,33 @@ if(cutscenePuzzleB2 == true)
         script_execute(ScenePuzzleB2);                                                                                     
     }             
     cutscenePuzzleB2 = false;               
+}
+
+if(consoleLockDialogue == true)
+{                                                                  
+    with( obj_demo_dialogue )
+    {
+        script_execute(ConsoleLockDialogue);                                                                                     
+    }             
+    consoleLockDialogue = false;               
+}
+
+if(shuttersDialogue == true)
+{                                                                  
+    with( obj_demo_dialogue )
+    {
+        script_execute(ShuttersDialogue);                                                                                     
+    }             
+    shuttersDialogue = false;               
+}
+
+if(lockerDialogue == true)
+{                                                                  
+    with( obj_demo_dialogue )
+    {
+        script_execute(LockerDialogue);                                                                                     
+    }             
+    lockerDialogue = false;               
 }
            
     

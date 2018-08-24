@@ -29,7 +29,6 @@
 opened = false;
 
 goggles = instance_create(x+1000, y+1000, Goggles);
-chainedBox = instance_create(x+1000, y+1000, ChainedBox);
 </string>
           </argument>
         </arguments>
@@ -58,12 +57,7 @@ chainedBox = instance_create(x+1000, y+1000, ChainedBox);
     {
         goggles.x = x+75;
         goggles.y = y+37;
-    }
-    if(instance_exists(chainedBox))
-    {
-        chainedBox.x = x+78;
-        chainedBox.y = y+180;
-    }
+    }    
 }
 
 if(!opened)
@@ -72,12 +66,7 @@ if(!opened)
     {
         goggles.x = x+1000;
         goggles.y = y+1000;
-    }
-    if(instance_exists(chainedBox))
-    {
-        chainedBox.x = x+1000;
-        chainedBox.y = y+1000;
-    }
+    }    
 }
 </string>
           </argument>
@@ -107,6 +96,7 @@ if(!opened)
     //chainedBox = instance_create(x+78, y+180, ChainedBox);
     opened = true;
     image_index = 1;
+    obj_controller.lockerDialogue = true;
     
 }
 </string>

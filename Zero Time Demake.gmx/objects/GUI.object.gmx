@@ -34,6 +34,7 @@ revolver = instance_create(x+188, y+307, Revolver);
 screwDriver = instance_create(x+287, y+304, ScrewDriver);
 screws = instance_create(x+368, y+320, Screws);
 gasTorch = instance_create(x+441, y+303, GasTorch);
+gasTorchPhi = instance_create(x+441, y+303, GasTorch);
 
 guiDisabledBar = instance_create(x+257, y+285, GUIDisabledBar);
 
@@ -93,7 +94,8 @@ else if (!Player.hasGoggles) {
 
 if(Player.hasChainedBox &amp;&amp; !instance_exists(chainedBox))
 {
-    chainedBox = instance_create(x+96, y+303, ChainedBox);
+    //chainedBox = instance_create(x+96, y+303, ChainedBox);
+    chainedBox = instance_create(x+193, y+316, ChainedBox);
     chainedBox.inInventory = true;
 } 
 else if (!Player.hasChainedBox) {
@@ -138,8 +140,17 @@ else if (!Player.hasScrews) {
 
 if(Player.hasGasTorch &amp;&amp; !instance_exists(gasTorch))
 {
-    gasTorch = instance_create(x+441, y+303, GasTorch);
+    //gasTorch = instance_create(x+441, y+303, GasTorch);
+    gasTorch = instance_create(x+193, y+316, GasTorch);
     gasTorch.inInventory = true;
+} 
+else if (!Player.hasGasTorch) {
+    if(instance_exists(gasTorch)) instance_destroy(gasTorch);
+}
+if(Player.hasGasTorchPhi &amp;&amp; !instance_exists(gasTorch))
+{
+    gasTorchPhi = instance_create(x+441, y+303, GasTorch);
+    gasTorchPhi.inInventory = true;
 } 
 else if (!Player.hasGasTorch) {
     if(instance_exists(gasTorch)) instance_destroy(gasTorch);
@@ -210,7 +221,7 @@ else if (!screwsSelected)
     if (instance_exists(screwsHighlight)) instance_destroy(screwsHighlight);
 }
 //--------------------------------------------------------------------------------------
-if (Player.sliderPuzzleComplete &amp;&amp; !instance_exists(switchChars))
+if (Room_a2_shutters.opened &amp;&amp; !instance_exists(switchChars))
 {
     switchChars = instance_create(x+8, y+392, SwitchCharsButton);
 }
