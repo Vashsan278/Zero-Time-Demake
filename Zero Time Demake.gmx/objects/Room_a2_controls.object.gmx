@@ -77,7 +77,7 @@ sliders.y = y+7;
             <string>if(!Player.sliderPuzzleComplete &amp;&amp; !consoleDialogue)
 {
     //Dilogue 
-    obj_controller.consoleLockDialogue = true;
+    obj_controller.shutterConsoleLock = true;
     consoleDialogue = true;
 }
 </string>

@@ -57,6 +57,7 @@ initialDialogue = false;
     {
         // dialogue
         
+        obj_controller.chuteDialogueIntro = true;
         initialDialogue = true;
     }
                

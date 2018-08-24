@@ -194,6 +194,13 @@
         </scripts>
         <scripts name="2A">
           <script>scripts\ShutterConsoleLock.gml</script>
+          <script>scripts\ShuttersDialogue.gml</script>
+          <script>scripts\ChainBoxAquired.gml</script>
+        </scripts>
+        <scripts name="3A">
+          <script>scripts\GunLock.gml</script>
+          <script>scripts\ChuteDialogueComplete.gml</script>
+          <script>scripts\ChuteDialogueIntro.gml</script>
         </scripts>
       </scripts>
     </scripts>

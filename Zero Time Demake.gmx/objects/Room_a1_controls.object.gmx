@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>image_speed = 0;
+unopenedDialogue = false;
 </string>
           </argument>
         </arguments>
@@ -50,6 +51,33 @@
             <kind>1</kind>
             <string>x = Room_a1_background.x+284;
 y = Room_a1_background.y+246;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(!unopenedDialogue &amp;&amp; !Player.inCutscene)
+{
+       obj_controller.shuttersDialogue = true;
+       unopenedDialogue = true;
+}
 </string>
           </argument>
         </arguments>

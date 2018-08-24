@@ -135,7 +135,7 @@ if(number1 == 1 &amp;&amp; number2 == 5 &amp;&amp; number3 == 4)
     PuzzleLockScreen.depth = 10;
     
     //Dialogue
-    
+    obj_controller.chuteDialogueComplete = true;
 }
 </string>
           </argument>

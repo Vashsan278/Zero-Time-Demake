@@ -43,13 +43,13 @@ currentArea = "mainRoom";
 sliderPuzzleComplete = false;
 chutePuzzleComplete = false;
 
-inCutscene = false;
-
 finalChoice = false;
 gunFired = false;
 liveBullet = false;
 blankBullet = false;
 timeRanOut = false;
+
+inCutscene = false;
 </string>
           </argument>
         </arguments>

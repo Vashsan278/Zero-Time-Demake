@@ -29,7 +29,7 @@
 keyHole = instance_create(x+0, y+416, FINALKEYHOLE);
 keyHole.depth = 10;
 
-initialDialogue = false;
+initDialogue = false;
 
 </string>
           </argument>
@@ -53,15 +53,16 @@ initialDialogue = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(GUI.revolverSelected)
+            <string>if(GUI.revolverSelected !initDialogue)
 {
     FOUNDIT.x = 0;
     FOUNDIT.y = 384;
     FOUNDIT.image_speed = 0.8;
     //dialogue
     
+    obj_controller.gunLock = true;
+    initDialogue = true;
     
-
 }
 if(!GUI.revolverSelected)
 {

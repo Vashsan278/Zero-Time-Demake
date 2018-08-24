@@ -3,7 +3,7 @@
   <spriteName>sRoom_a2_shutters</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-2</depth>
+  <depth>-3</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -77,7 +77,7 @@ unopenedDialogue = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!opened &amp;&amp; !unopenedDialogue)
+            <string>if(!opened &amp;&amp; !unopenedDialogue&amp;&amp; !Player.inCutscene)
 {
        obj_controller.shuttersDialogue = true;
        Room_a1_shutters.unopenedDialogue = true;

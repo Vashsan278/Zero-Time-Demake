@@ -37,7 +37,7 @@ coin = instance_create(x+50, y+150, Coin);
 
 hasHeatedThermometer = false;
 
-Player.cutscene1 = true;
+//obj_controller.cutscene1 = true;
 </string>
           </argument>
         </arguments>

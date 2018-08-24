@@ -92,6 +92,7 @@ else if(!inInventory &amp;&amp; !inPhiRoom)
 {
     Player.hasChainedBox = true;
     GUI.chainedBoxSelected = false;
+    obj_controller.chainBoxAquired = true;
     instance_destroy(ChainedBox);
 }
 else if(!inInventory &amp;&amp; inPhiRoom &amp;&amp; GUI.screwDriverSelected)
