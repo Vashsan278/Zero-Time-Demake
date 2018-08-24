@@ -33,6 +33,7 @@ door = instance_create(x+421, y, Room_b1_door);
 panel = instance_create(x+34, y+117, Room_b1_panel);
 weight = instance_create(x+161, y+114, Room_b1_weight);
 thermometer = instance_create(x+349, y+118, Room_b1_thermometer);
+screwDriver = instance_create(x+131, y-34, ScrewDriver);
 
 </string>
           </argument>
@@ -79,6 +80,12 @@ weight.y = y+114;
 
 thermometer.x = x+349;
 thermometer.y = y+118;
+
+if(instance_exists(screwDriver))
+{
+    screwDriver.x = x+131;
+    screwDriver.y = y-34;
+}
 </string>
           </argument>
         </arguments>
