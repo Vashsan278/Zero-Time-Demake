@@ -26,6 +26,89 @@
           <argument>
             <kind>1</kind>
             <string>image_speed = 0;
+opened = false;
+
+goggles = instance_create(x+1000, y+1000, Goggles);
+chainedBox = instance_create(x+1000, y+1000, ChainedBox);
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(opened)
+{
+    if(instance_exists(goggles))
+    {
+        goggles.x = x+75;
+        goggles.y = y+37;
+    }
+    if(instance_exists(chainedBox))
+    {
+        chainedBox.x = x+78;
+        chainedBox.y = y+180;
+    }
+}
+
+if(!opened)
+{
+    if(instance_exists(goggles))
+    {
+        goggles.x = x+1000;
+        goggles.y = y+1000;
+    }
+    if(instance_exists(chainedBox))
+    {
+        chainedBox.x = x+1000;
+        chainedBox.y = y+1000;
+    }
+}
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="6" enumb="4">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(!opened)
+{
+    //goggles = instance_create(x+75, y+37, Goggles);
+    //chainedBox = instance_create(x+78, y+180, ChainedBox);
+    opened = true;
+    image_index = 1;
+    
+}
 </string>
           </argument>
         </arguments>
