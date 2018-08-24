@@ -86,6 +86,7 @@ if (inInventory &amp;&amp; !disabled)
     GUI.screwDriverSelected = false;
     GUI.screwsSelected = true;
     GUI.gasTorchSelected = false;
+    GUI.gasTorchPhiSelected = false;
 }
 else if(!inInventory)
 {

@@ -113,7 +113,7 @@ else if(phi)
         Room_b1_background.isCurrentRoom = false;
         Room_b2_background.isCurrentRoom = false;       
     }
-    else if(dianaLastRoom == "Room_a2_background")
+    else if(dianaLastRoom == "Room_a3_background")
     {                
         Room_a1_background.isCurrentRoom = false;
         Room_a2_background.isCurrentRoom = false;
@@ -123,7 +123,7 @@ else if(phi)
         Room_b1_background.isCurrentRoom = false;
         Room_b2_background.isCurrentRoom = false;       
     }
-    else if(dianaLastRoom == "Room_a2_background")
+    else if(dianaLastRoom == "Room_a4_background")
     {                
         Room_a1_background.isCurrentRoom = false;
         Room_a2_background.isCurrentRoom = false;

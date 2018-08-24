@@ -44,6 +44,8 @@ consoleLockDialogue = false;
 shuttersDialogue = false;
 lockerDialogue = false;
 
+finalChoice = false;
+
 currentCharacter = sCharSigma;
 
 characterOrder = ds_list_create();

@@ -103,11 +103,18 @@ else if(inInventory &amp;&amp; !disabled &amp;&amp; phiHolding)
     GUI.gasTorchSelected = false;
     GUI.gasTorchPhiSelected = true;
 } 
-else if(!inInventory)
+else if(!inInventory &amp;&amp; !phiHolding)
 {
     Player.hasGasTorch = true;
     instance_destroy(GasTorch);
 }
+else if(!inInventory &amp;&amp; phiHolding)
+{
+    Player.hasGasTorchPhi = true;
+    instance_destroy(GasTorch);
+}
+
+
 </string>
           </argument>
         </arguments>

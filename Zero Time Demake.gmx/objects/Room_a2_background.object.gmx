@@ -27,11 +27,15 @@
             <kind>1</kind>
             <string>image_speed = 0;
 isCurrentRoom = true;
+coinCreated = false;
 
 chute = instance_create(x+377, y+238, Room_a2_chute);
 controls = instance_create(x+24, y+176, Room_a2_controls);
 shutters = instance_create(x+8, y, Room_a2_shutters);
 window = instance_create(x+370, y+23, Room_a2_window);
+coin = instance_create(x+50, y+150, Coin);
+
+hasHeatedThermometer = false;
 
 
 </string>
@@ -76,6 +80,22 @@ shutters.y = y;
 
 window.x = x+370;
 window.y = y+23;
+
+if (hasHeatedThermometer &amp;&amp; !instance_exists(coin) &amp;&amp; !coinCreated)
+{
+    coin = instance_create(x+50, y+150, Coin);
+    coinCreated = true;    
+} 
+else if(!hasHeatedThermometer &amp;&amp; instance_exists(coin) &amp;&amp; !coinCreated) 
+{
+    instance_destroy(coin);
+}
+
+if(instance_exists(coin))
+{
+    coin.x = x+132;
+    coin.y = y+180;
+}
 
 
 </string>

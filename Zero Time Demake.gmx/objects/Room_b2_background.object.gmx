@@ -30,6 +30,18 @@ isCurrentRoom = false;
 
 door = instance_create(x, y, Room_b2_door);
 window = instance_create(x+202, y, Room_b2_window);
+
+gasTorchPhi = instance_create(x+202, y, GasTorch);
+gasTorchPhi.phiHolding = true;
+transferedTorch = false;
+torchCreated = false;
+
+chainedBox = instance_create(x+202, y, ChainedBox);
+chainedBox.inPhiRoom = true;
+transferedChainedBox = false;
+chainedBoxCreated = false;
+
+
 </string>
           </argument>
         </arguments>
@@ -66,6 +78,42 @@ door.y = y;
 
 window.x = x+202;
 window.y = y;
+
+//--------------------------------------------------------------------------
+if (transferedTorch &amp;&amp; !instance_exists(gasTorchPhi) &amp;&amp; !torchCreated)
+{
+    gasTorchPhi = instance_create(x+50, y+150, GasTorch);
+    gasTorchPhi.phiHolding = true;
+    torchCreated = true;
+} 
+else if(!transferedTorch &amp;&amp; instance_exists(gasTorchPhi) &amp;&amp; !torchCreated) 
+{
+    instance_destroy(gasTorchPhi);
+}
+
+if(instance_exists(gasTorchPhi) &amp;&amp; transferedTorch)
+{
+    gasTorchPhi.x = x+225;
+    gasTorchPhi.y = y+310;
+}
+
+//--------------------------------------------------------------------------
+if (transferedChainedBox &amp;&amp; !instance_exists(chainedBox) &amp;&amp; !chainedBoxCreated)
+{
+    chainedBox = instance_create(x+50, y+150, ChainedBox);
+    chainedBox.inPhiRoom = true;
+    chainedBoxCreated = true;
+} 
+else if(!transferedChainedBox &amp;&amp; instance_exists(chainedBox) &amp;&amp; !chainedBoxCreated) 
+{
+    instance_destroy(chainedBox);
+}
+
+if(instance_exists(chainedBox))
+{
+    chainedBox.x = x+225;
+    chainedBox.y = y+310;
+}
 </string>
           </argument>
         </arguments>

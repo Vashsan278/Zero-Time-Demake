@@ -96,8 +96,7 @@ else if (!Player.hasGoggles) {
 
 if(Player.hasChainedBox &amp;&amp; !instance_exists(chainedBox))
 {
-    //chainedBox = instance_create(x+96, y+303, ChainedBox);
-    chainedBox = instance_create(x+193, y+316, ChainedBox);
+    chainedBox = instance_create(x+180, y+309, ChainedBox);
     chainedBox.inInventory = true;
 } 
 else if (!Player.hasChainedBox) {
@@ -164,7 +163,7 @@ else if (!Player.hasGasTorchPhi) {
 
 if (chainedBoxSelected &amp;&amp; !instance_exists(chainedBoxHighlight))
 {
-    chainedBoxHighlight = instance_create(88, 289, ItemSelected);
+    chainedBoxHighlight = instance_create(172, 289, ItemSelected);
 }
 else if (!chainedBoxSelected)
 { 

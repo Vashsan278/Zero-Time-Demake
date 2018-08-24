@@ -113,10 +113,16 @@
           <sprite>sprites\sRoom_a3_chair</sprite>
           <sprite>sprites\sRoom_a3_door</sprite>
           <sprite>sprites\sRoom_a3_slot</sprite>
+          <sprite>sprites\sChairButton</sprite>
         </sprites>
         <sprites name="A4">
           <sprite>sprites\sRoom_a4_background</sprite>
           <sprite>sprites\sRoom_a4_backboard</sprite>
+        </sprites>
+        <sprites name="FINAL">
+          <sprite>sprites\sFinalRoom</sprite>
+          <sprite>sprites\sFinalGun</sprite>
+          <sprite>sprites\sFinalKeyHole</sprite>
         </sprites>
       </sprites>
       <sprites name="RoomB">
@@ -134,6 +140,10 @@
           <sprite>sprites\sRoom_b2_window</sprite>
         </sprites>
       </sprites>
+    </sprites>
+    <sprites name="Animations">
+      <sprite>sprites\sWAYOUT</sprite>
+      <sprite>sprites\sFOUNDIT</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background"/>
@@ -220,6 +230,9 @@
         <object>objects\ChutePuzzle</object>
         <object>objects\ChuteNumber</object>
       </objects>
+      <objects name="Gun">
+        <object>objects\GunKeyPuzzle</object>
+      </objects>
     </objects>
     <objects name="Player">
       <object>objects\Player</object>
@@ -245,10 +258,16 @@
           <object>objects\Room_a3_chair</object>
           <object>objects\Room_a3_door</object>
           <object>objects\Room_a3_slot</object>
+          <object>objects\ChairButton</object>
         </objects>
         <objects name="A4">
           <object>objects\Room_a4_background</object>
           <object>objects\Room_a4_backboard</object>
+        </objects>
+        <objects name="FINAL">
+          <object>objects\FinalRoom</object>
+          <object>objects\FOUNDIT</object>
+          <object>objects\FINALGUN</object>
         </objects>
       </objects>
       <objects name="RoomB">
@@ -285,6 +304,7 @@
     <room>rooms\A3_Test</room>
     <room>rooms\A2_Test</room>
     <room>rooms\A1_Test</room>
+    <room>rooms\FINALTEST</room>
     <room>rooms\ChutePuzzleTest</room>
     <room>rooms\sliderPuzzleTest</room>
   </rooms>

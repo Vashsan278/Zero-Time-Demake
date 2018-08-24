@@ -43,6 +43,11 @@ currentArea = "mainRoom";
 sliderPuzzleComplete = false;
 chutePuzzleComplete = false;
 inCutscene = false;
+
+finalChoice = false;
+gunFired = false;
+liveBullet = false;
+blankBullet = false;
 </string>
           </argument>
         </arguments>
@@ -81,6 +86,12 @@ else if (sprName = "sCharNarraor")
 {
     x = -500;
     y = -500;
+}
+
+if (finalChoice)
+{
+    obj_controller.finalChoice = true;
+
 }
  
 </string>

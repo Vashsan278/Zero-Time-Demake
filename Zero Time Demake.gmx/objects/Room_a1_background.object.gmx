@@ -28,11 +28,15 @@
             <string>image_speed = 0;
 isCurrentRoom = false;
 
+boxDropCheck = false;
+boxCreated = false;
+
 cabinet = instance_create(x+24, y+123, Room_a1_cabinet);
 controls = instance_create(x+284, y+246, Room_a1_controls);
 shutters = instance_create(x+335, y, Room_a1_shutters);
 
 gasTorch = instance_create(x+320, y+200, GasTorch);
+chainedBox = instance_create(x+270, y+2300, ChainedBox);
 </string>
           </argument>
         </arguments>
@@ -80,7 +84,22 @@ if(instance_exists(gasTorch))
     gasTorch.x = x+267;
     gasTorch.y = y+257;
 }
-//-----------------------------
+
+if (boxDropCheck &amp;&amp; !instance_exists(chainedBox) &amp;&amp; !boxCreated)
+{
+    chainedBox = instance_create(x+175, y+150, ChainedBox);
+    boxCreated = true;    
+} 
+else if(!boxDropCheck &amp;&amp; instance_exists(chainedBox) &amp;&amp; !boxCreated) 
+{
+    instance_destroy(chainedBox);
+}
+
+if(instance_exists(chainedBox))
+{
+    chainedBox.x = x+115;
+    chainedBox.y = y+315;
+}
 
 </string>
           </argument>

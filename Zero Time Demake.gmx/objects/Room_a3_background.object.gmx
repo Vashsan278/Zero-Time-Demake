@@ -27,10 +27,12 @@
             <kind>1</kind>
             <string>image_speed = 0;
 isCurrentRoom = false;
+deleteButton = false;
 
 chair = instance_create(x+152, y+61, Room_a3_chair);
 slot = instance_create(x+351, y+160, Room_a3_slot);
 door = instance_create(x, y+53, Room_a3_door);
+chairButton = instance_create(x+250, y+100, ChairButton);
 </string>
           </argument>
         </arguments>
@@ -70,6 +72,16 @@ slot.y = y+160;
 
 door.x = x;
 door.y = y+53;
+
+if(instance_exists(chairButton) &amp;&amp; !deleteButton)
+{
+    chairButton.x = x+293;
+    chairButton.y = y+185;
+} 
+else if (deleteButton &amp;&amp; instance_exists(chairButton))
+{
+    instance_destroy(chairButton);
+}
 
 </string>
           </argument>

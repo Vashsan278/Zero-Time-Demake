@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>inInventory = false;
+inPhiRoom = false;
 </string>
           </argument>
         </arguments>
@@ -87,10 +88,24 @@ if (inInventory &amp;&amp; !disabled)
     GUI.screwsSelected = false;
     GUI.gasTorchSelected = false;
 }
-else if(!inInventory)
+else if(!inInventory &amp;&amp; !inPhiRoom)
 {
     Player.hasChainedBox = true;
     instance_destroy(ChainedBox);
+}
+else if(!inInventory &amp;&amp; inPhiRoom &amp;&amp; GUI.screwDriverSelected)
+{
+    //successDialog
+        
+    instance_destroy(ChainedBox);
+    Player.hasRevolver = true;
+
+}
+else if(!inInventory &amp;&amp; inPhiRoom)
+{
+    //hintDialog
+    
+
 }
 </string>
           </argument>

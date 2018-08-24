@@ -27,7 +27,6 @@
             <kind>1</kind>
             <string>image_speed = 0;
 opened = false;
-clickCount = 0;
 goggles = instance_create(x+1000, y+1000, Goggles);
 </string>
           </argument>
@@ -90,13 +89,9 @@ if(!opened)
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!opened &amp;&amp; clickCount = 0)
+            <string>if(!opened)
 {    
     obj_controller.lockerDialogue = true;
-    clickCount++;
-}
-else if (!opened &amp;&amp; clickCount = 1)
-{
     opened = true;
     image_index = 1;
 }
