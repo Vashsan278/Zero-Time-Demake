@@ -57,7 +57,7 @@ initialDialogue = false;
 {
     FOUNDIT.x = 0;
     FOUNDIT.y = 384;
-    FOUNDIT.image_speed = 1.1;
+    FOUNDIT.image_speed = 0.8;
     //dialogue
     
     

@@ -70,6 +70,11 @@ gun = instance_create(x+331, y+103, FINALGUN);
     Room_a4_background.isCurrentRoom = false;
     Room_b1_background.isCurrentRoom = false;
     Room_b2_background.isCurrentRoom = false;
+    LeftButton.depth = 10;
+    RightButton.depth = 10;
+    LeftButton.x = 1000;
+    RightButton.x = 1000;
+    SwitchCharsButton.x = 1000;
     
 }
 else

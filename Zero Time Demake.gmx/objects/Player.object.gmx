@@ -101,18 +101,21 @@ if (gunFired)
     if(liveBullet)
     {
         //suicideEnding
+        show_message("live bullet");
         
         
     }
     else if(blankBullet)
     {
         //happyEnding
+        show_message("blank bullet");
     }    
 }
 
 if(!gunFired &amp;&amp; timeRanOut)
 {
     //sadEnding
+    show_message("time ran out");
 }
 </string>
           </argument>
