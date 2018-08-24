@@ -26,6 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>inInventory = false;
+selected = false;
+
+goggleVision = instance_create(0, 384, GUIGoggles)
+instance_destroy(goggleVision);
 </string>
           </argument>
         </arguments>
@@ -49,9 +53,21 @@
           <argument>
             <kind>1</kind>
             <string>disabled = place_meeting(x,y, GUI.guiDisabledBar);
+selected = GUI.gogglesSelected;
 
 if (disabled){
     GUI.gogglesSelected = false;
+}
+
+if(selected &amp;&amp; !instance_exists(goggleVision))
+{
+    goggleVision = instance_create(0, 384, GUIGoggles);
+    Room_a4_backboard.gogglesOn = true;
+}
+else if(!selected &amp;&amp; instance_exists(goggleVision))
+{
+    Room_a4_backboard.gogglesOn = false;
+    instance_destroy(Goggles.goggleVision);
 }
 </string>
           </argument>
@@ -86,12 +102,15 @@ if (inInventory &amp;&amp; !disabled)
     GUI.screwDriverSelected = false;
     GUI.screwsSelected = false;
     GUI.gasTorchSelected = false;
+    selected = GUI.gogglesSelected;
+     
 }
 else if(!inInventory)
 {
     Player.hasGoggles = true;
     instance_destroy(Goggles);
 }
+
 </string>
           </argument>
         </arguments>
