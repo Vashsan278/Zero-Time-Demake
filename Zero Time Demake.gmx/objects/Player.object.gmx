@@ -41,6 +41,7 @@ currentEvent = "start";
 currentArea = "mainRoom";
 
 sliderPuzzleComplete = false;
+chutePuzzleComplete = false;
 inCutscene = false;
 </string>
           </argument>

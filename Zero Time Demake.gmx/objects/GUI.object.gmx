@@ -28,19 +28,20 @@
             <string>image_speed = 0;
 
 goggles = instance_create(x+7, y+289, Goggles);
-chainedBox = instance_create(x+96, y+303, ChainedBox);
+chainedBox = instance_create(x+180, y+303, ChainedBox);
+//chainedBox = instance_create(x+96, y+303, ChainedBox);
 coin = instance_create(x+193, y+316, Coin);
 revolver = instance_create(x+188, y+307, Revolver);
 screwDriver = instance_create(x+287, y+304, ScrewDriver);
 screws = instance_create(x+368, y+320, Screws);
-gasTorch = instance_create(x+441, y+303, GasTorch);
+gasTorch = instance_create(x+96, y+303, GasTorch);
 gasTorchPhi = instance_create(x+441, y+303, GasTorch);
-
 guiDisabledBar = instance_create(x+257, y+285, GUIDisabledBar);
 
-chainedBoxHighlight = instance_create(88, 289, ItemSelected);
+chainedBoxHighlight = instance_create(172, 289, ItemSelected);
 coinHighlight = instance_create(172, 289, ItemSelected);
-gasTorchHighlight = instance_create(427, 289, ItemSelected);
+gasTorchHighlight = instance_create(88, 289, ItemSelected);
+gasTorchPhiHighlight = instance_create(427, 289, ItemSelected);
 gogglesHighlight = instance_create(x+4, y+289, ItemSelected);
 revolverHighlight = instance_create(172, 289, ItemSelected);
 screwDriverHighlight = instance_create(x+260, y+289, ItemSelected);
@@ -57,6 +58,7 @@ revolverSelected = false;
 screwDriverSelected = false;
 screwsSelected = false;
 gasTorchSelected = false;
+gasTorchPhiSelected = false;
 </string>
           </argument>
         </arguments>
@@ -141,18 +143,20 @@ else if (!Player.hasScrews) {
 if(Player.hasGasTorch &amp;&amp; !instance_exists(gasTorch))
 {
     //gasTorch = instance_create(x+441, y+303, GasTorch);
-    gasTorch = instance_create(x+188, y+307, GasTorch);
+    gasTorch = instance_create(x+102, y+307, GasTorch);
     gasTorch.inInventory = true;
+    gasTorch.phiHolding = false;
 } 
 else if (!Player.hasGasTorch) {
     if(instance_exists(gasTorch)) instance_destroy(gasTorch);
 }
-if(Player.hasGasTorchPhi &amp;&amp; !instance_exists(gasTorch))
+if(Player.hasGasTorchPhi &amp;&amp; !instance_exists(gasTorchPhi))
 {
-    gasTorchPhi = instance_create(x+441, y+316, GasTorch);
+    gasTorchPhi = instance_create(x+441, y+307, GasTorch);
     gasTorchPhi.inInventory = true;
+    gasTorchPhi.phiHolding = true;
 } 
-else if (!Player.hasGasTorch) {
+else if (!Player.hasGasTorchPhi) {
     if(instance_exists(gasTorchPhi)) instance_destroy(gasTorchPhi);
 }
 
@@ -178,11 +182,20 @@ else if (!coinSelected)
 
 if (gasTorchSelected &amp;&amp; !instance_exists(gasTorchHighlight))
 {
-    gasTorchHighlight = instance_create(427, 289, ItemSelected);
+    gasTorchHighlight = instance_create(88, 289, ItemSelected);
 }
 else if (!gasTorchSelected)
 { 
     if (instance_exists(gasTorchHighlight)) instance_destroy(gasTorchHighlight);
+}
+
+if (gasTorchPhiSelected &amp;&amp; !instance_exists(gasTorchPhiHighlight))
+{
+    gasTorchPhiHighlight = instance_create(427, 289, ItemSelected);
+}
+else if (!gasTorchPhiSelected)
+{ 
+    if (instance_exists(gasTorchPhiHighlight)) instance_destroy(gasTorchPhiHighlight);
 }
 
 if (gogglesSelected &amp;&amp; !instance_exists(gogglesHighlight))

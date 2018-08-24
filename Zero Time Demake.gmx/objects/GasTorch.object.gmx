@@ -3,7 +3,7 @@
   <spriteName>sGasTorch</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-5</depth>
+  <depth>-6</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -51,8 +51,11 @@ phiHolding = false;
             <kind>1</kind>
             <string>disabled = place_meeting(x,y, GUI.guiDisabledBar);
 
-if (disabled){
+if (disabled &amp;&amp; !phiHolding){
     GUI.gasTorchSelected = false;
+}
+else if (disabled &amp;&amp; phiHolding){
+    GUI.gasTorchPhiSelected = false;
 }
 </string>
           </argument>
@@ -82,11 +85,12 @@ if (inInventory &amp;&amp; !disabled &amp;&amp; !phiHolding)
 { 
     GUI.gogglesSelected = false;
     GUI.chainedBoxSelected = false;
-    GUI.coinSelected = true;
+    GUI.coinSelected = false;
     GUI.revolverSelected = false;
     GUI.screwDriverSelected = false;
     GUI.screwsSelected = false;
-    GUI.gasTorchSelected = false;
+    GUI.gasTorchSelected = true;
+    GUI.gasTorchPhiSelected = false;
 }
 else if(inInventory &amp;&amp; !disabled &amp;&amp; phiHolding)
 {
@@ -96,7 +100,8 @@ else if(inInventory &amp;&amp; !disabled &amp;&amp; phiHolding)
     GUI.revolverSelected = false;
     GUI.screwDriverSelected = false;
     GUI.screwsSelected = false;
-    GUI.gasTorchSelected = true;
+    GUI.gasTorchSelected = false;
+    GUI.gasTorchPhiSelected = true;
 } 
 else if(!inInventory)
 {

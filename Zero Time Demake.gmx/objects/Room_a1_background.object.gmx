@@ -32,7 +32,7 @@ cabinet = instance_create(x+24, y+123, Room_a1_cabinet);
 controls = instance_create(x+284, y+246, Room_a1_controls);
 shutters = instance_create(x+335, y, Room_a1_shutters);
 
-
+gasTorch = instance_create(x+320, y+200, GasTorch);
 </string>
           </argument>
         </arguments>
@@ -74,6 +74,12 @@ controls.y = y+246;
 
 shutters.x = x+335;
 shutters.y = y;
+
+if(instance_exists(gasTorch))
+{
+    gasTorch.x = x+267;
+    gasTorch.y = y+257;
+}
 //-----------------------------
 
 </string>

@@ -97,15 +97,13 @@ if(inView)
     PuzzleLockScreen.depth = -8;
     LeftButton.depth = 10;
     RightButton.depth = 10;
-    //instance_deactivate_object(LeftButton);
-    //instance_deactivate_object(RightButton);
         
     BackButton.x = 223;
     BackButton.y = 709;  
     BackButton.depth = -15;    
         
 }
-else
+else if(!inView &amp;&amp; !ChutePuzzle.inView)
 {
     depth = 10
     slider1.depth = depth-1;

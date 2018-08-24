@@ -26,6 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>inView = false;
+x = 32;
+y = 416;
+depth = 10;
 
 number1 = 0;
 number2 = 0;
@@ -34,6 +37,64 @@ number3 = 0;
 dial1 = instance_create(x+73, y+45, ChuteNumber);
 dial2 = instance_create(x+187, y+45, ChuteNumber);
 dial3 = instance_create(x+301, y+45, ChuteNumber);
+
+dial1.depth= depth-1;
+dial2.depth= depth-1;
+dial3.depth= depth-1;
+
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="3" enumb="0">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>if(inView)
+{
+    depth = -10
+    dial1.depth= depth-1;
+    dial2.depth= depth-1;
+    dial3.depth= depth-1;
+    
+    PuzzleLockScreen.depth = -8;
+    LeftButton.depth = 10;
+    RightButton.depth = 10;
+        
+    BackButton.x = 223;
+    BackButton.y = 709;  
+    BackButton.depth = -15;    
+}
+else if (!inView &amp;&amp; !SliderPuzzle.inView)
+{
+    depth = 10
+    dial1.depth= depth-1;
+    dial2.depth= depth-1;
+    dial3.depth= depth-1;
+    
+    //PuzzleLockScreen.depth = 8;
+    //LeftButton.depth = -10;
+    //RightButton.depth = -10;
+    
+        
+    BackButton.x = 1000;
+    BackButton.y = 1000;  
+    BackButton.depth = depth-1;  
+}
 </string>
           </argument>
         </arguments>
@@ -62,7 +123,19 @@ number3 = dial3.number;
 
 if(number1 == 1 &amp;&amp; number2 == 5 &amp;&amp; number3 == 4)
 {
-    show_message("Puzzle Solved!");
+    
+    Player.chutePuzzleComplete = true;
+    ChutePuzzle.inView = false;
+    
+    LeftButton.depth = -10;
+    RightButton.depth = -10;
+    instance_activate_object(LeftButton);
+    instance_activate_object(RightButton);
+
+    PuzzleLockScreen.depth = 10;
+    
+    //Dialogue
+    
 }
 </string>
           </argument>

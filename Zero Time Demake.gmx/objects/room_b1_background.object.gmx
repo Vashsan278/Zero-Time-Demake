@@ -34,6 +34,7 @@ panel = instance_create(x+34, y+117, Room_b1_panel);
 weight = instance_create(x+161, y+114, Room_b1_weight);
 thermometer = instance_create(x+349, y+118, Room_b1_thermometer);
 screwDriver = instance_create(x+131, y-34, ScrewDriver);
+screwDriver.depth = -3;
 
 </string>
           </argument>
