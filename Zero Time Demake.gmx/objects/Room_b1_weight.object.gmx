@@ -51,21 +51,25 @@
             <string>if(GUI.screwDriverSelected)
 {
     //screwDriverWeight dialogue
+    obj_controller.scaleScrewDriver = true;
     
 }
 else if(GUI.screwsSelected)
 {
     //screwsWeight dialogue
+    obj_controller.scaleScrews = true;
     
 }
 else if(GUI.gasTorchSelected)
 {
     //gasTorchWeight dialogue
+    obj_controller.scaleGasTorch = true;
     
 }
 else
 {
     //nothingSelected dialogue
+    obj_controller.scaleNothing = true;
     
 }
 </string>

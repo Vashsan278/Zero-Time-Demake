@@ -37,7 +37,8 @@ coin = instance_create(x+50, y+150, Coin);
 
 hasHeatedThermometer = false;
 
-//obj_controller.cutscene1 = true;
+gogglesOn = false;
+initialDialogue = false;
 </string>
           </argument>
         </arguments>
@@ -97,6 +98,22 @@ if(instance_exists(coin))
 {
     coin.x = x+132;
     coin.y = y+180;
+}
+
+if(gogglesOn)
+{
+    image_index = 1;
+    
+    if(!initialDialogue)
+    {
+        //Dialogue
+        
+        initialDialogue = true;
+    }       
+}
+else
+{
+    image_index = 0;
 }
 
 

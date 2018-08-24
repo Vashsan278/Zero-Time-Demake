@@ -63,10 +63,12 @@ if(selected &amp;&amp; !instance_exists(goggleVision))
 {
     goggleVision = instance_create(0, 384, GUIGoggles);
     Room_a4_backboard.gogglesOn = true;
+    Room_a2_background.gogglesOn = true;
 }
 else if(!selected &amp;&amp; instance_exists(goggleVision))
 {
     Room_a4_backboard.gogglesOn = false;
+    Room_a2_background.gogglesOn = false;
     instance_destroy(Goggles.goggleVision);
 }
 else if (!inInventory)

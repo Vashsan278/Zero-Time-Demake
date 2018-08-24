@@ -47,7 +47,16 @@ gunLock = false;
 chuteDialogue = false;
 chainBoxAquired = false;
 chuteDialogueIntro = false;
-chuteDialogueComplete = false
+chuteDialogueComplete = false;
+sliderOpen = false;
+scaleScrewDriver = false;
+scaleScrews = false;
+scaleGasTorch = false;
+scaleNothing = false;
+thermometerDialogue = false;
+thermometerGasTorchDialogue = false;
+chainBoxClue = false;
+chainBoxOpen = false;
 
 //finalChoice = false;
 
@@ -265,7 +274,98 @@ if(chuteDialogueComplete == true)
     }             
     chuteDialogueComplete = false;               
 }
-    
+
+if(sliderOpen == true)
+{    
+    Player.inCutscene = true;                                                              
+    with( obj_demo_dialogue )
+    {
+        script_execute(SliderOpen);                                                                                     
+    }             
+    sliderOpen = false;               
+}
+
+if(scaleScrewDriver == true)
+{    
+    Player.inCutscene = true;                                                              
+    with( obj_demo_dialogue )
+    {
+        script_execute(ScaleScrewDriver);                                                                                     
+    }             
+    scaleScrewDriver = false;               
+}
+
+if(scaleScrews == true)
+{    
+    Player.inCutscene = true;                                                              
+    with( obj_demo_dialogue )
+    {
+        script_execute(ScaleScrews);                                                                                     
+    }             
+    scaleScrews = false;               
+}
+
+if(scaleGasTorch == true)
+{    
+    Player.inCutscene = true;                                                              
+    with( obj_demo_dialogue )
+    {
+        script_execute(ScaleGasTorch);                                                                                     
+    }             
+    scaleGasTorch = false;               
+}
+
+if(scaleNothing == true)
+{    
+    Player.inCutscene = true;                                                              
+    with( obj_demo_dialogue )
+    {
+        script_execute(ScaleNothing);                                                                                     
+    }             
+    scaleNothing = false;               
+}
+
+if(thermometerDialogue == true)
+{    
+    Player.inCutscene = true;                                                              
+    with( obj_demo_dialogue )
+    {
+        script_execute(ThermometerDialogue);                                                                                     
+    }             
+    thermometerDialogue = false;               
+}
+
+if(thermometerGasTorchDialogue == true)
+{    
+    Player.inCutscene = true;                                                              
+    with( obj_demo_dialogue )
+    {
+        script_execute(ThermometerGasTorchDialogue);                                                                                     
+    }             
+    thermometerGasTorchDialogue = false;               
+}
+
+if(chainBoxClue == true)
+{    
+    Player.inCutscene = true;                                                              
+    with( obj_demo_dialogue )
+    {
+        script_execute(ChainBoxClue);                                                                                     
+    }             
+    chainBoxClue = false;               
+}
+
+if(chainBoxOpen == true)
+{    
+    Player.inCutscene = true;                                                              
+    with( obj_demo_dialogue )
+    {
+        script_execute(ChainBoxOpen);                                                                                     
+    }             
+    chainBoxOpen = false;               
+}
+   
+ 
 
 </string>
           </argument>

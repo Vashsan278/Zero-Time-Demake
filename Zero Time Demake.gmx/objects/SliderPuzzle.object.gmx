@@ -53,6 +53,8 @@ letterBox3.spr_index = sA;
 letter1 = "";
 letter2 = "";
 letter3 = "";
+
+compDialogue = false;
 </string>
           </argument>
         </arguments>
@@ -157,6 +159,11 @@ else if(!inView &amp;&amp; !ChutePuzzle.inView &amp;&amp; !FINALKEYHOLE.inView)
     Room_a2_shutters.opened = true;
     
     //kick off dialogue
+    if (!compDialogue)
+    {
+        obj_controller.sliderOpen = true;
+        compDialogue = true;
+    }
         
 }
 </string>

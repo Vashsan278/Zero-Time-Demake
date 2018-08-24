@@ -29,6 +29,7 @@
 x = 0;
 y = 416;
 depth = 10;
+initDialogue = false;
 </string>
           </argument>
         </arguments>
@@ -51,7 +52,7 @@ depth = 10;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(inView)
+            <string>if(inView &amp;&amp; !initDialogue)
 {
     depth = -10
     
@@ -61,7 +62,11 @@ depth = 10;
         
     BackButton.x = 223;
     BackButton.y = 709;  
-    BackButton.depth = -15;    
+    BackButton.depth = -15;
+        
+    obj_controller.gunLock = true;
+    initDialogue = true;  
+      
 }
 else if (!inView &amp;&amp; !SliderPuzzle.inView &amp;&amp; !ChutePuzzle.inView)
 {
@@ -71,6 +76,10 @@ else if (!inView &amp;&amp; !SliderPuzzle.inView &amp;&amp; !ChutePuzzle.inView)
     BackButton.y = 1000;  
     BackButton.depth = depth-1;  
 }
+else{
+    inView = false;
+}
+
 </string>
           </argument>
         </arguments>

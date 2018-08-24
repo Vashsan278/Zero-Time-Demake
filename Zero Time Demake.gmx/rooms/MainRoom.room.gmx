@@ -17,7 +17,7 @@
   <makerSettings>
     <isSet>-1</isSet>
     <w>870</w>
-    <h>712</h>
+    <h>709</h>
     <showGrid>-1</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -67,6 +67,7 @@
     <instance objName="BackButton" x="80" y="832" name="inst_F372ABB4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="FINALKEYHOLE" x="0" y="416" name="inst_64AB508B" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="FinalRoom" x="1008" y="-592" name="inst_23B2FD5C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="SoundController" x="-144" y="48" name="inst_FEC97EF3" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles/>
   <PhysicsWorld>0</PhysicsWorld>

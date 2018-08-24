@@ -6,7 +6,9 @@
   <NewExtensions>
     <extension index="0">extensions\Simple Dialogue Box Demo</extension>
   </NewExtensions>
-  <sounds name="sound"/>
+  <sounds name="sound">
+    <sound>sound\Sinisterness</sound>
+  </sounds>
   <sprites name="sprites">
     <sprites name="Items">
       <sprite>sprites\sChainedBox</sprite>
@@ -141,6 +143,13 @@
         </sprites>
       </sprites>
     </sprites>
+    <sprites name="Main Menu">
+      <sprite>sprites\sMainMenu</sprite>
+      <sprite>sprites\sInfo</sprite>
+      <sprite>sprites\sStart</sprite>
+      <sprite>sprites\sExit</sprite>
+      <sprite>sprites\sInfoButton</sprite>
+    </sprites>
     <sprites name="Animations">
       <sprite>sprites\sWAYOUT</sprite>
       <sprite>sprites\sFOUNDIT</sprite>
@@ -196,11 +205,23 @@
           <script>scripts\ShutterConsoleLock.gml</script>
           <script>scripts\ShuttersDialogue.gml</script>
           <script>scripts\ChainBoxAquired.gml</script>
+          <script>scripts\SliderOpen.gml</script>
         </scripts>
         <scripts name="3A">
           <script>scripts\GunLock.gml</script>
           <script>scripts\ChuteDialogueComplete.gml</script>
           <script>scripts\ChuteDialogueIntro.gml</script>
+          <script>scripts\ButtonLocked.gml</script>
+        </scripts>
+        <scripts name="RoomB">
+          <script>scripts\ScaleScrews.gml</script>
+          <script>scripts\ScaleGasTorch.gml</script>
+          <script>scripts\ScaleScrewDriver.gml</script>
+          <script>scripts\ScaleNothing.gml</script>
+          <script>scripts\ThermometerDialogue.gml</script>
+          <script>scripts\ThermometerGasTorchDialogue.gml</script>
+          <script>scripts\ChainBoxClue.gml</script>
+          <script>scripts\ChainBoxOpen.gml</script>
         </scripts>
       </scripts>
     </scripts>
@@ -302,8 +323,17 @@
       <object>objects\ScrewDriver</object>
       <object>objects\Screws</object>
     </objects>
+    <object>objects\SoundController</object>
+    <objects name="Menu">
+      <object>objects\MainMenuScreen</object>
+      <object>objects\Start</object>
+      <object>objects\InfoPage</object>
+      <object>objects\InfoButton</object>
+      <object>objects\ExitButton</object>
+    </objects>
   </objects>
   <rooms name="rooms">
+    <room>rooms\MainMenu</room>
     <room>rooms\MainRoom</room>
     <room>rooms\A4_Test</room>
     <room>rooms\B2_Test</room>

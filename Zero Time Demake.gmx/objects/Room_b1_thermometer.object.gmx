@@ -56,6 +56,12 @@ hadDialogue = false;
     
     //dialogue
     
+    obj_controller.thermometerGasTorchDialogue = true;
+    hadDialogue = true;   
+}
+else
+{
+    obj_controller.thermometerDialogue = true;
 }
 </string>
           </argument>

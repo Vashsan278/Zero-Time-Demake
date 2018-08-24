@@ -1,10 +1,8 @@
-///ScenePuzzleB1()
+///ScaleScrews()
 ds_list_add(obj_controller.characterOrder, "sCharNarrator");
 tb_AddMessage
 (                
-"Phi: #This must be the exit...#
-Nope, locked."
+	"Phi: #24 grams for both..."
 );
 
-       
-tb_ShowDialogue(); 
+tb_ShowDialogue();

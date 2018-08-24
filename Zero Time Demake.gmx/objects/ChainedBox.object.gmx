@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>inInventory = false;
 inPhiRoom = false;
+initDialogue = false;
 </string>
           </argument>
         </arguments>
@@ -101,12 +102,13 @@ else if(!inInventory &amp;&amp; inPhiRoom &amp;&amp; GUI.screwDriverSelected)
         
     instance_destroy(ChainedBox);
     Player.hasRevolver = true;
+    obj_controller.chainBoxOpen = true;
 
 }
 else if(!inInventory &amp;&amp; inPhiRoom)
 {
     //hintDialog
-    
+    obj_controller.chainBoxClue = true;
 
 }
 </string>

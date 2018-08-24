@@ -42,6 +42,8 @@ dial1.depth= depth-1;
 dial2.depth= depth-1;
 dial3.depth= depth-1;
 
+compDialogue = false;
+
 </string>
           </argument>
         </arguments>
@@ -135,7 +137,11 @@ if(number1 == 1 &amp;&amp; number2 == 5 &amp;&amp; number3 == 4)
     PuzzleLockScreen.depth = 10;
     
     //Dialogue
-    obj_controller.chuteDialogueComplete = true;
+    if(!compDialogue)
+    {
+        obj_controller.chuteDialogueComplete = true;
+        compDialogue = true;
+    }
 }
 </string>
           </argument>

@@ -50,6 +50,7 @@ blankBullet = false;
 timeRanOut = false;
 
 inCutscene = false;
+gameOver = false;
 </string>
           </argument>
         </arguments>
@@ -102,28 +103,35 @@ if (gunFired)
     if(liveBullet)
     {
         //suicideEnding
-        show_message("live bullet");
+        obj_controller.scene3 = true;
         
         gunFired = false;
+        gameOver = true;
         
         
     }
     else if(blankBullet)
     {
         //happyEnding
-        show_message("blank bullet");
+        obj_controller.scene4 = true;
         
         gunFired = false;
+        gameOver = true;
     }    
 }
 
 if(!gunFired &amp;&amp; timeRanOut)
 {
     //sadEnding
-    show_message("time ran out");
-    
-    
+    obj_controller.scene5 = true;
     timeRanOut = false;
+    gameOver = true;   
+}
+
+if(gameOver &amp;&amp; !Player.inCutscene)
+{
+    room = room_get_name("MainMenu")
+
 }
 </string>
           </argument>

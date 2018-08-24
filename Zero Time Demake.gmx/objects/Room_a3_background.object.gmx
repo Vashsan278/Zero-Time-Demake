@@ -33,6 +33,8 @@ chair = instance_create(x+152, y+61, Room_a3_chair);
 slot = instance_create(x+351, y+160, Room_a3_slot);
 door = instance_create(x, y+53, Room_a3_door);
 chairButton = instance_create(x+250, y+100, ChairButton);
+
+
 </string>
           </argument>
         </arguments>

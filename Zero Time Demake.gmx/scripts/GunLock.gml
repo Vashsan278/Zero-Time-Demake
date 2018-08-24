@@ -13,3 +13,5 @@ ds_list_add(obj_controller.characterOrder, "sCharNarrator");
 tb_AddMessage(
 "Diana: #We'd definately fee; calmer#once Phi is safe. Wait a second...#Isn't this keyhole too big?"
 );
+
+tb_ShowDialogue();
