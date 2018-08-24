@@ -79,8 +79,7 @@ initialDialogue = false;
             <kind>1</kind>
             <string>if (!Player.sliderPuzzleComplete)
 {
-    backButton = instance_create(x+223, y+709, BackButton);
-    
+       
     SliderPuzzle.inView = true;   
     
     if(!initialDialogue)

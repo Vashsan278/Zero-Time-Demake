@@ -26,7 +26,10 @@
           <argument>
             <kind>1</kind>
             <string>diana = true;
-sigma = false;
+phi = false;
+
+dianaLastRoom = "";
+phiLastRoom = "";
 </string>
           </argument>
         </arguments>
@@ -54,14 +57,83 @@ sigma = false;
     GUIDisabledBar.x = 0;
     GUIDisabledBar.y = 285;
     diana = false;
-    sigma = true;
+    phi = true;
+    
+    if(Room_a1_background.isCurrentRoom) dianaLastRoom = "Room_a1_backgroud";
+    else if (Room_a2_background.isCurrentRoom) dianaLastRoom = "Room_a2_backgroud";
+    else if (Room_a3_background.isCurrentRoom) dianaLastRoom = "Room_a3_backgroud";
+    else if (Room_a4_background.isCurrentRoom) dianaLastRoom = "Room_a4_backgroud";
+    
+    if(phiLastRoom == "Room_b1_background" || phiLastRoom == "")
+    {
+        Room_b1_background.isCurrent = true;
+        
+        Room_a1_background.isCurrent = false;
+        Room_a2_background.isCurrent = false;
+        Room_a3_background.isCurrent = false;
+        Room_a4_background.isCurrent = false;        
+    }
+    else if(phiLastRoom == "Room_b2_background")
+    {
+        Room_b2_background.isCurrent = true;
+        
+        Room_a1_background.isCurrent = false;
+        Room_a2_background.isCurrent = false;
+        Room_a3_background.isCurrent = false;
+        Room_a4_background.isCurrent = false;        
+    }    
+    
 } 
-else if(sigma)
+else if(phi)
 {
     GUIDisabledBar.x = 257;
     GUIDisabledBar.y = 285;
     sigma = false;
-    diana = true;
+    phi = true;
+    
+    if(Room_b1_background.isCurrentRoom) phiLastRoom = "Room_b1_backgroud";
+    else if (Room_b2_background.isCurrentRoom) phiLastRoom = "Room_b2_backgroud";
+    
+    if(dianaLastRoom == "Room_a1_background" || dianaLastRoom == "")
+    {                
+        Room_a1_background.isCurrent = true;
+        Room_a2_background.isCurrent = false;
+        Room_a3_background.isCurrent = false;
+        Room_a4_background.isCurrent = false; 
+        
+        Room_b1_background.isCurrent = false;
+        Room_b2_background.isCurrent = false;       
+    }
+    else if(dianaLastRoom == "Room_a2_background")
+    {                
+        Room_a1_background.isCurrent = false;
+        Room_a2_background.isCurrent = true;
+        Room_a3_background.isCurrent = false;
+        Room_a4_background.isCurrent = false; 
+        
+        Room_b1_background.isCurrent = false;
+        Room_b2_background.isCurrent = false;       
+    }
+    else if(dianaLastRoom == "Room_a2_background")
+    {                
+        Room_a1_background.isCurrent = false;
+        Room_a2_background.isCurrent = false;
+        Room_a3_background.isCurrent = true;
+        Room_a4_background.isCurrent = false; 
+        
+        Room_b1_background.isCurrent = false;
+        Room_b2_background.isCurrent = false;       
+    }
+    else if(dianaLastRoom == "Room_a2_background")
+    {                
+        Room_a1_background.isCurrent = false;
+        Room_a2_background.isCurrent = false;
+        Room_a3_background.isCurrent = false;
+        Room_a4_background.isCurrent = true; 
+        
+        Room_b1_background.isCurrent = false;
+        Room_b2_background.isCurrent = false;       
+    }
 }
 </string>
           </argument>

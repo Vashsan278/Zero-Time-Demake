@@ -32,6 +32,7 @@
       <sprite>sprites\sGUISelected</sprite>
       <sprite>sprites\sGUISwitchChars</sprite>
       <sprite>sprites\sGUIBack</sprite>
+      <sprite>sprites\sPuzzleScreenLock</sprite>
     </sprites>
     <sprites name="Map">
       <sprite>sprites\sMapA1</sprite>
@@ -182,6 +183,7 @@
       <object>objects\GUIGoggles</object>
       <object>objects\GUIDisabledBar</object>
       <object>objects\BackButton</object>
+      <object>objects\PuzzleLockScreen</object>
     </objects>
     <objects name="Puzzles">
       <objects name="Slider">
@@ -191,7 +193,7 @@
         <object>objects\SliderPuzzle</object>
       </objects>
       <objects name="Chute">
-        <object>objects\ChutePanel</object>
+        <object>objects\ChutePuzzle</object>
         <object>objects\ChuteNumber</object>
       </objects>
     </objects>

@@ -85,7 +85,7 @@ letter3 = string(slider3.currentLetter);
 
 if(inView)
 {
-    depth = -3
+    depth = -10
     slider1.depth = depth-1;
     slider2.depth = depth-1;
     slider3.depth = depth-1;
@@ -93,6 +93,33 @@ if(inView)
     letterBox1.depth = depth-1;
     letterBox2.depth = depth-1;
     letterBox3.depth = depth-1;
+    
+    PuzzleLockScreen.depth = -8;
+    LeftButton.depth = 10;
+    RightButton.depth = 10;
+    //instance_deactivate_object(LeftButton);
+    //instance_deactivate_object(RightButton);
+        
+    BackButton.x = 223;
+    BackButton.y = 709;  
+    BackButton.depth = -15;    
+        
+}
+else
+{
+    depth = 10
+    slider1.depth = depth-1;
+    slider2.depth = depth-1;
+    slider3.depth = depth-1;
+    
+    letterBox1.depth = depth-1;
+    letterBox2.depth = depth-1;
+    letterBox3.depth = depth-1;
+        
+    BackButton.x = 1000;
+    BackButton.y = 1000;  
+    BackButton.depth = depth-1;
+
 }
 </string>
           </argument>
@@ -118,7 +145,18 @@ if(inView)
             <kind>1</kind>
             <string>if(letter1 == "sD" &amp;&amp; letter2 == "sP" &amp;&amp; letter3 == "sK")
 {
-    Player.sliderPuzzleComplete = true;    
+    Player.sliderPuzzleComplete = true;
+    SliderPuzzle.inView = false;
+    
+    LeftButton.depth = -10;
+    RightButton.depth = -10;
+    instance_activate_object(LeftButton);
+    instance_activate_object(RightButton);
+
+    PuzzleLockScreen.depth = 10;
+    
+    //kick off dialogue
+        
 }
 </string>
           </argument>
