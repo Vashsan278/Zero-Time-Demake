@@ -63,11 +63,12 @@ initialDialogue = false;
     initDialogue = true;
     
 }
-if(!GUI.revolverSelected &amp;&amp; !FINALKEYHOLE.initDialogue)
+if(!Player.hasRevolver &amp;&amp; !FINALKEYHOLE.initDialogue)
 {
     FINALKEYHOLE.inView = true;
         
 }
+
 </string>
           </argument>
         </arguments>

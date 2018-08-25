@@ -57,6 +57,12 @@ thermometerDialogue = false;
 thermometerGasTorchDialogue = false;
 chainBoxClue = false;
 chainBoxOpen = false;
+buttonUnlocked = false;
+buttonLocked = false;
+buttonPressed = false;
+screwPanelOn = false;
+screwPanelOff = false;
+
 
 //finalChoice = false;
 
@@ -364,9 +370,57 @@ if(chainBoxOpen == true)
     }             
     chainBoxOpen = false;               
 }
-   
- 
 
+if(buttonUnlocked == true)
+{    
+    Player.inCutscene = true;                                                              
+    with( obj_demo_dialogue )
+    {
+        script_execute(ButtonUnlocked);                                                                                     
+    }             
+    buttonUnlocked = false;               
+}
+
+if(buttonLocked == true)
+{    
+    Player.inCutscene = true;                                                              
+    with( obj_demo_dialogue )
+    {
+        script_execute(ButtonLocked);                                                                                     
+    }             
+    buttonLocked = false;               
+}
+
+if(buttonPressed == true)
+{    
+    Player.inCutscene = true;                                                              
+    with( obj_demo_dialogue )
+    {
+        script_execute(ButtonPressed);                                                                                     
+    }             
+    buttonPressed = false;               
+}
+
+if(screwPanelOn == true)
+{    
+    Player.inCutscene = true;                                                              
+    with( obj_demo_dialogue )
+    {
+        script_execute(ScrewPanelOn);                                                                                     
+    }             
+    screwPanelOn = false;               
+}
+
+if(screwPanelOff == true)
+{    
+    Player.inCutscene = true;                                                              
+    with( obj_demo_dialogue )
+    {
+        script_execute(ScrewPanelOff);                                                                                     
+    }             
+    screwPanelOff = false;               
+}
+   
 </string>
           </argument>
         </arguments>

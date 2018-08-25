@@ -3,7 +3,7 @@
   <spriteName>sFinalRoom</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>0</depth>
+  <depth>-12</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -66,7 +66,7 @@ gun = instance_create(x+331, y+103, FINALGUN);
     
     Room_a1_background.isCurrentRoom = false;
     Room_a2_background.isCurrentRoom = false;
-    Room_a3_background.isCurrentRoom = false;
+    Room_a3_background.isCurrentRoom = true;
     Room_a4_background.isCurrentRoom = false;
     Room_b1_background.isCurrentRoom = false;
     Room_b2_background.isCurrentRoom = false;

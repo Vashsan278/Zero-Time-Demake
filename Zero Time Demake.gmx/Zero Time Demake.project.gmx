@@ -212,6 +212,8 @@
           <script>scripts\ChuteDialogueComplete.gml</script>
           <script>scripts\ChuteDialogueIntro.gml</script>
           <script>scripts\ButtonLocked.gml</script>
+          <script>scripts\ButtonUnlocked.gml</script>
+          <script>scripts\ButtonPressed.gml</script>
         </scripts>
         <scripts name="RoomB">
           <script>scripts\ScaleScrews.gml</script>
@@ -222,6 +224,8 @@
           <script>scripts\ThermometerGasTorchDialogue.gml</script>
           <script>scripts\ChainBoxClue.gml</script>
           <script>scripts\ChainBoxOpen.gml</script>
+          <script>scripts\ScrewPanelOn.gml</script>
+          <script>scripts\ScrewPanelOff.gml</script>
         </scripts>
       </scripts>
     </scripts>
@@ -312,6 +316,9 @@
           <object>objects\Room_b2_door</object>
           <object>objects\Room_b2_window</object>
         </objects>
+      </objects>
+      <objects name="Intro">
+        <object>objects\INTRO</object>
       </objects>
     </objects>
     <objects name="Items">

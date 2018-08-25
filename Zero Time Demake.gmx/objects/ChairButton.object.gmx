@@ -26,6 +26,9 @@
           <argument>
             <kind>1</kind>
             <string>unlocked = false;
+buttonUnlockedTalk = false;
+buttonPressedTalk = false;
+buttonLockedTalk = false;
 </string>
           </argument>
         </arguments>
@@ -48,28 +51,34 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!unlocked &amp;&amp; GUI.coinSelected)
+            <string>if(!unlocked &amp;&amp; GUI.coinSelected &amp;&amp; !buttonUnlockedTalk)
 {
     unlocked = true;
     Player.hasCoin = false;
     Room_a3_chair.image_index = 1;
     
     //chair button dialogue 1
+    obj_controller.buttonUnlocked = true;
+    buttonUnlockedTalk = true;
     
-
 }
-else if (unlocked)
+else if (!unlocked &amp;&amp; !GUI.coinSelected &amp;&amp; !buttonLockedTalk)
 {
-    
-    Room_a3_chair.image_index = 2;
-    
-    
+    buttonLockedTalk = true;
+    obj_controller.buttonLocked = true;
 
-    //chair button dialogue 2
-    
-    
-    Room_a3_background.deleteButton = true;
 }
+else if (unlocked &amp;&amp; !buttonPressedTalk)
+{   
+    //chair button dialogue 2
+    obj_controller.buttonPressed = true;
+    buttonPressedTalk = true;
+    
+    Room_a3_chair.image_index = 2;           
+    Room_a3_background.deleteButton = true;
+    
+}
+
 </string>
           </argument>
         </arguments>

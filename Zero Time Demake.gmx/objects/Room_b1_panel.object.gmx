@@ -27,7 +27,8 @@
             <kind>1</kind>
             <string>image_speed = 0;
 opened = false;
-missingScrewDriverDialogue = false;
+panelOnTalk = false;
+panelOffTalk = false;
 </string>
           </argument>
         </arguments>
@@ -83,13 +84,17 @@ missingScrewDriverDialogue = false;
     Player.hasScrews = true;
     
     //dialogue
+    panelOffTalk = true;
+    obj_controller.screwPanelOff = true;
         
 }
-if(!opened &amp;&amp; !GUI.screwDriverSelected &amp;&amp; !missingScrewDriverDialogue)
+if(!opened &amp;&amp; !GUI.screwDriverSelected &amp;&amp; !panelOnTalk)
 {
     missingScrewDriverDialogue = true;
     
     //dialogue
+    panelOnTalk = true;
+    obj_controller.screwPanelOn = true;
 }
 </string>
           </argument>
