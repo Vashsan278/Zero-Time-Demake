@@ -9,13 +9,15 @@ Diana. Wake up."
 ds_list_add(obj_controller.characterOrder, "sCharSigmaSilent");
 tb_AddMessage
 (
-"Diana: #Sigma?"
+"Diana: #
+Sigma?"
 );                 
 
 ds_list_add(obj_controller.characterOrder, "sCharSigmaSilent");
 tb_AddMessage
 (
-"Diana: #What is this room?"
+"Diana: #
+What is this room?"
 );                      
 
 ds_list_add(obj_controller.characterOrder, "sCharSigma");

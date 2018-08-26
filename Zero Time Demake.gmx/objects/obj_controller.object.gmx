@@ -27,10 +27,11 @@
             <kind>1</kind>
             <string>isFullscreen = false;
 
-cutscene1 = false;
+cutscene1 = true;
 cutscene2 = false;
 cutscene3 = false;
 cutscene4 = false;
+cutscene5 = false;
 
 cutscenePuzzleA1 = false;
 cutscenePuzzleA2 = false;
@@ -96,8 +97,9 @@ characterOrder = ds_list_create();
           <argument>
             <kind>1</kind>
             <string>if(cutscene1 == true)
-{                                                                  
-    Player.inCutscene = true;
+{                                                                      
+    show_debug_message("cutscene start");
+    Player.inCutscene = true;  
     with( obj_demo_dialogue )
     {
         script_execute(Scene1);                                                                                     
@@ -111,7 +113,10 @@ if(cutscene2 == true)
     with( obj_demo_dialogue )
     {
         script_execute(Scene2);                                                                                      
-    }             
+    }
+    Player.inCutscene = true;
+    SoundController.musicUpdate = true;
+    SoundController.musicName = extremeUrgency;             
     cutscene2 = false;       
 }
 
@@ -122,6 +127,8 @@ if(cutscene3 == true)
     {
         script_execute(Scene3);                                                                                     
     }             
+    SoundController.musicUpdate = true;
+    SoundController.musicName = BAD_END;
     cutscene3 = false;               
 }
 
@@ -132,7 +139,21 @@ if(cutscene4 == true)
     {
         script_execute(Scene4);                                                                                      
     }             
+    SoundController.musicUpdate = true;
+    SoundController.musicName = Divulgation;
     cutscene4 = false;               
+}
+
+if(cutscene5 == true)
+{      
+    Player.inCutscene = true;                                                            
+    with( obj_demo_dialogue )
+    {
+        script_execute(Scene5);                                                                                      
+    }             
+    SoundController.musicUpdate = true;
+    SoundController.musicName = blueBird;
+    cutscene5 = false;               
 }
 
 if(cutscenePuzzleA1 == true)

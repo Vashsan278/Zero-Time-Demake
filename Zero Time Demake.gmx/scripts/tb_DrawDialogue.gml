@@ -31,6 +31,8 @@ if( currentMessage == noone )
         
         if(Player.gameOver)
         {
+            SoundController.musicUpdate = true;
+            SoundController.musicName = blueBird;
             room_restart();
             room_goto_previous();
         

@@ -97,6 +97,10 @@ else if (!inView &amp;&amp; !SliderPuzzle.inView &amp;&amp; !FINALKEYHOLE.inView
     BackButton.y = 1000;  
     BackButton.depth = depth-1;  
 }
+else
+{
+    BackButton.inChutePuzzle = false;
+}
 </string>
           </argument>
         </arguments>

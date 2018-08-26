@@ -28,6 +28,8 @@
             <string>image_speed = 0;
 isCurrentRoom = true;
 coinCreated = false;
+introPlayed = false;
+//obj_controller.cutscene1 = true;
 
 chute = instance_create(x+377, y+238, Room_a2_chute);
 controls = instance_create(x+24, y+176, Room_a2_controls);
@@ -68,6 +70,22 @@ initialDialogue = false;
 } else {
     x = -500;
     y = -500;
+}
+
+if(!introPlayed &amp;&amp; !Player.inCutscene)
+{
+    INTRO.x = 0;
+    INTRO.y = 384;
+    INTRO.image_speed = 1.4;
+    
+    SoundController.musicUpdate = true;
+    SoundController.musicName = trashDisposalRoom;
+    
+    RightButton.depth = -15;
+    LeftButton.depth = -15;
+
+    introPlayed = true;
+
 }
 
 chute.x = x+377;

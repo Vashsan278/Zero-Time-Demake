@@ -8,6 +8,14 @@
   </NewExtensions>
   <sounds name="sound">
     <sound>sound\Sinisterness</sound>
+    <sound>sound\trashDisposalRoom</sound>
+    <sound>sound\makeYourChoice</sound>
+    <sound>sound\BAD_END</sound>
+    <sound>sound\Divulgation</sound>
+    <sound>sound\strain_2nd_mix</sound>
+    <sound>sound\extremeUrgency</sound>
+    <sound>sound\blueBird</sound>
+    <sound>sound\gunShot</sound>
   </sounds>
   <sprites name="sprites">
     <sprites name="Items">
@@ -333,13 +341,15 @@
       <object>objects\ScrewDriver</object>
       <object>objects\Screws</object>
     </objects>
-    <object>objects\SoundController</object>
     <objects name="Menu">
       <object>objects\MainMenuScreen</object>
       <object>objects\Start</object>
       <object>objects\InfoPage</object>
       <object>objects\InfoButton</object>
       <object>objects\ExitButton</object>
+    </objects>
+    <objects name="Music">
+      <object>objects\SoundController</object>
     </objects>
   </objects>
   <rooms name="rooms">

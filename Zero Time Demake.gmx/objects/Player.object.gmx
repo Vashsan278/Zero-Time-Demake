@@ -51,6 +51,9 @@ timeRanOut = false;
 
 inCutscene = false;
 gameOver = false;
+
+gunFiredAlready = false;
+timeRanOutAlready = false;
 </string>
           </argument>
         </arguments>
@@ -75,6 +78,7 @@ gameOver = false;
             <kind>1</kind>
             <string>sprName = string(sprite_get_name(sprite_index));
 
+show_debug_message(string(inCutscene));
 if (sprName = "sCharSigma")
 {
     x = 117;
@@ -91,36 +95,54 @@ else if (sprName = "sCharNarraor")
     y = -500;
 }
 
-if (gunFired)
+if (gunFired &amp;&amp; !gunFiredAlready)
 {
-    if(liveBullet || prevBlankRound)
+    if(liveBullet)
     {
         //suicideEnding
-        obj_controller.cutscene3 = true;
+        if(SoundController.liveBullet)
+        {
+            obj_controller.cutscene4 = true;
+        }
+        else
+        {
+             obj_controller.cutscene3 = true;
+        }
         
-        gunFired = false;
-        gameOver = true;        
-        
+        gameOver = true;
+        SoundController.liveBullet = true;
+        SoundController.blankBullet = false;                
     }
-    else if(blankBullet || prevLiveRound)
+    else if(blankBullet)
     {
         //happyEnding
-        obj_controller.cutscene4 = true;         
+        if(SoundController.blankBullet)
+        {
+            obj_controller.cutscene3 = true;
+        }
+        else
+        {
+             obj_controller.cutscene4 = true;
+        }        
         
-        gunFired = false;
         gameOver = true;
+        SoundController.liveBullet = false;
+        SoundController.blankBullet = true;
         
-    }    
+    }
+    gunFiredAlready = true;    
 }
 
-if(!gunFired &amp;&amp; timeRanOut)
+if(!gunFired &amp;&amp; timeRanOut &amp;&amp; !gunFiredAlready &amp;&amp; !timeRanOutAlready)
 {
     //sadEnding
     obj_controller.cutscene5 = true;
     timeRanOut = false;
-    gameOver = true;   
+    gameOver = true;
+    timeRanOutAlready = true;
+              
+}   
     
-}
 
 
 </string>
