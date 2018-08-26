@@ -77,7 +77,8 @@ unopenedDialogue = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!opened &amp;&amp; !unopenedDialogue&amp;&amp; !Player.inCutscene)
+            <string>if(!opened &amp;&amp; !unopenedDialogue&amp;&amp; !Player.inCutscene 
+&amp;&amp; !BackButton.inChutePuzzle &amp;&amp; !BackButton.inChutePuzzle)
 {
        obj_controller.shuttersDialogue = true;
        Room_a1_shutters.unopenedDialogue = true;

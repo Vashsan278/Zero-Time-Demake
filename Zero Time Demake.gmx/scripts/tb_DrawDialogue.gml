@@ -26,7 +26,9 @@ if( currentMessage == noone )
     else
     {
         Player.sprite_index = asset_get_index("sCharNarrator");
+        Player.inCutscene = false;
         visible = false;
+        
         // TODO: Add closing animation
     }
 }

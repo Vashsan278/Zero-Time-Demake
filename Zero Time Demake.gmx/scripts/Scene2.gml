@@ -73,8 +73,8 @@ it doesn't matter which is fired."
 ds_list_add(obj_controller.characterOrder, "sCharGunScene");                    
 tb_AddMessage
 (                
-"The alarms all around the room
-start blaring."
+"#
+The alarms all around the room start blaring."
 );
 
 ds_list_add(obj_controller.characterOrder, "sCharGunScene");                    
@@ -249,8 +249,7 @@ ds_list_add(obj_controller.characterOrder, "sCharPhiLocked");
 tb_AddMessage
 (                
 "Diana:#
-But Phi... If I don't pull
-the trigger, you'll..."
+But Phi... If I don't pullthe trigger, you'll..."
 );
 
 ds_list_add(obj_controller.characterOrder, "sCharPhiLocked");

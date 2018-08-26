@@ -74,7 +74,8 @@ sliders.y = y+7;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!Player.sliderPuzzleComplete &amp;&amp; !consoleDialogue)
+            <string>if(!Player.sliderPuzzleComplete &amp;&amp; !consoleDialogue 
+&amp;&amp; !BackButton.inChutePuzzle &amp;&amp; !BackButton.inChutePuzzle)
 {
     //Dilogue 
     obj_controller.shutterConsoleLock = true;

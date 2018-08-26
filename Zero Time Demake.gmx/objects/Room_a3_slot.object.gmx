@@ -58,13 +58,15 @@ initialDialogue = false;
     if(GUI.revolverSelected)
     {
         FINALKEYHOLE.hasRevolverTalk = true;
-        FINALKEYHOLE.inView = true;   
-    }
-    if(!Player.hasRevolver &amp;&amp; !FINALKEYHOLE.initDialogue)
-    {
         FINALKEYHOLE.inView = true;
+        FINALKEYHOLE.normalViewLock = true;   
+    }
+    else if(!Player.hasRevolver &amp;&amp; !FINALKEYHOLE.initDialogue)
+    {
         initDialogue = true;
-        obj_controller.gunLock = true;    
+        FINALKEYHOLE.inView = true;
+        obj_controller.gunLock = true; 
+           
     }
 }
 

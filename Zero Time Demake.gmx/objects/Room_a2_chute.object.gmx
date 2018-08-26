@@ -49,11 +49,12 @@ initialDialogue = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(!Player.inCutscene)
+            <string>if(!Player.inCutscene &amp;&amp; !BackButton.inSliderPuzzle)
 {
     if (!Player.chutePuzzleComplete)
     {  
         ChutePuzzle.inView = true;
+        BackButton.inChutePuzzle = true;
         
         if(!initialDialogue)
         {

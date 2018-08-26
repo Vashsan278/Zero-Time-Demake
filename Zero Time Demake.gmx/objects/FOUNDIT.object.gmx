@@ -50,10 +50,11 @@ image_speed = 0;
           <argument>
             <kind>1</kind>
             <string>FinalRoom.isCurrentRoom = true;
-image_speed = 0;
 Room_a2_background.isCurrentRoom = false;
 x = 1000;
 y = 1000;
+obj_controller.cutscene2 = true;
+instance_destroy();
 
 </string>
           </argument>

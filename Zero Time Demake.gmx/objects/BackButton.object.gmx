@@ -25,7 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string></string>
+            <string>inSliderPuzzle = false;
+inChutePuzzle = false;
+</string>
           </argument>
         </arguments>
       </action>
@@ -62,6 +64,9 @@ if(instance_exists(SwitchCharsButton)) SwitchCharsButton.depth = -10;
 
 x = 1000;
 y = 1000;
+
+inSliderPuzzle = false;
+inChutePuzzle = false;
 </string>
           </argument>
         </arguments>

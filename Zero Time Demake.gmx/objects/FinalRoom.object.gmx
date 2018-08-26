@@ -28,6 +28,7 @@
             <string>image_speed = 0;
 isCurrentRoom = false;
 gun = instance_create(x+331, y+103, FINALGUN);
+cutsceneStart = false;
 </string>
           </argument>
         </arguments>
@@ -55,14 +56,14 @@ gun = instance_create(x+331, y+103, FINALGUN);
     x = 0;
     y = 384;
     
-    Player.hasChainedBox = false;
-    Player.hasCoin = false;
-    Player.hasGasTorch = false;
-    Player.hasGoggles = false;
-    Player.hasRevolver = false;
-    Player.hasScrewDriver = false;
-    Player.hasScrews = false;
-    Player.hasGasTorchPhi = false;
+    //Player.hasChainedBox = false;
+    //Player.hasCoin = false;
+    //Player.hasGasTorch = false;
+    //Player.hasGoggles = false;
+    //Player.hasRevolver = false;
+    //Player.hasScrewDriver = false;
+    //Player.hasScrews = false;
+    //Player.hasGasTorchPhi = false;
     
     GUI.gogglesSelected = false;
     GUI.chainedBoxSelected = false;
@@ -86,7 +87,6 @@ gun = instance_create(x+331, y+103, FINALGUN);
     SwitchCharsButton.x = 1000;
     BackButton.x = 1000;
     
-    obj_controller.cutscene2 = true;
 }
 else
 {
