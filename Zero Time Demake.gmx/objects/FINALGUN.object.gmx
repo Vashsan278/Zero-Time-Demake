@@ -94,12 +94,12 @@ show_debug_message(string(alarm[0]));
     if(chance == 0)
     {
         Player.liveBullet = true;
-        show_message("live bullet";
+        show_message("live bullet");
     } 
     else
     {
         Player.blankBullet = true;
-        show_message("blank bullet";
+        show_message("blank bullet");
     }
     
     Player.gunFired = true;
