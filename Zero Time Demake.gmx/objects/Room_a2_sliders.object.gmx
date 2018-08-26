@@ -82,7 +82,7 @@ initialDialogue = false;
     if (!Player.sliderPuzzleComplete)
     {    
         SliderPuzzle.inView = true;
-        BackButton.inChutePuzzle = true;
+        BackButton.inSliderPuzzle = true;
         
         if(!initialDialogue)
         {
