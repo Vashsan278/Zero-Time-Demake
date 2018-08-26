@@ -29,6 +29,13 @@ if( currentMessage == noone )
         Player.inCutscene = false;
         visible = false;
         
+        if(Player.gameOver)
+        {
+            room_restart();
+            room_goto_previous();
+        
+        }
+        
         // TODO: Add closing animation
     }
 }

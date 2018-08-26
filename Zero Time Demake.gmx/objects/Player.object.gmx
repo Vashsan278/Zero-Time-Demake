@@ -4,7 +4,7 @@
   <solid>0</solid>
   <visible>-1</visible>
   <depth>-5</depth>
-  <persistent>-1</persistent>
+  <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
   <events>
@@ -93,23 +93,23 @@ else if (sprName = "sCharNarraor")
 
 if (gunFired)
 {
-    if(liveBullet)
+    if(liveBullet || prevBlankRound)
     {
         //suicideEnding
         obj_controller.cutscene3 = true;
         
         gunFired = false;
-        gameOver = true;
-        
+        gameOver = true;        
         
     }
-    else if(blankBullet)
+    else if(blankBullet || prevLiveRound)
     {
         //happyEnding
-        obj_controller.cutscene4 = true;
+        obj_controller.cutscene4 = true;         
         
         gunFired = false;
         gameOver = true;
+        
     }    
 }
 
@@ -119,13 +119,10 @@ if(!gunFired &amp;&amp; timeRanOut)
     obj_controller.cutscene5 = true;
     timeRanOut = false;
     gameOver = true;   
+    
 }
 
-if(gameOver &amp;&amp; !Player.inCutscene)
-{
-    room_goto_previous();
 
-}
 </string>
           </argument>
         </arguments>
