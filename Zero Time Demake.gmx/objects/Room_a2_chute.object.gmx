@@ -83,7 +83,6 @@ initialDialogue = false;
         obj_controller.chainBoxDrop = true;
     }
 }
-
 </string>
           </argument>
         </arguments>

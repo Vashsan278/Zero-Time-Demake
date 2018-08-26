@@ -69,7 +69,7 @@ transitionedToFinal = false;
     RightButton.x = 1000;  
     BackButton.depth = depth-1;
     
-    
+    SwitchCharsButton.depth = 10;
     
     if(!finalKeyDialogueDone)
     {
@@ -99,6 +99,8 @@ else if(inView &amp;&amp; !normalViewLock)
     BackButton.x = 223;
     BackButton.y = 709;  
     BackButton.depth = -15;
+    
+    SwitchCharsButton.depth = 10;
     
     PuzzleLockScreen.depth = -9;         
       

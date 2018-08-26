@@ -68,7 +68,7 @@ compDialogue = false;
             <kind>1</kind>
             <string>if(inView)
 {
-    depth = -10
+    depth = -10;
     dial1.depth= depth-1;
     dial2.depth= depth-1;
     dial3.depth= depth-1;
@@ -76,28 +76,25 @@ compDialogue = false;
     PuzzleLockScreen.depth = -8;
     LeftButton.depth = 10;
     RightButton.depth = 10;
-        
+    
     BackButton.x = 223;
-    BackButton.y = 709;  
-    BackButton.depth = -15;    
+    BackButton.y = 709;
+    BackButton.depth = -15;
+    
+    SwitchCharsButton.depth = 10;
 }
 else if (!inView &amp;&amp; !SliderPuzzle.inView &amp;&amp; !FINALKEYHOLE.inView)
 {
-    depth = 10
+    depth = 10;
     dial1.depth= depth-1;
     dial2.depth= depth-1;
     dial3.depth= depth-1;
     
-    //PuzzleLockScreen.depth = 8;
-    //LeftButton.depth = -10;
-    //RightButton.depth = -10;
-    
-        
     BackButton.x = 1000;
-    BackButton.y = 1000;  
+    BackButton.y = 1000;
     BackButton.depth = depth-1;
     
-    BackButton.inChutePuzzle = false;  
+    BackButton.inChutePuzzle = false;
 }
 else
 {

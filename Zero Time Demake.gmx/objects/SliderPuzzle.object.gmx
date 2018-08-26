@@ -87,7 +87,7 @@ letter3 = string(slider3.currentLetter);
 
 if(inView)
 {
-    depth = -10
+    depth = -10;
     slider1.depth = depth-1;
     slider2.depth = depth-1;
     slider3.depth = depth-1;
@@ -99,15 +99,15 @@ if(inView)
     PuzzleLockScreen.depth = -8;
     LeftButton.depth = 10;
     RightButton.depth = 10;
-        
+    
     BackButton.x = 223;
-    BackButton.y = 709;  
-    BackButton.depth = -15;    
-        
+    BackButton.y = 709;
+    BackButton.depth = -15;
+    
 }
 else if(!inView &amp;&amp; !ChutePuzzle.inView &amp;&amp; !FINALKEYHOLE.inView)
 {
-    depth = 10
+    depth = 10;
     slider1.depth = depth-1;
     slider2.depth = depth-1;
     slider3.depth = depth-1;
@@ -115,9 +115,9 @@ else if(!inView &amp;&amp; !ChutePuzzle.inView &amp;&amp; !FINALKEYHOLE.inView)
     letterBox1.depth = depth-1;
     letterBox2.depth = depth-1;
     letterBox3.depth = depth-1;
-        
+    
     BackButton.x = 1000;
-    BackButton.y = 1000;  
+    BackButton.y = 1000;
     BackButton.depth = depth-1;
 
 }

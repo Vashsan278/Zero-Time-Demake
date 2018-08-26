@@ -95,6 +95,7 @@ if(!opened &amp;&amp; !GUI.screwDriverSelected &amp;&amp; !panelOnTalk)
     //dialogue
     panelOnTalk = true;
     obj_controller.screwPanelOn = true;
+    
 }
 </string>
           </argument>
