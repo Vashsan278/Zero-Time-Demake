@@ -97,8 +97,6 @@ characterOrder = ds_list_create();
             <kind>1</kind>
             <string>show_debug_message(string(Player.inCutscene));
 
-{
-
 if(cutscene1 == true)
 {                                                                  
     Player.inCutscene = true;
