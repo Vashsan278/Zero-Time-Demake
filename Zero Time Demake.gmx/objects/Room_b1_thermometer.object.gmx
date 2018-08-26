@@ -27,6 +27,7 @@
             <kind>1</kind>
             <string>image_speed = 0;
 hadDialogue = false;
+helpDialogue = false;
 </string>
           </argument>
         </arguments>
@@ -59,9 +60,10 @@ hadDialogue = false;
     obj_controller.thermometerGasTorchDialogue = true;
     hadDialogue = true;   
 }
-else
+else if (!helpDialogue)
 {
     obj_controller.thermometerDialogue = true;
+    helpDialogue = true;
 }
 </string>
           </argument>

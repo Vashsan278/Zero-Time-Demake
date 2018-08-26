@@ -69,6 +69,7 @@ phiLastRoom = "";
         if(phiLastRoom == "Room_b1_background" || phiLastRoom == "")
         {
             Room_b1_background.isCurrentRoom = true;
+            GUI.sprite_index = asset_get_index("sMapB1");
             
             Room_a1_background.isCurrentRoom = false;
             Room_a2_background.isCurrentRoom = false;
@@ -78,6 +79,7 @@ phiLastRoom = "";
         else if(phiLastRoom == "Room_b2_background")
         {
             Room_b2_background.isCurrentRoom = true;
+            GUI.sprite_index = asset_get_index("sMapB2");
             
             Room_a1_background.isCurrentRoom = false;
             Room_a2_background.isCurrentRoom = false;
@@ -97,6 +99,7 @@ phiLastRoom = "";
         
         if(dianaLastRoom == "Room_a1_background" || dianaLastRoom == "")
         {                
+            GUI.sprite_index = asset_get_index("sMapA1");
             Room_a1_background.isCurrentRoom = true;
             Room_a2_background.isCurrentRoom = false;
             Room_a3_background.isCurrentRoom = false;
@@ -107,6 +110,7 @@ phiLastRoom = "";
         }
         else if(dianaLastRoom == "Room_a2_background")
         {                
+            GUI.sprite_index = asset_get_index("sMapA2");
             Room_a1_background.isCurrentRoom = false;
             Room_a2_background.isCurrentRoom = true;
             Room_a3_background.isCurrentRoom = false;
@@ -117,6 +121,7 @@ phiLastRoom = "";
         }
         else if(dianaLastRoom == "Room_a3_background")
         {                
+            GUI.sprite_index = asset_get_index("sMapA3");
             Room_a1_background.isCurrentRoom = false;
             Room_a2_background.isCurrentRoom = false;
             Room_a3_background.isCurrentRoom = true;
@@ -126,7 +131,8 @@ phiLastRoom = "";
             Room_b2_background.isCurrentRoom = false;       
         }
         else if(dianaLastRoom == "Room_a4_background")
-        {                
+        {          
+            GUI.sprite_index = asset_get_index("sMapA4");      
             Room_a1_background.isCurrentRoom = false;
             Room_a2_background.isCurrentRoom = false;
             Room_a3_background.isCurrentRoom = false;

@@ -29,6 +29,7 @@
 inPhiRoom = false;
 initDialogue = false;
 openedDialogue = false;
+screwDriverClue = false;
 </string>
           </argument>
         </arguments>
@@ -81,7 +82,7 @@ if (disabled){
             <string>disabled = place_meeting(x,y, GUI.guiDisabledBar);
 
 if (inInventory &amp;&amp; !disabled) 
-{ 
+{
     GUI.gogglesSelected = false;
     GUI.chainedBoxSelected = true;
     GUI.coinSelected = false;
@@ -89,6 +90,7 @@ if (inInventory &amp;&amp; !disabled)
     GUI.screwDriverSelected = false;
     GUI.screwsSelected = false;
     GUI.gasTorchSelected = false;
+    
 }
 else if(!inInventory &amp;&amp; !inPhiRoom)
 {
@@ -96,6 +98,7 @@ else if(!inInventory &amp;&amp; !inPhiRoom)
     GUI.chainedBoxSelected = false;
     obj_controller.chainBoxAquired = true;
     instance_destroy(ChainedBox);
+    
 }
 else if(!inInventory &amp;&amp; inPhiRoom &amp;&amp; GUI.screwDriverSelected)
 {
@@ -106,11 +109,12 @@ else if(!inInventory &amp;&amp; inPhiRoom &amp;&amp; GUI.screwDriverSelected)
     obj_controller.chainBoxOpen = true;
 
 }
-else if(!inInventory &amp;&amp; inPhiRoom)
+else if(!inInventory &amp;&amp; inPhiRoom &amp;&amp; !screwDriverClue)
 {
     //hintDialog
     obj_controller.chainBoxClue = true;
-
+    screwDriverClue = true;
+    
 }
 </string>
           </argument>

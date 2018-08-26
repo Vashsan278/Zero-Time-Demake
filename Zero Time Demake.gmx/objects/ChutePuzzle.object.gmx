@@ -95,7 +95,9 @@ else if (!inView &amp;&amp; !SliderPuzzle.inView &amp;&amp; !FINALKEYHOLE.inView
         
     BackButton.x = 1000;
     BackButton.y = 1000;  
-    BackButton.depth = depth-1;  
+    BackButton.depth = depth-1;
+    
+    BackButton.inChutePuzzle = false;  
 }
 else
 {
@@ -145,6 +147,7 @@ if(number1 == 1 &amp;&amp; number2 == 5 &amp;&amp; number3 == 4)
     {
         obj_controller.chuteDialogueComplete = true;
         compDialogue = true;
+        
     }
 }
 </string>

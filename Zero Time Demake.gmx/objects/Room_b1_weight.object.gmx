@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>image_speed = 0;
+helpText = false;
 </string>
           </argument>
         </arguments>
@@ -66,10 +67,11 @@ else if(GUI.gasTorchSelected)
     obj_controller.scaleGasTorch = true;
     
 }
-else
+else if(!helpText)
 {
     //nothingSelected dialogue
     obj_controller.scaleNothing = true;
+    helpText = true;
     
 }
 </string>
