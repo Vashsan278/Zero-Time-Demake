@@ -52,6 +52,7 @@ initialDialogue = false;
             <string>if (Player.sliderPuzzleComplete)
 {
     image_index = 1;
+    BackButton.inSliderPuzzle = false;
 }
 
 
@@ -92,6 +93,10 @@ initialDialogue = false;
         }
                    
     }
+}
+else
+{
+    BackButton.inSliderPuzzle = false;
 }
 </string>
           </argument>

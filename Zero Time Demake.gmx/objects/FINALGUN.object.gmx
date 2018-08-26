@@ -3,7 +3,7 @@
   <spriteName>sFinalGun</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-13</depth>
+  <depth>-2</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -61,7 +61,10 @@ if (!Player.inCutscene &amp;&amp; !timerSet)
 if (alarm[0] = 0 &amp;&amp; !Player.gunFired)
 {
     Player.timeRanOut = true;
+    show_message("time ran out");
 }
+
+show_debug_message(string(alarm[0]));
 </string>
           </argument>
         </arguments>
@@ -91,13 +94,16 @@ if (alarm[0] = 0 &amp;&amp; !Player.gunFired)
     if(chance == 0)
     {
         Player.liveBullet = true;
+        show_message("live bullet";
     } 
     else
     {
         Player.blankBullet = true;
+        show_message("blank bullet";
     }
     
     Player.gunFired = true;
+    
 }
 </string>
           </argument>

@@ -3,7 +3,7 @@
   <spriteName>sFinalRoom</spriteName>
   <solid>0</solid>
   <visible>-1</visible>
-  <depth>-12</depth>
+  <depth>-1</depth>
   <persistent>0</persistent>
   <parentName>&lt;undefined&gt;</parentName>
   <maskName>&lt;undefined&gt;</maskName>
@@ -80,6 +80,7 @@ cutsceneStart = false;
     Room_a4_background.isCurrentRoom = false;
     Room_b1_background.isCurrentRoom = false;
     Room_b2_background.isCurrentRoom = false;
+    
     LeftButton.depth = 10;
     RightButton.depth = 10;
     LeftButton.x = 1000;

@@ -102,7 +102,7 @@ characterOrder = ds_list_create();
     {
         script_execute(Scene1);                                                                                     
     }             
-    Player.cutscene1 = false;               
+    cutscene1 = false;       
 }
 
 if(cutscene2 == true)
@@ -112,7 +112,7 @@ if(cutscene2 == true)
     {
         script_execute(Scene2);                                                                                      
     }             
-    Player.cutscene2 = false;               
+    cutscene2 = false;       
 }
 
 if(cutscene3 == true)

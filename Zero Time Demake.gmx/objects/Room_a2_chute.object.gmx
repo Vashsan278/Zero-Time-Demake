@@ -83,6 +83,10 @@ initialDialogue = false;
         obj_controller.chainBoxDrop = true;
     }
 }
+else
+{
+    BackButton.inChutePuzzle = false;
+}
 </string>
           </argument>
         </arguments>

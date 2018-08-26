@@ -73,9 +73,9 @@ transitionedToFinal = false;
     
     if(!finalKeyDialogueDone)
     {
-        finalKeyDialogue = true;
-        //additional dialogue
         obj_controller.insertGun = true;
+        finalKeyDialogue = true;
+        
     }
     
     if (!Player.inCutscene &amp;&amp; finalKeyDialogue &amp;&amp; inView &amp;&amp; !transitionedToFinal)
