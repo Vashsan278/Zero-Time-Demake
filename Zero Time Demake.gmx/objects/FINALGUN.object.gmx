@@ -28,6 +28,9 @@
             <string>foundIt = instance_create(500,500, FOUNDIT);
 foundIt = image_speed = 0; 
 timerSet = false;
+alarm[0] = -1;
+set = false;
+
 </string>
           </argument>
         </arguments>
@@ -50,15 +53,14 @@ timerSet = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>alarm[0] = 300;
-if (!Player.inCutscene &amp;&amp; !timerSet)
+            <string>if (!Player.inCutscene &amp;&amp; timerSet &amp;&amp; !set)
 {    
     alarm[0] = 300;
-    timerSet = true;
+    set = true;   
     
 }
 
-if (alarm[0] = 0 &amp;&amp; !Player.gunFired)
+if (alarm[0] == 0 &amp;&amp; !Player.gunFired)
 {
     Player.timeRanOut = true;
     show_message("time ran out");

@@ -96,7 +96,7 @@ if (gunFired)
     if(liveBullet)
     {
         //suicideEnding
-        obj_controller.scene3 = true;
+        obj_controller.cutscene3 = true;
         
         gunFired = false;
         gameOver = true;
@@ -106,7 +106,7 @@ if (gunFired)
     else if(blankBullet)
     {
         //happyEnding
-        obj_controller.scene4 = true;
+        obj_controller.cutscene4 = true;
         
         gunFired = false;
         gameOver = true;
@@ -116,14 +116,14 @@ if (gunFired)
 if(!gunFired &amp;&amp; timeRanOut)
 {
     //sadEnding
-    obj_controller.scene5 = true;
+    obj_controller.cutscene5 = true;
     timeRanOut = false;
     gameOver = true;   
 }
 
 if(gameOver &amp;&amp; !Player.inCutscene)
 {
-    //room_goto_previous();
+    room_goto_previous();
 
 }
 </string>

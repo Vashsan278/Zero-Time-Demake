@@ -48,7 +48,7 @@ tb_AddMessage
 So please!"
 );   
 
-ds_list_add(obj_controller.characterOrder, "sCharPhiLockedSilent");
+ds_list_add(obj_controller.characterOrder, "sCharNarrator");
 tb_AddMessage
 (                
 "Sigma:#
@@ -70,7 +70,7 @@ tb_AddMessage
 Thank you."
 );    
 
-ds_list_add(obj_controller.characterOrder, "sCharPhiLockedSilent");
+ds_list_add(obj_controller.characterOrder, "sCharNarrator");
 tb_AddMessage
 (                
 "Sigma:#

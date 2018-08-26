@@ -87,6 +87,7 @@ cutsceneStart = false;
     RightButton.x = 1000;
     SwitchCharsButton.x = 1000;
     BackButton.x = 1000;
+    gun.timerSet = true;
     
 }
 else

@@ -36,14 +36,14 @@ Phi leaves the incinerator as#
 quickly as she can."
 );
 
-ds_list_add(obj_controller.characterOrder, "sCharPhi");
+ds_list_add(obj_controller.characterOrder, "sCharNarrator");
 tb_AddMessage
 (
 "Phi:#
 No... It can't be..."
 );                    
 
-ds_list_add(obj_controller.characterOrder, "sCharPhiSilent");
+ds_list_add(obj_controller.characterOrder, "sCharNarrator");
 tb_AddMessage
 (         
 "#
@@ -51,7 +51,7 @@ She sees a blood-spattered wall#
 and Sigma's body."
 );
 
-ds_list_add(obj_controller.characterOrder, "sCharPhiSilent");
+ds_list_add(obj_controller.characterOrder, "sCharNarrator");
 tb_AddMessage
 (                
 "#
@@ -59,14 +59,14 @@ Phi grabs and shakes Diana by#
 the shoulders.."
 );     
 
-ds_list_add(obj_controller.characterOrder, "sCharPhiCrying");
+ds_list_add(obj_controller.characterOrder, "sCharNarrator");
 tb_AddMessage
 (                
 "Phi:#
 You murderer! Murderer!"
 );        
 
-ds_list_add(obj_controller.characterOrder, "sCharPhiCrying");
+ds_list_add(obj_controller.characterOrder, "sCharNarrator");
 tb_AddMessage
 (                
 "Phi:#
@@ -74,14 +74,14 @@ I wasn't... I didn't matter#
 at all!"
 );       
 
-ds_list_add(obj_controller.characterOrder, "sCharPhiCrying");
+ds_list_add(obj_controller.characterOrder, "sCharNarrator");
 tb_AddMessage
 (                
 "Phi:#
 I didn't... ! I didn't... !"
 );       
 
-ds_list_add(obj_controller.characterOrder, "sCharPhiCrying");
+ds_list_add(obj_controller.characterOrder, "sCharNarrator");
 tb_AddMessage
 (                
 "Phi:#

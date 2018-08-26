@@ -245,7 +245,7 @@ end up blowing your head off#
 with her own hands?!"
 );
 
-ds_list_add(obj_controller.characterOrder, "sCharPhiLocked");                    
+ds_list_add(obj_controller.characterOrder, "sCharNarrator");                    
 tb_AddMessage
 (                
 "Diana:#
@@ -259,7 +259,7 @@ tb_AddMessage
 Don't worry about me..."
 );
 
-ds_list_add(obj_controller.characterOrder, "sCharPhiLocked");                    
+ds_list_add(obj_controller.characterOrder, "sCharNarrator");                    
 tb_AddMessage
 (                
 "Diana:#
