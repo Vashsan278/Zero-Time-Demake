@@ -53,20 +53,19 @@ initialDialogue = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(GUI.revolverSelected)
+            <string>if(!Player.inCutscene)
 {
-    FOUNDIT.x = 0;
-    FOUNDIT.y = 384;
-    FOUNDIT.image_speed = 0.8;
-    
-    obj_controller.gunLock = true;
-    initDialogue = true;
-    
-}
-if(!Player.hasRevolver &amp;&amp; !FINALKEYHOLE.initDialogue)
-{
-    FINALKEYHOLE.inView = true;
-        
+    if(GUI.revolverSelected)
+    {
+        FINALKEYHOLE.hasRevolverTalk = true;
+        FINALKEYHOLE.inView = true;   
+    }
+    if(!Player.hasRevolver &amp;&amp; !FINALKEYHOLE.initDialogue)
+    {
+        FINALKEYHOLE.inView = true;
+        initDialogue = true;
+        obj_controller.gunLock = true;    
+    }
 }
 
 </string>

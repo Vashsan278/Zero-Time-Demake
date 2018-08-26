@@ -25,8 +25,9 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>foundIt = instance_create(500,500, FOUNDIT); 
-foundIt.image_speed = 0;
+            <string>foundIt = instance_create(500,500, FOUNDIT);
+foundIt = image_speed = 0; 
+timerSet = false;
 </string>
           </argument>
         </arguments>
@@ -49,14 +50,17 @@ foundIt.image_speed = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!Player.inCutscene)
-{
+            <string>alarm[0] = 300;
+if (!Player.inCutscene &amp;&amp; !timerSet)
+{    
     alarm[0] = 300;
+    timerSet = true;
     
-    if (alarm[0] = 0 &amp;&amp; !Player.gunFired)
-    {
-        Player.timeRanOut = true;
-    }
+}
+
+if (alarm[0] = 0 &amp;&amp; !Player.gunFired)
+{
+    Player.timeRanOut = true;
 }
 </string>
           </argument>
@@ -80,18 +84,21 @@ foundIt.image_speed = 0;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>chance = random_range(0,1)
-
-if(chance = 0)
+            <string>if(!Player.inCutscene)
 {
-    Player.liveBullet = true;
-} 
-else
-{
-    Player.blankBullet = true;
+    chance = irandom_range(0,1);
+    
+    if(chance == 0)
+    {
+        Player.liveBullet = true;
+    } 
+    else
+    {
+        Player.blankBullet = true;
+    }
+    
+    Player.gunFired = true;
 }
-
-Player.gunFired = true;
 </string>
           </argument>
         </arguments>

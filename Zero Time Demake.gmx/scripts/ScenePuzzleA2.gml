@@ -1,9 +1,4 @@
 ///ScenePuzzleA2()
-
-
-
-
-
 ds_list_add(obj_controller.characterOrder, "sCharNarrator");
 tb_AddMessage
 (                

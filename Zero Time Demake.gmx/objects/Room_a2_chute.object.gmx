@@ -49,34 +49,38 @@ initialDialogue = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!Player.chutePuzzleComplete)
-{  
-    ChutePuzzle.inView = true;
-    
-    if(!initialDialogue)
-    {
-        // dialogue
+            <string>if(!Player.inCutscene)
+{
+    if (!Player.chutePuzzleComplete)
+    {  
+        ChutePuzzle.inView = true;
         
-        obj_controller.chuteDialogueIntro = true;
-        initialDialogue = true;
+        if(!initialDialogue)
+        {
+            // dialogue
+            
+            obj_controller.chuteDialogueIntro = true;
+            initialDialogue = true;
+        }
+                   
     }
-               
-}
-if (Player.chutePuzzleComplete &amp;&amp; GUI.gasTorchSelected)
-{
-    GUI.gasTorchSelected = false;
-    Player.hasGasTorch = false;
-    Room_b2_background.transferedTorch = true;
-    
-    
-    //Dialogue
-}
-if(GUI.chainedBoxSelected)
-{
-    Room_b2_background.transferedTorch = false;
-    Room_b2_background.transferedChainedBox = true;
-    Player.hasChainedBox = false;
-    GUI.chainedBoxSelected = false;
+    if (Player.chutePuzzleComplete &amp;&amp; GUI.gasTorchSelected)
+    {
+        GUI.gasTorchSelected = false;
+        Player.hasGasTorch = false;
+        Room_b2_background.transferedTorch = true;
+        
+        
+        //Dialogue
+    }
+    if(GUI.chainedBoxSelected)
+    {
+        Room_b2_background.transferedTorch = false;
+        Room_b2_background.transferedChainedBox = true;
+        Player.hasChainedBox = false;
+        GUI.chainedBoxSelected = false;
+        obj_controller.chainBoxDrop = true;
+    }
 }
 </string>
           </argument>

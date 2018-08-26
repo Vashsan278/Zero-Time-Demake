@@ -64,9 +64,18 @@ gun = instance_create(x+331, y+103, FINALGUN);
     Player.hasScrews = false;
     Player.hasGasTorchPhi = false;
     
+    GUI.gogglesSelected = false;
+    GUI.chainedBoxSelected = false;
+    GUI.coinSelected = false;
+    GUI.revolverSelected = false;
+    GUI.screwDriverSelected = false;
+    GUI.screwsSelected = false;
+    GUI.gasTorchSelected = false;
+    GUI.gasTorchPhiSelected = false;
+    
     Room_a1_background.isCurrentRoom = false;
     Room_a2_background.isCurrentRoom = false;
-    Room_a3_background.isCurrentRoom = true;
+    Room_a3_background.isCurrentRoom = false;
     Room_a4_background.isCurrentRoom = false;
     Room_b1_background.isCurrentRoom = false;
     Room_b2_background.isCurrentRoom = false;
@@ -75,18 +84,18 @@ gun = instance_create(x+331, y+103, FINALGUN);
     LeftButton.x = 1000;
     RightButton.x = 1000;
     SwitchCharsButton.x = 1000;
+    BackButton.x = 1000;
     
+    obj_controller.cutscene2 = true;
 }
 else
 {
     x = -500;
     y = -500;
 }
-
+    
 gun.x = x+331;
 gun.y = y+103;
-    
-
 </string>
           </argument>
         </arguments>

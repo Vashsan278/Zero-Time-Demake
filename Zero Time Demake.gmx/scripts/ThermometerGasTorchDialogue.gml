@@ -35,4 +35,10 @@ tb_AddMessage
 "Diana: #I'm so glad... Huh?#The coin here is loose now..."
 );
 
+ds_list_add(obj_controller.characterOrder, "sCharNarrator");
+tb_AddMessage
+(                
+"Diana: #Oh, the coin came off."
+);
+
 tb_ShowDialogue();

@@ -26,6 +26,7 @@
           <argument>
             <kind>1</kind>
             <string>x = 1000;
+image_speed = 0;
 </string>
           </argument>
         </arguments>
@@ -50,9 +51,10 @@
             <kind>1</kind>
             <string>FinalRoom.isCurrentRoom = true;
 image_speed = 0;
+Room_a2_background.isCurrentRoom = false;
 x = 1000;
 y = 1000;
-Room_a3_background.isCurrentRoom = false;
+
 </string>
           </argument>
         </arguments>

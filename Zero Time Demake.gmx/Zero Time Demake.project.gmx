@@ -206,6 +206,7 @@
           <script>scripts\ShuttersDialogue.gml</script>
           <script>scripts\ChainBoxAquired.gml</script>
           <script>scripts\SliderOpen.gml</script>
+          <script>scripts\InsertGun.gml</script>
         </scripts>
         <scripts name="3A">
           <script>scripts\GunLock.gml</script>
@@ -214,6 +215,7 @@
           <script>scripts\ButtonLocked.gml</script>
           <script>scripts\ButtonUnlocked.gml</script>
           <script>scripts\ButtonPressed.gml</script>
+          <script>scripts\ChairSit.gml</script>
         </scripts>
         <scripts name="RoomB">
           <script>scripts\ScaleScrews.gml</script>
@@ -223,6 +225,7 @@
           <script>scripts\ThermometerDialogue.gml</script>
           <script>scripts\ThermometerGasTorchDialogue.gml</script>
           <script>scripts\ChainBoxClue.gml</script>
+          <script>scripts\ChainBoxDrop.gml</script>
           <script>scripts\ChainBoxOpen.gml</script>
           <script>scripts\ScrewPanelOn.gml</script>
           <script>scripts\ScrewPanelOff.gml</script>

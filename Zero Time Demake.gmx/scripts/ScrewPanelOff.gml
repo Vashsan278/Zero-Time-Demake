@@ -2,8 +2,7 @@
 ds_list_add(obj_controller.characterOrder, "sCharNarrator");
 tb_AddMessage
 (                
-"Phi: #This wall is screwed on.#I doubt it's connected to the#
-outside though."
+"Phi: #This wall is screwed on.#I doubt it's connected to the#outside though."
 );
 
 ds_list_add(obj_controller.characterOrder, "sCharNarrator");

@@ -31,6 +31,7 @@ y = 416;
 depth = 10;
 initDialogue = false;
 hasRevolverTalk = false;
+finalKeyDialogue = false;
 </string>
           </argument>
         </arguments>
@@ -53,7 +54,7 @@ hasRevolverTalk = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(inView &amp;&amp; !initDialogue)
+            <string>if(inView)
 {
     depth = -10
     
@@ -64,15 +65,14 @@ hasRevolverTalk = false;
     BackButton.x = 223;
     BackButton.y = 709;  
     BackButton.depth = -15;
-        
-    obj_controller.gunLock = true;
-    initDialogue = true;  
+    
+    PuzzleLockScreen.depth = -9;         
       
 }
 else if (inView &amp;&amp; Player.hasRevolver)
 {
 
-    depth = 10
+    depth = -10
     
     BackButton.x = 1000;
     BackButton.y = 1000;
@@ -82,14 +82,28 @@ else if (inView &amp;&amp; Player.hasRevolver)
     
     //additional dialogue
     hasRevolverTalk = true;
-}
-
-if (Player.hasRevolver &amp;&amp; !Player.inCutscene &amp;&amp; hasRevolverTalk)
+    
+} 
+else if(hasRevolverTalk &amp;&amp; inView)
 {    
-    // dialogue before placing gun complete
+    // dialogue before placing gun complete    
+    BackButton.x = 1000;
+    BackButton.depth = 10;
+    
+    obj_controller.insertGun = true;
+    finalKeyDialogue = true;
 
 }
-
+else if (!Player.inCutscene &amp;&amp; finalKeyDialogue &amp;&amp; inView)
+{
+    FOUNDIT.x = 0;
+    FOUNDIT.y = 384;
+    FOUNDIT.image_speed = 0.8;
+}
+else if(!inView)
+{
+    depth = 10;
+}
 </string>
           </argument>
         </arguments>

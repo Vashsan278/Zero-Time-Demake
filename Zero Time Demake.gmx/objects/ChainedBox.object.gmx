@@ -28,6 +28,7 @@
             <string>inInventory = false;
 inPhiRoom = false;
 initDialogue = false;
+openedDialogue = false;
 </string>
           </argument>
         </arguments>

@@ -77,17 +77,20 @@ initialDialogue = false;
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (!Player.sliderPuzzleComplete)
-{    
-    SliderPuzzle.inView = true;
-    
-    if(!initialDialogue)
-    {
-        // dialogue
+            <string>if(!Player.inCutscene)
+{
+    if (!Player.sliderPuzzleComplete)
+    {    
+        SliderPuzzle.inView = true;
         
-        initialDialogue = true;
+        if(!initialDialogue)
+        {
+            // dialogue
+            
+            initialDialogue = true;
+        }
+                   
     }
-               
 }
 </string>
           </argument>

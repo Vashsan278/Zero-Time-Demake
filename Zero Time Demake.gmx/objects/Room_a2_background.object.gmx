@@ -96,8 +96,8 @@ else if(!hasHeatedThermometer &amp;&amp; instance_exists(coin) &amp;&amp; !coinC
 
 if(instance_exists(coin))
 {
-    coin.x = x+132;
-    coin.y = y+180;
+    coin.x = x+137;
+    coin.y = y+170;
 }
 
 if(gogglesOn)

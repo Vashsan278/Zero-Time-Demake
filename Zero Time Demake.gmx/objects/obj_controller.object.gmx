@@ -62,6 +62,10 @@ buttonLocked = false;
 buttonPressed = false;
 screwPanelOn = false;
 screwPanelOff = false;
+chainBoxDrop = false;
+chainBoxOpen = false;
+chairSit = false;
+insertGun = false;
 
 
 //finalChoice = false;
@@ -91,7 +95,11 @@ characterOrder = ds_list_create();
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if(cutscene1 == true)
+            <string>show_debug_message(string(Player.inCutscene));
+
+{
+
+if(cutscene1 == true)
 {                                                                  
     Player.inCutscene = true;
     with( obj_demo_dialogue )
@@ -419,6 +427,46 @@ if(screwPanelOff == true)
         script_execute(ScrewPanelOff);                                                                                     
     }             
     screwPanelOff = false;               
+}
+
+if(chainBoxDrop == true)
+{    
+    Player.inCutscene = true;                                                              
+    with( obj_demo_dialogue )
+    {
+        script_execute(ChainBoxDrop);                                                                                     
+    }             
+    chainBoxDrop = false;               
+}
+
+if(chainBoxOpen == true)
+{    
+    Player.inCutscene = true;                                                              
+    with( obj_demo_dialogue )
+    {
+        script_execute(ChainBoxOpen);                                                                                     
+    }             
+    chainBoxOpen = false;               
+}
+
+if(chairSit == true)
+{    
+    Player.inCutscene = true;                                                              
+    with( obj_demo_dialogue )
+    {
+        script_execute(ChairSit);                                                                                     
+    }             
+    chairSit = false;               
+}
+
+if(insertGun == true)
+{    
+    Player.inCutscene = true;                                                              
+    with( obj_demo_dialogue )
+    {
+        script_execute(InsertGun);                                                                                     
+    }             
+    insertGun = false;               
 }
    
 </string>
